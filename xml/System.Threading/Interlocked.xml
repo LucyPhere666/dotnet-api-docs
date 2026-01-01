@@ -858,10 +858,10 @@
         <Parameter Name="comparand" Type="System.IntPtr" Index="2" FrameworkAlternate="dotnet-uwp-10.0;net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <param name="location1">The destination <see cref="T:System.IntPtr" />, whose value is compared with the value of <paramref name="comparand" /> and possibly replaced by <paramref name="value" />.</param>
-        <param name="value">The <see cref="T:System.IntPtr" /> that replaces the destination value if the comparison results in equality.</param>
-        <param name="comparand">The <see cref="T:System.IntPtr" /> that is compared to the value at <paramref name="location1" />.</param>
-        <summary>Compares two platform-specific handles or pointers for equality and, if they are equal, replaces the first one, as an atomic operation.</summary>
+        <param name="location1">The destination, whose value is compared with the value of <paramref name="comparand" /> and possibly replaced by <paramref name="value" />.</param>
+        <param name="value">The value that replaces the destination value if the comparison results in equality.</param>
+        <param name="comparand">The value that is compared to the value at <paramref name="location1" />.</param>
+        <summary>Compares two native-sized signed integers for equality and, if they are equal, replaces the first one, as an atomic operation.</summary>
         <returns>The original value in <paramref name="location1" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[
@@ -1251,10 +1251,10 @@ If `comparand` and the object in `location1` are equal by reference, then `value
         <Parameter Name="comparand" Type="System.UIntPtr" Index="2" FrameworkAlternate="net-7.0;net-8.0;net-9.0;net-10.0" />
       </Parameters>
       <Docs>
-        <param name="location1">The destination <see cref="T:System.UIntPtr" />, whose value is compared with the value of <paramref name="comparand" /> and possibly replaced by <paramref name="value" />.</param>
-        <param name="value">The <see cref="T:System.UIntPtr" /> that replaces the destination value if the comparison results in equality.</param>
-        <param name="comparand">The <see cref="T:System.UIntPtr" /> that is compared to the value at <paramref name="location1" />.</param>
-        <summary>Compares two platform-specific handles or pointers for equality and, if they are equal, replaces the first one, as an atomic operation.</summary>
+        <param name="location1">The destination, whose value is compared with the value of <paramref name="comparand" /> and possibly replaced by <paramref name="value" />.</param>
+        <param name="value">The value that replaces the destination value if the comparison results in equality.</param>
+        <param name="comparand">The value that is compared to the value at <paramref name="location1" />.</param>
+        <summary>Compares two native-sized unsigned integers for equality and, if they are equal, replaces the first one, as an atomic operation.</summary>
         <returns>The original value in <paramref name="location1" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a <see langword="null" /> pointer.</exception>
@@ -1919,7 +1919,7 @@ If `comparand` and the value in `location1` are equal by reference, then `value`
       <Docs>
         <param name="location1">The variable to set to the specified value.</param>
         <param name="value">The value to which the <paramref name="location1" /> parameter is set.</param>
-        <summary>Sets a platform-specific handle or pointer to a specified value and returns the original value, as an atomic operation.</summary>
+        <summary>Sets a native-sized signed integer to a specified value and returns the original value, as an atomic operation.</summary>
         <returns>The original value of <paramref name="location1" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a <see langword="null" /> pointer.</exception>
@@ -2274,7 +2274,7 @@ If `comparand` and the value in `location1` are equal by reference, then `value`
       <Docs>
         <param name="location1">The variable to set to the specified value.</param>
         <param name="value">The value to which the <paramref name="location1" /> parameter is set.</param>
-        <summary>Sets a platform-specific handle or pointer to a specified value and returns the original value, as an atomic operation.</summary>
+        <summary>Sets a native-sized unsigned integer to a specified value and returns the original value, as an atomic operation.</summary>
         <returns>The original value of <paramref name="location1" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a <see langword="null" /> pointer.</exception>
@@ -2894,12 +2894,13 @@ This method wraps a call to [FlushProcessWriteBuffers](/windows/win32/api/proces
       </Docs>
     </Member>
     <Member MemberName="Read">
-      <MemberSignature Language="C#" Value="public static long Read (ref long location);" />
+      <MemberSignature Language="C#" Value="public static long Read (ref long location);" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 Read(int64&amp; location) cil managed" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Read(System.Int64@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Read (ByRef location As Long) As Long" />
       <MemberSignature Language="F#" Value="static member Read : int64 -&gt; int64" Usage="System.Threading.Interlocked.Read location" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static long Read(long % location);" />
+      <MemberSignature Language="C#" Value="public static long Read (ref readonly long location);" FrameworkAlternate="net-10.0;net-8.0;net-9.0" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 Read([in]int64&amp; location) cil managed" FrameworkAlternate="net-10.0;net-8.0;net-9.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -2950,6 +2951,9 @@ This method wraps a call to [FlushProcessWriteBuffers](/windows/win32/api/proces
 ## Remarks
  The <xref:System.Threading.Interlocked.Read%2A> method is unnecessary on 64-bit systems, because 64-bit read operations are already atomic. On 32-bit systems, 64-bit read operations are not atomic unless performed using <xref:System.Threading.Interlocked.Read%2A>.
 
+> [!IMPORTANT]
+> On 32-bit platforms, despite taking a readonly reference parameter, this method requires write access to the memory location because it uses <xref:System.Threading.Interlocked.CompareExchange%2A> internally to ensure atomicity. Attempting to read from read-only memory (such as memory-mapped files opened with read-only access) can result in an <xref:System.AccessViolationException>.
+
  ]]></format>
         </remarks>
         <altmember cref="Overload:System.Threading.Interlocked.Increment" />
@@ -2960,12 +2964,13 @@ This method wraps a call to [FlushProcessWriteBuffers](/windows/win32/api/proces
       </Docs>
     </Member>
     <Member MemberName="Read">
-      <MemberSignature Language="C#" Value="public static ulong Read (ref ulong location);" />
+      <MemberSignature Language="C#" Value="public static ulong Read (ref readonly ulong location);" FrameworkAlternate="net-10.0;net-8.0;net-9.0" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int64 Read([in]unsigned int64&amp; location) cil managed" FrameworkAlternate="net-10.0;net-8.0;net-9.0" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Read(System.UInt64@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Read (ByRef location As ULong) As ULong" />
       <MemberSignature Language="F#" Value="static member Read : uint64 -&gt; uint64" Usage="System.Threading.Interlocked.Read location" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt64 Read(System::UInt64 % location);" />
+      <MemberSignature Language="C#" Value="public static ulong Read (ref ulong location);" FrameworkAlternate="net-5.0;net-6.0;net-7.0" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int64 Read(unsigned int64&amp; location) cil managed" FrameworkAlternate="net-5.0;net-6.0;net-7.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -3006,7 +3011,17 @@ This method wraps a call to [FlushProcessWriteBuffers](/windows/win32/api/proces
         <param name="location">The 64-bit value to be loaded.</param>
         <summary>Returns a 64-bit unsigned value, loaded as an atomic operation.</summary>
         <returns>The loaded value.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+ The <xref:System.Threading.Interlocked.Read%2A> method is unnecessary on 64-bit systems, because 64-bit read operations are already atomic. On 32-bit systems, 64-bit read operations are not atomic unless performed using <xref:System.Threading.Interlocked.Read%2A>.
+
+> [!IMPORTANT]
+> On 32-bit platforms, despite taking a readonly reference parameter, this method requires write access to the memory location because it uses <xref:System.Threading.Interlocked.CompareExchange%2A> internally to ensure atomicity. Attempting to read from read-only memory (such as memory-mapped files opened with read-only access) can result in an <xref:System.AccessViolationException>.
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SpeculationBarrier">

@@ -185,6 +185,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.AddSaturate``1(System.Runtime.Intrinsics.Vector128{``0},System.Runtime.Intrinsics.Vector128{``0})" />
       </Docs>
     </Member>
     <Member MemberName="All&lt;T&gt;">
@@ -230,6 +231,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.All``1(System.Runtime.Intrinsics.Vector128{``0},``0)" />
       </Docs>
     </Member>
     <Member MemberName="AllWhereAllBitsSet&lt;T&gt;">
@@ -266,6 +268,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.AllWhereAllBitsSet``1(System.Runtime.Intrinsics.Vector128{``0})" />
       </Docs>
     </Member>
     <Member MemberName="AndNot&lt;T&gt;">
@@ -371,6 +374,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.Any``1(System.Runtime.Intrinsics.Vector128{``0},``0)" />
       </Docs>
     </Member>
     <Member MemberName="AnyWhereAllBitsSet&lt;T&gt;">
@@ -407,6 +411,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.AnyWhereAllBitsSet``1(System.Runtime.Intrinsics.Vector128{``0})" />
       </Docs>
     </Member>
     <Member MemberName="As&lt;T,U&gt;">
@@ -1533,14 +1538,14 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <param name="min">To be added.</param>
-        <param name="max">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of the elements in the vector.</typeparam>
+        <param name="value">The vector to restrict.</param>
+        <param name="min">The minimum value.</param>
+        <param name="max">The maximum value.</param>
+        <summary>Restricts a vector between a minimum and a maximum value.</summary>
+        <returns>The restricted vector.</returns>
         <remarks>To be added.</remarks>
-        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.Clamp``1(System.Runtime.Intrinsics.Vector128{``0},System.Runtime.Intrinsics.Vector128{``0},System.Runtime.Intrinsics.Vector128{``0})" />
+        <exception cref="T:System.NotSupportedException">The type of the elements in the vector (<typeparamref name="T" />) is not supported.</exception>
       </Docs>
     </Member>
     <Member MemberName="ClampNative&lt;T&gt;">
@@ -2358,6 +2363,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.Count``1(System.Runtime.Intrinsics.Vector128{``0},``0)" />
       </Docs>
     </Member>
     <Member MemberName="CountWhereAllBitsSet&lt;T&gt;">
@@ -2394,6 +2400,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.CountWhereAllBitsSet``1(System.Runtime.Intrinsics.Vector128{``0})" />
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -4355,7 +4362,7 @@ On x86, this method corresponds to __m256i _mm256_setr_epi8
       <Docs>
         <typeparam name="T">The type of the elements in the vector.</typeparam>
         <param name="values">The array from which the vector is created.</param>
-        <param name="index">The index in <paramref name="values" /> at which to being reading elements.</param>
+        <param name="index">The index in <paramref name="values" /> at which to begin reading elements.</param>
         <summary>Creates a new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> from a given array.</summary>
         <returns>A new <see cref="T:System.Runtime.Intrinsics.Vector256`1" /> with its elements set to the first <see cref="P:System.Runtime.Intrinsics.Vector128`1.Count" /> elements from <paramref name="values" />.</returns>
         <remarks>To be added.</remarks>
@@ -6546,6 +6553,7 @@ On x86, this method corresponds to __m256i _mm256_setr_epi8
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.IndexOf``1(System.Runtime.Intrinsics.Vector128{``0},``0)" />
       </Docs>
     </Member>
     <Member MemberName="IndexOfWhereAllBitsSet&lt;T&gt;">
@@ -6582,6 +6590,7 @@ On x86, this method corresponds to __m256i _mm256_setr_epi8
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.IndexOfWhereAllBitsSet``1(System.Runtime.Intrinsics.Vector128{``0})" />
       </Docs>
     </Member>
     <Member MemberName="IsEvenInteger&lt;T&gt;">
@@ -6624,6 +6633,7 @@ On x86, this method corresponds to __m256i _mm256_setr_epi8
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.IsEvenInteger``1(System.Runtime.Intrinsics.Vector128{``0})" />
       </Docs>
     </Member>
     <Member MemberName="IsFinite&lt;T&gt;">
@@ -6666,6 +6676,7 @@ On x86, this method corresponds to __m256i _mm256_setr_epi8
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.IsFinite``1(System.Runtime.Intrinsics.Vector128{``0})" />
       </Docs>
     </Member>
     <Member MemberName="IsHardwareAccelerated">
@@ -6741,6 +6752,7 @@ On x86, this method corresponds to __m256i _mm256_setr_epi8
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.IsInfinity``1(System.Runtime.Intrinsics.Vector128{``0})" />
       </Docs>
     </Member>
     <Member MemberName="IsInteger&lt;T&gt;">
@@ -6783,6 +6795,7 @@ On x86, this method corresponds to __m256i _mm256_setr_epi8
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.IsInteger``1(System.Runtime.Intrinsics.Vector128{``0})" />
       </Docs>
     </Member>
     <Member MemberName="IsNaN&lt;T&gt;">
@@ -6913,6 +6926,7 @@ On x86, this method corresponds to __m256i _mm256_setr_epi8
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.IsNegativeInfinity``1(System.Runtime.Intrinsics.Vector128{``0})" />
       </Docs>
     </Member>
     <Member MemberName="IsNormal&lt;T&gt;">
@@ -6955,6 +6969,7 @@ On x86, this method corresponds to __m256i _mm256_setr_epi8
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.IsNormal``1(System.Runtime.Intrinsics.Vector128{``0})" />
       </Docs>
     </Member>
     <Member MemberName="IsOddInteger&lt;T&gt;">
@@ -6997,6 +7012,7 @@ On x86, this method corresponds to __m256i _mm256_setr_epi8
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.IsOddInteger``1(System.Runtime.Intrinsics.Vector128{``0})" />
       </Docs>
     </Member>
     <Member MemberName="IsPositive&lt;T&gt;">
@@ -7127,6 +7143,7 @@ On x86, this method corresponds to __m256i _mm256_setr_epi8
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.IsSubnormal``1(System.Runtime.Intrinsics.Vector128{``0})" />
       </Docs>
     </Member>
     <Member MemberName="IsZero&lt;T&gt;">
@@ -7216,6 +7233,7 @@ On x86, this method corresponds to __m256i _mm256_setr_epi8
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.LastIndexOf``1(System.Runtime.Intrinsics.Vector128{``0},``0)" />
       </Docs>
     </Member>
     <Member MemberName="LastIndexOfWhereAllBitsSet&lt;T&gt;">
@@ -7252,6 +7270,7 @@ On x86, this method corresponds to __m256i _mm256_setr_epi8
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.LastIndexOfWhereAllBitsSet``1(System.Runtime.Intrinsics.Vector128{``0})" />
       </Docs>
     </Member>
     <Member MemberName="Lerp">
@@ -7830,7 +7849,7 @@ This method may bypass the cache on certain platforms.
       </Docs>
     </Member>
     <Member MemberName="LoadUnsafe&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;T&gt; LoadUnsafe&lt;T&gt; (ref T source);" FrameworkAlternate="net-10.0;net-8.0;net-9.0" />
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;T&gt; LoadUnsafe&lt;T&gt; (ref readonly T source);" FrameworkAlternate="net-10.0;net-8.0;net-9.0" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;!!T&gt; LoadUnsafe&lt;T&gt;([in]!!T&amp; source) cil managed" FrameworkAlternate="net-10.0;net-8.0;net-9.0" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector256.LoadUnsafe``1(``0@)" />
       <MemberSignature Language="VB.NET" Value="Public Function LoadUnsafe(Of T) (ByRef source As T) As Vector256(Of T)" FrameworkAlternate="net-10.0;net-8.0;net-9.0" />
@@ -7888,7 +7907,7 @@ This method may bypass the cache on certain platforms.
       </Docs>
     </Member>
     <Member MemberName="LoadUnsafe&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;T&gt; LoadUnsafe&lt;T&gt; (ref T source, UIntPtr elementOffset);" FrameworkAlternate="net-10.0;net-8.0;net-9.0" />
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector256&lt;T&gt; LoadUnsafe&lt;T&gt; (ref readonly T source, UIntPtr elementOffset);" FrameworkAlternate="net-10.0;net-8.0;net-9.0" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector256`1&lt;!!T&gt; LoadUnsafe&lt;T&gt;([in]!!T&amp; source, native unsigned int elementOffset) cil managed" FrameworkAlternate="net-10.0;net-8.0;net-9.0" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector256.LoadUnsafe``1(``0@,System.UIntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Function LoadUnsafe(Of T) (ByRef source As T, elementOffset As UIntPtr) As Vector256(Of T)" FrameworkAlternate="net-10.0;net-8.0;net-9.0" />
@@ -8117,9 +8136,8 @@ This method may bypass the cache on certain platforms.
         <param name="right">The vector to compare with <paramref name="left" />.</param>
         <summary>Computes the maximum of two vectors on a per-element basis.</summary>
         <returns>A vector whose elements are the maximum of the corresponding elements in <paramref name="left" /> and <paramref name="right" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>For <see cref="T:System.Numerics.IFloatingPoint`1" />, this method matches the IEEE 754:2019 <c>maximum</c> function. This requires NaN inputs to be propagated back to the caller and for <c>-0.0</c> to be treated as less than <c>+0.0</c>.</remarks>
         <exception cref="T:System.NotSupportedException">The type of <paramref name="left" /> and <paramref name="right" /> (<typeparamref name="T" />) is not supported.</exception>
-        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.Max``1(System.Runtime.Intrinsics.Vector128{``0},System.Runtime.Intrinsics.Vector128{``0})" />
       </Docs>
     </Member>
     <Member MemberName="MaxMagnitude&lt;T&gt;">
@@ -8390,9 +8408,8 @@ This method may bypass the cache on certain platforms.
         <param name="right">The vector to compare with <paramref name="left" />.</param>
         <summary>Computes the minimum of two vectors on a per-element basis.</summary>
         <returns>A vector whose elements are the minimum of the corresponding elements in <paramref name="left" /> and <paramref name="right" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>For <see cref="T:System.Numerics.IFloatingPoint`1" />, this method matches the IEEE 754:2019 <c>minimum</c> function. This requires NaN inputs to be propagated back to the caller and for <c>-0.0</c> to be treated as less than <c>+0.0</c>.</remarks>
         <exception cref="T:System.NotSupportedException">The type of <paramref name="left" /> and <paramref name="right" /> (<typeparamref name="T" />) is not supported.</exception>
-        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.Min``1(System.Runtime.Intrinsics.Vector128{``0},System.Runtime.Intrinsics.Vector128{``0})" />
       </Docs>
     </Member>
     <Member MemberName="MinMagnitude&lt;T&gt;">
@@ -9108,6 +9125,7 @@ This method may bypass the cache on certain platforms.
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.NarrowWithSaturation(System.Runtime.Intrinsics.Vector128{System.Double},System.Runtime.Intrinsics.Vector128{System.Double})" />
       </Docs>
     </Member>
     <Member MemberName="NarrowWithSaturation">
@@ -9141,6 +9159,7 @@ This method may bypass the cache on certain platforms.
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.NarrowWithSaturation(System.Runtime.Intrinsics.Vector128{System.Int16},System.Runtime.Intrinsics.Vector128{System.Int16})" />
       </Docs>
     </Member>
     <Member MemberName="NarrowWithSaturation">
@@ -9168,6 +9187,7 @@ This method may bypass the cache on certain platforms.
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.NarrowWithSaturation(System.Runtime.Intrinsics.Vector128{System.Int32},System.Runtime.Intrinsics.Vector128{System.Int32})" />
       </Docs>
     </Member>
     <Member MemberName="NarrowWithSaturation">
@@ -9195,6 +9215,7 @@ This method may bypass the cache on certain platforms.
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.NarrowWithSaturation(System.Runtime.Intrinsics.Vector128{System.Int64},System.Runtime.Intrinsics.Vector128{System.Int64})" />
       </Docs>
     </Member>
     <Member MemberName="NarrowWithSaturation">
@@ -9228,6 +9249,7 @@ This method may bypass the cache on certain platforms.
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.NarrowWithSaturation(System.Runtime.Intrinsics.Vector128{System.UInt16},System.Runtime.Intrinsics.Vector128{System.UInt16})" />
       </Docs>
     </Member>
     <Member MemberName="NarrowWithSaturation">
@@ -9261,6 +9283,7 @@ This method may bypass the cache on certain platforms.
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.NarrowWithSaturation(System.Runtime.Intrinsics.Vector128{System.UInt32},System.Runtime.Intrinsics.Vector128{System.UInt32})" />
       </Docs>
     </Member>
     <Member MemberName="NarrowWithSaturation">
@@ -9294,6 +9317,7 @@ This method may bypass the cache on certain platforms.
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.NarrowWithSaturation(System.Runtime.Intrinsics.Vector128{System.UInt64},System.Runtime.Intrinsics.Vector128{System.UInt64})" />
       </Docs>
     </Member>
     <Member MemberName="Negate&lt;T&gt;">
@@ -9390,6 +9414,7 @@ This method may bypass the cache on certain platforms.
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.None``1(System.Runtime.Intrinsics.Vector128{``0},``0)" />
       </Docs>
     </Member>
     <Member MemberName="NoneWhereAllBitsSet&lt;T&gt;">
@@ -9426,6 +9451,7 @@ This method may bypass the cache on certain platforms.
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.NoneWhereAllBitsSet``1(System.Runtime.Intrinsics.Vector128{``0})" />
       </Docs>
     </Member>
     <Member MemberName="OnesComplement&lt;T&gt;">
@@ -10805,11 +10831,14 @@ This method may bypass the cache on certain platforms.
         <Parameter Name="indices" Type="System.Runtime.Intrinsics.Vector256&lt;System.Byte&gt;" Index="1" FrameworkAlternate="net-10.0" />
       </Parameters>
       <Docs>
-        <param name="vector">To be added.</param>
-        <param name="indices">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="vector">The input vector from which values are selected.</param>
+        <param name="indices">The per-element indices used to select a value from <paramref name="vector" />.</param>
+        <summary>
+          <para>Creates a new vector by selecting values from an input vector using a set of indices.</para>
+          <para>Behavior is platform-dependent for out-of-range indices.</para>
+        </summary>
+        <returns>A new vector containing the values from <paramref name="vector" /> selected by the given <paramref name="indices" />.</returns>
+        <remarks>Unlike Shuffle, this method delegates to the underlying hardware intrinsic without ensuring that <paramref name="indices" /> are normalized to [0, 31].</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShuffleNative">
@@ -10832,11 +10861,11 @@ This method may bypass the cache on certain platforms.
         <Parameter Name="indices" Type="System.Runtime.Intrinsics.Vector256&lt;System.Int64&gt;" Index="1" FrameworkAlternate="net-10.0" />
       </Parameters>
       <Docs>
-        <param name="vector">To be added.</param>
-        <param name="indices">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="vector">The input vector from which values are selected.</param>
+        <param name="indices">The per-element indices used to select a value from <paramref name="vector" />.</param>
+        <summary>Creates a new vector by selecting values from an input vector using a set of indices.</summary>
+        <returns>A new vector containing the values from <paramref name="vector" /> selected by the given <paramref name="indices" />.</returns>
+        <remarks>Unlike Shuffle, this method delegates to the underlying hardware intrinsic without ensuring that <paramref name="indices" /> are normalized to [0, 3].</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShuffleNative">
@@ -10859,11 +10888,11 @@ This method may bypass the cache on certain platforms.
         <Parameter Name="indices" Type="System.Runtime.Intrinsics.Vector256&lt;System.Int16&gt;" Index="1" FrameworkAlternate="net-10.0" />
       </Parameters>
       <Docs>
-        <param name="vector">To be added.</param>
-        <param name="indices">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="vector">The input vector from which values are selected.</param>
+        <param name="indices">The per-element indices used to select a value from <paramref name="vector" />.</param>
+        <summary>Creates a new vector by selecting values from an input vector using a set of indices.</summary>
+        <returns>A new vector containing the values from <paramref name="vector" /> selected by the given <paramref name="indices" />.</returns>
+        <remarks>Unlike Shuffle, this method delegates to the underlying hardware intrinsic without ensuring that <paramref name="indices" /> are normalized to [0, 15].</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShuffleNative">
@@ -10886,11 +10915,11 @@ This method may bypass the cache on certain platforms.
         <Parameter Name="indices" Type="System.Runtime.Intrinsics.Vector256&lt;System.Int32&gt;" Index="1" FrameworkAlternate="net-10.0" />
       </Parameters>
       <Docs>
-        <param name="vector">To be added.</param>
-        <param name="indices">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="vector">The input vector from which values are selected.</param>
+        <param name="indices">The per-element indices used to select a value from <paramref name="vector" />.</param>
+        <summary>Creates a new vector by selecting values from an input vector using a set of indices.</summary>
+        <returns>A new vector containing the values from <paramref name="vector" /> selected by the given <paramref name="indices" />.</returns>
+        <remarks>Unlike Shuffle, this method delegates to the underlying hardware intrinsic without ensuring that <paramref name="indices" /> are normalized to [0, 7].</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShuffleNative">
@@ -10913,11 +10942,11 @@ This method may bypass the cache on certain platforms.
         <Parameter Name="indices" Type="System.Runtime.Intrinsics.Vector256&lt;System.Int64&gt;" Index="1" FrameworkAlternate="net-10.0" />
       </Parameters>
       <Docs>
-        <param name="vector">To be added.</param>
-        <param name="indices">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="vector">The input vector from which values are selected.</param>
+        <param name="indices">The per-element indices used to select a value from <paramref name="vector" />.</param>
+        <summary>Creates a new vector by selecting values from an input vector using a set of indices.</summary>
+        <returns>A new vector containing the values from <paramref name="vector" /> selected by the given <paramref name="indices" />.</returns>
+        <remarks>Unlike Shuffle, this method delegates to the underlying hardware intrinsic without ensuring that <paramref name="indices" /> are normalized to [0, 3].</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShuffleNative">
@@ -10946,11 +10975,14 @@ This method may bypass the cache on certain platforms.
         <Parameter Name="indices" Type="System.Runtime.Intrinsics.Vector256&lt;System.SByte&gt;" Index="1" FrameworkAlternate="net-10.0" />
       </Parameters>
       <Docs>
-        <param name="vector">To be added.</param>
-        <param name="indices">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="vector">The input vector from which values are selected.</param>
+        <param name="indices">The per-element indices used to select a value from <paramref name="vector" />.</param>
+        <summary>
+          <para>Creates a new vector by selecting values from an input vector using a set of indices.</para>
+          <para>Behavior is platform-dependent for out-of-range indices.</para>
+        </summary>
+        <returns>A new vector containing the values from <paramref name="vector" /> selected by the given <paramref name="indices" />.</returns>
+        <remarks>Unlike Shuffle, this method delegates to the underlying hardware intrinsic without ensuring that <paramref name="indices" /> are normalized to [0, 31].</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShuffleNative">
@@ -10973,11 +11005,11 @@ This method may bypass the cache on certain platforms.
         <Parameter Name="indices" Type="System.Runtime.Intrinsics.Vector256&lt;System.Int32&gt;" Index="1" FrameworkAlternate="net-10.0" />
       </Parameters>
       <Docs>
-        <param name="vector">To be added.</param>
-        <param name="indices">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="vector">The input vector from which values are selected.</param>
+        <param name="indices">The per-element indices used to select a value from <paramref name="vector" />.</param>
+        <summary>Creates a new vector by selecting values from an input vector using a set of indices.</summary>
+        <returns>A new vector containing the values from <paramref name="vector" /> selected by the given <paramref name="indices" />.</returns>
+        <remarks>Unlike Shuffle, this method delegates to the underlying hardware intrinsic without ensuring that <paramref name="indices" /> are normalized to [0, 7].</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShuffleNative">
@@ -11006,11 +11038,11 @@ This method may bypass the cache on certain platforms.
         <Parameter Name="indices" Type="System.Runtime.Intrinsics.Vector256&lt;System.UInt16&gt;" Index="1" FrameworkAlternate="net-10.0" />
       </Parameters>
       <Docs>
-        <param name="vector">To be added.</param>
-        <param name="indices">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="vector">The input vector from which values are selected.</param>
+        <param name="indices">The per-element indices used to select a value from <paramref name="vector" />.</param>
+        <summary>Creates a new vector by selecting values from an input vector using a set of indices.</summary>
+        <returns>A new vector containing the values from <paramref name="vector" /> selected by the given <paramref name="indices" />.</returns>
+        <remarks>Unlike Shuffle, this method delegates to the underlying hardware intrinsic without ensuring that <paramref name="indices" /> are normalized to [0, 15].</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShuffleNative">
@@ -11039,11 +11071,11 @@ This method may bypass the cache on certain platforms.
         <Parameter Name="indices" Type="System.Runtime.Intrinsics.Vector256&lt;System.UInt32&gt;" Index="1" FrameworkAlternate="net-10.0" />
       </Parameters>
       <Docs>
-        <param name="vector">To be added.</param>
-        <param name="indices">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="vector">The input vector from which values are selected.</param>
+        <param name="indices">The per-element indices used to select a value from <paramref name="vector" />.</param>
+        <summary>Creates a new vector by selecting values from an input vector using a set of indices.</summary>
+        <returns>A new vector containing the values from <paramref name="vector" /> selected by the given <paramref name="indices" />.</returns>
+        <remarks>Unlike Shuffle, this method delegates to the underlying hardware intrinsic without ensuring that <paramref name="indices" /> are normalized to [0, 7].</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShuffleNative">
@@ -11072,11 +11104,11 @@ This method may bypass the cache on certain platforms.
         <Parameter Name="indices" Type="System.Runtime.Intrinsics.Vector256&lt;System.UInt64&gt;" Index="1" FrameworkAlternate="net-10.0" />
       </Parameters>
       <Docs>
-        <param name="vector">To be added.</param>
-        <param name="indices">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="vector">The input vector from which values are selected.</param>
+        <param name="indices">The per-element indices used to select a value from <paramref name="vector" />.</param>
+        <summary>Creates a new vector by selecting values from an input vector using a set of indices.</summary>
+        <returns>A new vector containing the values from <paramref name="vector" /> selected by the given <paramref name="indices" />.</returns>
+        <remarks>Unlike Shuffle, this method delegates to the underlying hardware intrinsic without ensuring that <paramref name="indices" /> are normalized to [0, 3].</remarks>
       </Docs>
     </Member>
     <Member MemberName="Sin">
@@ -11163,7 +11195,7 @@ This method may bypass the cache on certain platforms.
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.Cos(System.Runtime.Intrinsics.Vector128{System.Double})" />
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.SinCos(System.Runtime.Intrinsics.Vector128{System.Double})" />
       </Docs>
     </Member>
     <Member MemberName="SinCos">
@@ -11196,7 +11228,7 @@ This method may bypass the cache on certain platforms.
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.Cos(System.Runtime.Intrinsics.Vector128{System.Single})" />
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.SinCos(System.Runtime.Intrinsics.Vector128{System.Single})" />
       </Docs>
     </Member>
     <Member MemberName="Sqrt&lt;T&gt;">
@@ -11652,6 +11684,7 @@ This method may bypass the cache on certain platforms.
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.SubtractSaturate``1(System.Runtime.Intrinsics.Vector128{``0},System.Runtime.Intrinsics.Vector128{``0})" />
       </Docs>
     </Member>
     <Member MemberName="Sum&lt;T&gt;">

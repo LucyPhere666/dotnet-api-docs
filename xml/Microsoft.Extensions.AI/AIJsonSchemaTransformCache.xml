@@ -11,6 +11,9 @@
     <AssemblyVersion>9.5.0.0</AssemblyVersion>
     <AssemblyVersion>9.6.0.0</AssemblyVersion>
     <AssemblyVersion>9.7.0.0</AssemblyVersion>
+    <AssemblyVersion>9.9.0.0</AssemblyVersion>
+    <AssemblyVersion>9.10.0.0</AssemblyVersion>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -33,7 +36,7 @@
             implementations that enforce vendor-specific restrictions on what constitutes a valid JSON schema for a given function or response format.
             </para>
       <para>
-            It is recommended <see cref="T:Microsoft.Extensions.AI.IChatClient" /> implementations with schema transformation requirements should create a single static instance of this cache.
+            It is recommended <see cref="T:Microsoft.Extensions.AI.IChatClient" /> implementations with schema transformation requirements create a single static instance of this cache.
             </para>
     </remarks>
   </Docs>
@@ -48,7 +51,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Extensions.AI.Abstractions</AssemblyName>
-        <AssemblyVersion>9.7.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="transformOptions" Type="Microsoft.Extensions.AI.AIJsonSchemaTransformOptions" />
@@ -71,8 +74,14 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Extensions.AI.Abstractions</AssemblyName>
-        <AssemblyVersion>9.7.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Text.Json.JsonElement</ReturnType>
       </ReturnValue>
@@ -80,9 +89,36 @@
         <Parameter Name="function" Type="Microsoft.Extensions.AI.AIFunction" />
       </Parameters>
       <Docs>
-        <param name="function">The function whose JSON schema we want to transform.</param>
+        <param name="function">The function whose JSON schema is to be transformed.</param>
         <summary>
             Gets or creates a transformed JSON schema for the specified <see cref="T:Microsoft.Extensions.AI.AIFunction" /> instance.
+            </summary>
+        <returns>The transformed JSON schema corresponding to <see cref="P:Microsoft.Extensions.AI.AIJsonSchemaTransformCache.TransformOptions" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOrCreateTransformedSchema">
+      <MemberSignature Language="C#" Value="public System.Text.Json.JsonElement GetOrCreateTransformedSchema (Microsoft.Extensions.AI.AIFunctionDeclaration function);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Text.Json.JsonElement GetOrCreateTransformedSchema(class Microsoft.Extensions.AI.AIFunctionDeclaration function) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Extensions.AI.AIJsonSchemaTransformCache.GetOrCreateTransformedSchema(Microsoft.Extensions.AI.AIFunctionDeclaration)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetOrCreateTransformedSchema (function As AIFunctionDeclaration) As JsonElement" />
+      <MemberSignature Language="F#" Value="member this.GetOrCreateTransformedSchema : Microsoft.Extensions.AI.AIFunctionDeclaration -&gt; System.Text.Json.JsonElement" Usage="aIJsonSchemaTransformCache.GetOrCreateTransformedSchema function" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Text::Json::JsonElement GetOrCreateTransformedSchema(Microsoft::Extensions::AI::AIFunctionDeclaration ^ function);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Extensions.AI.Abstractions</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Json.JsonElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="function" Type="Microsoft.Extensions.AI.AIFunctionDeclaration" />
+      </Parameters>
+      <Docs>
+        <param name="function">The function whose JSON schema is to be transformed.</param>
+        <summary>
+            Gets or creates a transformed JSON schema for the specified <see cref="T:Microsoft.Extensions.AI.AIFunctionDeclaration" /> instance.
             </summary>
         <returns>The transformed JSON schema corresponding to <see cref="P:Microsoft.Extensions.AI.AIJsonSchemaTransformCache.TransformOptions" />.</returns>
         <remarks>To be added.</remarks>
@@ -98,7 +134,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Extensions.AI.Abstractions</AssemblyName>
-        <AssemblyVersion>9.7.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Text.Json.JsonElement&gt;</ReturnType>
@@ -107,7 +143,7 @@
         <Parameter Name="responseFormat" Type="Microsoft.Extensions.AI.ChatResponseFormatJson" />
       </Parameters>
       <Docs>
-        <param name="responseFormat">The response format whose JSON schema we want to transform.</param>
+        <param name="responseFormat">The response format whose JSON schema is to be transformed.</param>
         <summary>
             Gets or creates a transformed JSON schema for the specified <see cref="T:Microsoft.Extensions.AI.ChatResponseFormatJson" /> instance.
             </summary>
@@ -125,7 +161,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Extensions.AI.Abstractions</AssemblyName>
-        <AssemblyVersion>9.7.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Extensions.AI.AIJsonSchemaTransformOptions</ReturnType>

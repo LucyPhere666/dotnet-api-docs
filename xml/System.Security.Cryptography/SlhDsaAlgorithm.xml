@@ -1,10 +1,10 @@
 <Type Name="SlhDsaAlgorithm" FullName="System.Security.Cryptography.SlhDsaAlgorithm">
-  <TypeSignature Language="C#" Value="public sealed class SlhDsaAlgorithm" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SlhDsaAlgorithm extends System.Object" />
+  <TypeSignature Language="C#" Value="public sealed class SlhDsaAlgorithm : IEquatable&lt;System.Security.Cryptography.SlhDsaAlgorithm&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SlhDsaAlgorithm extends System.Object implements class System.IEquatable`1&lt;class System.Security.Cryptography.SlhDsaAlgorithm&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.SlhDsaAlgorithm" />
-  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SlhDsaAlgorithm" />
-  <TypeSignature Language="F#" Value="type SlhDsaAlgorithm = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class SlhDsaAlgorithm sealed" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SlhDsaAlgorithm&#xA;Implements IEquatable(Of SlhDsaAlgorithm)" />
+  <TypeSignature Language="F#" Value="type SlhDsaAlgorithm = class&#xA;    interface IEquatable&lt;SlhDsaAlgorithm&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SlhDsaAlgorithm sealed : IEquatable&lt;System::Security::Cryptography::SlhDsaAlgorithm ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -16,7 +16,11 @@
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
-  <Interfaces />
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IEquatable&lt;System.Security.Cryptography.SlhDsaAlgorithm&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
   <Attributes>
     <Attribute FrameworkAlternate="net-10.0;net-8.0-pp;net-9.0-pp">
       <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.Experimental("SYSLIB5006", UrlFormat="https://aka.ms/dotnet-warnings/{0}")]</AttributeName>
@@ -32,10 +36,114 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a specific algorithm within the SHL-DSA family.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object? obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SlhDsaAlgorithm.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="slhDsaAlgorithm.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bcl.Cryptography</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-10.0;net-8.0-pp;net-9.0-pp;netframework-4.7.1-pp;netframework-4.7.2-pp;netframework-4.8.1-pp;netframework-4.8-pp;netstandard-2.1-pp">
+              <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.NotNullWhen(true)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.NotNullWhen(true)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (System.Security.Cryptography.SlhDsaAlgorithm? other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(class System.Security.Cryptography.SlhDsaAlgorithm other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SlhDsaAlgorithm.Equals(System.Security.Cryptography.SlhDsaAlgorithm)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As SlhDsaAlgorithm) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Security.Cryptography.SlhDsaAlgorithm -&gt; bool" Usage="slhDsaAlgorithm.Equals other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Security::Cryptography::SlhDsaAlgorithm ^ other);" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bcl.Cryptography</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Security.Cryptography.SlhDsaAlgorithm">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-10.0;net-8.0-pp;net-9.0-pp;netframework-4.7.1-pp;netframework-4.7.2-pp;netframework-4.8.1-pp;netframework-4.8-pp;netstandard-2.1-pp">
+              <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.NotNullWhen(true)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.NotNullWhen(true)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="other">An object to be compared to the current <see cref="T:System.Security.Cryptography.SlhDsaAlgorithm" /> object.</param>
+        <summary>Compares two <see cref="T:System.Security.Cryptography.SlhDsaAlgorithm" /> objects.</summary>
+        <returns>
+          <see langword="true" /> if the objects are considered equal; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SlhDsaAlgorithm.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="slhDsaAlgorithm.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bcl.Cryptography</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
     <Member MemberName="Name">
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
@@ -56,8 +164,97 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the underlying string representation of the algorithm name.</summary>
+        <value>The underlying string representation of the algorithm name.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool operator == (System.Security.Cryptography.SlhDsaAlgorithm? left, System.Security.Cryptography.SlhDsaAlgorithm? right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Security.Cryptography.SlhDsaAlgorithm left, class System.Security.Cryptography.SlhDsaAlgorithm right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SlhDsaAlgorithm.op_Equality(System.Security.Cryptography.SlhDsaAlgorithm,System.Security.Cryptography.SlhDsaAlgorithm)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As SlhDsaAlgorithm, right As SlhDsaAlgorithm) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Security.Cryptography.SlhDsaAlgorithm * System.Security.Cryptography.SlhDsaAlgorithm -&gt; bool" Usage="left = right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Security::Cryptography::SlhDsaAlgorithm ^ left, System::Security::Cryptography::SlhDsaAlgorithm ^ right);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bcl.Cryptography</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Security.Cryptography.SlhDsaAlgorithm" />
+        <Parameter Name="right" Type="System.Security.Cryptography.SlhDsaAlgorithm" />
+      </Parameters>
+      <Docs>
+        <param name="left">An object that specifies an algorithm name.</param>
+        <param name="right">A second object, to be compared to the object that is identified by the <paramref name="left" /> parameter.</param>
+        <summary>Determines whether two <see cref="T:System.Security.Cryptography.SlhDsaAlgorithm" /> objects specify the same algorithm name.</summary>
+        <returns>
+          <see langword="true" /> if the objects are considered equal; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool operator != (System.Security.Cryptography.SlhDsaAlgorithm? left, System.Security.Cryptography.SlhDsaAlgorithm? right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Security.Cryptography.SlhDsaAlgorithm left, class System.Security.Cryptography.SlhDsaAlgorithm right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SlhDsaAlgorithm.op_Inequality(System.Security.Cryptography.SlhDsaAlgorithm,System.Security.Cryptography.SlhDsaAlgorithm)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As SlhDsaAlgorithm, right As SlhDsaAlgorithm) As Boolean" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Security.Cryptography.SlhDsaAlgorithm * System.Security.Cryptography.SlhDsaAlgorithm -&gt; bool" Usage="System.Security.Cryptography.SlhDsaAlgorithm.op_Inequality (left, right)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Security::Cryptography::SlhDsaAlgorithm ^ left, System::Security::Cryptography::SlhDsaAlgorithm ^ right);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bcl.Cryptography</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Security.Cryptography.SlhDsaAlgorithm" />
+        <Parameter Name="right" Type="System.Security.Cryptography.SlhDsaAlgorithm" />
+      </Parameters>
+      <Docs>
+        <param name="left">An object that specifies an algorithm name.</param>
+        <param name="right">A second object, to be compared to the object that is identified by the <paramref name="left" /> parameter.</param>
+        <summary>Determines whether two <see cref="T:System.Security.Cryptography.SlhDsaAlgorithm" /> objects do not specify the same algorithm name.</summary>
+        <returns>
+          <see langword="true" /> if the objects are not considered equal; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrivateKeySizeInBytes">
+      <MemberSignature Language="C#" Value="public int PrivateKeySizeInBytes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 PrivateKeySizeInBytes" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.SlhDsaAlgorithm.PrivateKeySizeInBytes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrivateKeySizeInBytes As Integer" />
+      <MemberSignature Language="F#" Value="member this.PrivateKeySizeInBytes : int" Usage="System.Security.Cryptography.SlhDsaAlgorithm.PrivateKeySizeInBytes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PrivateKeySizeInBytes { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bcl.Cryptography</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the size of the private key in bytes for this algorithm.</summary>
+        <value>The size of the private key in bytes for this algorithm.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,33 +278,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SecretKeySizeInBytes">
-      <MemberSignature Language="C#" Value="public int SecretKeySizeInBytes { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance int32 SecretKeySizeInBytes" />
-      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.SlhDsaAlgorithm.SecretKeySizeInBytes" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SecretKeySizeInBytes As Integer" />
-      <MemberSignature Language="F#" Value="member this.SecretKeySizeInBytes : int" Usage="System.Security.Cryptography.SlhDsaAlgorithm.SecretKeySizeInBytes" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SecretKeySizeInBytes { int get(); };" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Security.Cryptography</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Bcl.Cryptography</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the size of the public key in bytes for this algorithm.</summary>
+        <value>The size of the public key in bytes for this algorithm.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,8 +303,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the size of the signature in bytes for this algorithm.</summary>
+        <value>The size of the signature in bytes for this algorithm.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,8 +328,8 @@
         <ReturnType>System.Security.Cryptography.SlhDsaAlgorithm</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an SLH-DSA algorithm identifier for the SLH-DSA-SHA2-128f algorithm.</summary>
+        <value>An SLH-DSA algorithm identifier for the SLH-DSA-SHA2-128f algorithm.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -181,8 +353,8 @@
         <ReturnType>System.Security.Cryptography.SlhDsaAlgorithm</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an SLH-DSA algorithm identifier for the SLH-DSA-SHA2-128s algorithm.</summary>
+        <value>An SLH-DSA algorithm identifier for the SLH-DSA-SHA2-128s algorithm.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -206,8 +378,8 @@
         <ReturnType>System.Security.Cryptography.SlhDsaAlgorithm</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an SLH-DSA algorithm identifier for the SLH-DSA-SHA2-192f algorithm.</summary>
+        <value>An SLH-DSA algorithm identifier for the SLH-DSA-SHA2-192f algorithm.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -231,8 +403,8 @@
         <ReturnType>System.Security.Cryptography.SlhDsaAlgorithm</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an SLH-DSA algorithm identifier for the SLH-DSA-SHA2-192s algorithm.</summary>
+        <value>An SLH-DSA algorithm identifier for the SLH-DSA-SHA2-192s algorithm.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -256,8 +428,8 @@
         <ReturnType>System.Security.Cryptography.SlhDsaAlgorithm</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an SLH-DSA algorithm identifier for the SLH-DSA-SHA2-256f algorithm.</summary>
+        <value>An SLH-DSA algorithm identifier for the SLH-DSA-SHA2-256f algorithm.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -281,8 +453,8 @@
         <ReturnType>System.Security.Cryptography.SlhDsaAlgorithm</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an SLH-DSA algorithm identifier for the SLH-DSA-SHA2-256s algorithm.</summary>
+        <value>An SLH-DSA algorithm identifier for the SLH-DSA-SHA2-256s algorithm.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -306,8 +478,8 @@
         <ReturnType>System.Security.Cryptography.SlhDsaAlgorithm</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an SLH-DSA algorithm identifier for the SLH-DSA-SHAKE-128f algorithm.</summary>
+        <value>An SLH-DSA algorithm identifier for the SLH-DSA-SHAKE-128f algorithm.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -331,8 +503,8 @@
         <ReturnType>System.Security.Cryptography.SlhDsaAlgorithm</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an SLH-DSA algorithm identifier for the SLH-DSA-SHAKE-128s algorithm.</summary>
+        <value>An SLH-DSA algorithm identifier for the SLH-DSA-SHAKE-128s algorithm.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -356,8 +528,8 @@
         <ReturnType>System.Security.Cryptography.SlhDsaAlgorithm</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an SLH-DSA algorithm identifier for the SLH-DSA-SHAKE-192f algorithm.</summary>
+        <value>An SLH-DSA algorithm identifier for the SLH-DSA-SHAKE-192f algorithm.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -381,8 +553,8 @@
         <ReturnType>System.Security.Cryptography.SlhDsaAlgorithm</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an SLH-DSA algorithm identifier for the SLH-DSA-SHAKE-192s algorithm.</summary>
+        <value>An SLH-DSA algorithm identifier for the SLH-DSA-SHAKE-192s algorithm.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -406,8 +578,8 @@
         <ReturnType>System.Security.Cryptography.SlhDsaAlgorithm</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an SLH-DSA algorithm identifier for the SLH-DSA-SHAKE-256f algorithm.</summary>
+        <value>An SLH-DSA algorithm identifier for the SLH-DSA-SHAKE-256f algorithm.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -431,9 +603,36 @@
         <ReturnType>System.Security.Cryptography.SlhDsaAlgorithm</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an SLH-DSA algorithm identifier for the SLH-DSA-SHAKE-256s algorithm.</summary>
+        <value>An SLH-DSA algorithm identifier for the SLH-DSA-SHAKE-256s algorithm.</value>
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SlhDsaAlgorithm.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="slhDsaAlgorithm.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bcl.Cryptography</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
   </Members>

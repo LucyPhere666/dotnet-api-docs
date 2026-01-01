@@ -23,10 +23,6 @@
   </Interfaces>
   <Attributes>
     <Attribute FrameworkAlternate="net-10.0;net-8.0-pp;net-9.0-pp">
-      <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.Experimental("SYSLIB5006", UrlFormat="https://aka.ms/dotnet-warnings/{0}")]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.Experimental("SYSLIB5006", UrlFormat="https://aka.ms/dotnet-warnings/{0}")&gt;]</AttributeName>
-    </Attribute>
-    <Attribute FrameworkAlternate="net-10.0;net-8.0-pp;net-9.0-pp">
       <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(0)]</AttributeName>
       <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(0)&gt;]</AttributeName>
     </Attribute>
@@ -36,8 +32,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents a specific algorithm within the ML-KEM family.</summary>
     <remarks>To be added.</remarks>
+    <seealso cref="T:System.Security.Cryptography.MLKem" />
   </Docs>
   <Members>
     <Member MemberName="CiphertextSizeInBytes">
@@ -60,8 +57,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the size of the ciphertext for the algorithm, in bytes.</summary>
+        <value>The size of the ciphertext for the algorithm, in bytes.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,8 +82,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the size of the decapsulation key for the algorithm, in bytes.</summary>
+        <value>The size of the decapsulation key for the algorithm, in bytes.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,8 +107,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the size of the encapsulation key for the algorithm, in bytes.</summary>
+        <value>The size of the encapsulation key for the algorithm, in bytes.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -149,6 +146,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -184,9 +182,10 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">An object to be compared to the current <see cref="T:System.Security.Cryptography.MLKemAlgorithm" /> object.</param>
+        <summary>Compares two <see cref="T:System.Security.Cryptography.MLKemAlgorithm" /> objects.</summary>
+        <returns>
+          <see langword="true" /> if the objects are considered equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -214,6 +213,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="MLKem1024">
@@ -236,8 +236,8 @@
         <ReturnType>System.Security.Cryptography.MLKemAlgorithm</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an ML-KEM algorithm identifier for the ML-KEM-1024 algorithm.</summary>
+        <value>An ML-KEM algorithm identifier for the ML-KEM-1024 algorithm.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -261,8 +261,8 @@
         <ReturnType>System.Security.Cryptography.MLKemAlgorithm</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an ML-KEM algorithm identifier for the ML-KEM-512 algorithm.</summary>
+        <value>An ML-KEM algorithm identifier for the ML-KEM-512 algorithm.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -286,8 +286,8 @@
         <ReturnType>System.Security.Cryptography.MLKemAlgorithm</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an ML-KEM algorithm identifier for the ML-KEM-768 algorithm.</summary>
+        <value>An ML-KEM algorithm identifier for the ML-KEM-768 algorithm.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -311,8 +311,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the algorithm.</summary>
+        <value>The algorithm name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -340,10 +340,11 @@
         <Parameter Name="right" Type="System.Security.Cryptography.MLKemAlgorithm" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">An object that specifies an algorithm name.</param>
+        <param name="right">A second object, to be compared to the object that is identified by the <paramref name="left" /> parameter.</param>
+        <summary>Determines whether two <see cref="T:System.Security.Cryptography.MLKemAlgorithm" /> objects specify the same algorithm name.</summary>
+        <returns>
+          <see langword="true" /> if the objects are considered equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -371,10 +372,11 @@
         <Parameter Name="right" Type="System.Security.Cryptography.MLKemAlgorithm" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">An object that specifies an algorithm name.</param>
+        <param name="right">A second object, to be compared to the object that is identified by the <paramref name="left" /> parameter.</param>
+        <summary>Determines whether two <see cref="T:System.Security.Cryptography.MLKemAlgorithm" /> objects do not specify the same algorithm name.</summary>
+        <returns>
+          <see langword="true" /> if the objects are not considered equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -398,8 +400,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the size of the private seed for the algorithm, in bytes.</summary>
+        <value>The size of the private seed for the algorithm, in bytes.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -423,8 +425,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the size of the shared secret for the algorithm, in bytes.</summary>
+        <value>The size of the shared secret for the algorithm, in bytes.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -452,6 +454,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
   </Members>

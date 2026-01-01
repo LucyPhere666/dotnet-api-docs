@@ -20,7 +20,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Describes the results of parsing a command line input based on a specific parser configuration.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -46,7 +48,10 @@
         <ReturnType>System.CommandLine.Invocation.CommandLineAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the <see cref="T:System.CommandLine.Invocation.CommandLineAction" /> for parsed result. The handler represents the action
+            that will be performed when the parse result is invoked.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -67,28 +72,32 @@
         <ReturnType>System.CommandLine.Parsing.CommandResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            A result indicating the command specified in the command line input.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Configuration">
-      <MemberSignature Language="C#" Value="public System.CommandLine.CommandLineConfiguration Configuration { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.CommandLine.CommandLineConfiguration Configuration" />
+      <MemberSignature Language="C#" Value="public System.CommandLine.ParserConfiguration Configuration { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.CommandLine.ParserConfiguration Configuration" />
       <MemberSignature Language="DocId" Value="P:System.CommandLine.ParseResult.Configuration" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Configuration As CommandLineConfiguration" />
-      <MemberSignature Language="F#" Value="member this.Configuration : System.CommandLine.CommandLineConfiguration" Usage="System.CommandLine.ParseResult.Configuration" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CommandLine::CommandLineConfiguration ^ Configuration { System::CommandLine::CommandLineConfiguration ^ get(); };" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Configuration As ParserConfiguration" />
+      <MemberSignature Language="F#" Value="member this.Configuration : System.CommandLine.ParserConfiguration" Usage="System.CommandLine.ParseResult.Configuration" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CommandLine::ParserConfiguration ^ Configuration { System::CommandLine::ParserConfiguration ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.CommandLine</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.CommandLine.CommandLineConfiguration</ReturnType>
+        <ReturnType>System.CommandLine.ParserConfiguration</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The configuration used to produce the parse result.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -109,7 +118,9 @@
         <ReturnType>System.Collections.Generic.IReadOnlyList&lt;System.CommandLine.Parsing.ParseError&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the parse errors found while parsing command line input.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -131,7 +142,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the completion context for the parse result.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -154,9 +167,11 @@
         <Parameter Name="position" Type="System.Nullable&lt;System.Int32&gt;" />
       </Parameters>
       <Docs>
-        <param name="position">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="position">The position at which completions are requested.</param>
+        <summary>
+            Gets completions based on a given parse result.
+            </summary>
+        <returns>A set of completions for completion.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -190,10 +205,13 @@
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
-        <param name="argument">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="argument">The argument for which to get a value.</param>
+        <summary>
+            Gets the parsed or default value for the specified required argument or throws.
+            </summary>
+        <returns>The parsed value or a configured default.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">Thrown when required argument was not parsed or has no default value configured.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetRequiredValue&lt;T&gt;">
@@ -226,10 +244,13 @@
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
-        <param name="option">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="option">The option for which to get a value.</param>
+        <summary>
+            Gets the parsed or default value for the specified required option or throws.
+            </summary>
+        <returns>The parsed value or a configured default.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">Thrown when required option was not parsed or has no default value configured.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetRequiredValue&lt;T&gt;">
@@ -262,10 +283,15 @@
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the required Symbol for which to get a value.</param>
+        <summary>
+            Gets the parsed or default value for the specified required symbol name, in the context of parsed command (not entire symbol tree).
+            </summary>
+        <returns>The parsed value or a configured default.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">Thrown when parsing resulted in parse error(s) or required symbol was not parsed or has no default value configured.</exception>
+        <exception cref="T:System.ArgumentException">Thrown when there was no symbol defined for given name for the parsed command.</exception>
+        <exception cref="T:System.InvalidCastException">Thrown when parsed result can not be cast to <typeparamref name="T" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetResult">
@@ -293,9 +319,11 @@
         <Parameter Name="argument" Type="System.CommandLine.Argument" />
       </Parameters>
       <Docs>
-        <param name="argument">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="argument">The argument for which to find a result.</param>
+        <summary>
+            Gets the result, if any, for the specified argument.
+            </summary>
+        <returns>A result for the specified argument, or <see langword="null" /> if it was not provided and no default was configured.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -324,9 +352,11 @@
         <Parameter Name="command" Type="System.CommandLine.Command" />
       </Parameters>
       <Docs>
-        <param name="command">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="command">The command for which to find a result.</param>
+        <summary>
+            Gets the result, if any, for the specified command.
+            </summary>
+        <returns>A result for the specified command, or <see langword="null" /> if it was not provided.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -355,9 +385,11 @@
         <Parameter Name="directive" Type="System.CommandLine.Directive" />
       </Parameters>
       <Docs>
-        <param name="directive">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="directive">The directive for which to find a result.</param>
+        <summary>
+            Gets the result, if any, for the specified directive.
+            </summary>
+        <returns>A result for the specified directive, or <see langword="null" /> if it was not provided.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -386,9 +418,11 @@
         <Parameter Name="option" Type="System.CommandLine.Option" />
       </Parameters>
       <Docs>
-        <param name="option">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="option">The option for which to find a result.</param>
+        <summary>
+            Gets the result, if any, for the specified option.
+            </summary>
+        <returns>A result for the specified option, or <see langword="null" /> if it was not provided and no default was configured.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -417,9 +451,11 @@
         <Parameter Name="symbol" Type="System.CommandLine.Symbol" />
       </Parameters>
       <Docs>
-        <param name="symbol">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="symbol">The symbol for which to find a result.</param>
+        <summary>
+            Gets the result, if any, for the specified symbol.
+            </summary>
+        <returns>A result for the specified symbol, or <see langword="null" /> if it was not provided and no default was configured.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -448,9 +484,11 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the symbol for which to find a result.</param>
+        <summary>
+            Finds a result for a symbol having the specified name anywhere in the parse tree.
+            </summary>
+        <returns>An symbol result if the argument was matched by the parser or has a default value; otherwise, <c>null</c>.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -484,9 +522,11 @@
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
-        <param name="argument">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="argument">The argument for which to get a value.</param>
+        <summary>
+            Gets the parsed or default value for the specified argument.
+            </summary>
+        <returns>The parsed value or a configured default.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -520,9 +560,11 @@
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
-        <param name="option">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="option">The option for which to get a value.</param>
+        <summary>
+            Gets the parsed or default value for the specified option.
+            </summary>
+        <returns>The parsed value or a configured default.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -556,19 +598,46 @@
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="name">The name of the Symbol for which to get a value.</param>
+        <summary>
+            Gets the parsed or default value for the specified symbol name, in the context of parsed command (not entire symbol tree).
+            </summary>
+        <returns>The parsed value or a configured default.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">Thrown when parsing resulted in parse error(s).</exception>
+        <exception cref="T:System.ArgumentException">Thrown when there was no symbol defined for given name for the parsed command.</exception>
+        <exception cref="T:System.InvalidCastException">Thrown when parsed result can not be cast to <typeparamref name="T" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="InvocationConfiguration">
+      <MemberSignature Language="C#" Value="public System.CommandLine.InvocationConfiguration InvocationConfiguration { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.CommandLine.InvocationConfiguration InvocationConfiguration" />
+      <MemberSignature Language="DocId" Value="P:System.CommandLine.ParseResult.InvocationConfiguration" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InvocationConfiguration As InvocationConfiguration" />
+      <MemberSignature Language="F#" Value="member this.InvocationConfiguration : System.CommandLine.InvocationConfiguration" Usage="System.CommandLine.ParseResult.InvocationConfiguration" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CommandLine::InvocationConfiguration ^ InvocationConfiguration { System::CommandLine::InvocationConfiguration ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.CommandLine</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CommandLine.InvocationConfiguration</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The configuration used to specify command line runtime behavior.
+            </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Invoke">
-      <MemberSignature Language="C#" Value="public int Invoke ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Invoke() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.CommandLine.ParseResult.Invoke" />
-      <MemberSignature Language="VB.NET" Value="Public Function Invoke () As Integer" />
-      <MemberSignature Language="F#" Value="member this.Invoke : unit -&gt; int" Usage="parseResult.Invoke " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Invoke();" />
+      <MemberSignature Language="C#" Value="public int Invoke (System.CommandLine.InvocationConfiguration? configuration = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Invoke(class System.CommandLine.InvocationConfiguration configuration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CommandLine.ParseResult.Invoke(System.CommandLine.InvocationConfiguration)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Invoke (Optional configuration As InvocationConfiguration = Nothing) As Integer" />
+      <MemberSignature Language="F#" Value="member this.Invoke : System.CommandLine.InvocationConfiguration -&gt; int" Usage="parseResult.Invoke configuration" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.CommandLine</AssemblyName>
@@ -577,19 +646,24 @@
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <Parameters />
+      <Parameters>
+        <Parameter Name="configuration" Type="System.CommandLine.InvocationConfiguration" />
+      </Parameters>
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="configuration">The configuration used to define invocation behaviors.</param>
+        <summary>
+            Invokes the appropriate command handler for a parsed command line input.
+            </summary>
+        <returns>A value that can be used as a process exit code.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InvokeAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;int&gt; InvokeAsync (System.Threading.CancellationToken cancellationToken = default);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;int32&gt; InvokeAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.CommandLine.ParseResult.InvokeAsync(System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Function InvokeAsync (Optional cancellationToken As CancellationToken = Nothing) As Task(Of Integer)" />
-      <MemberSignature Language="F#" Value="member this.InvokeAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;int&gt;" Usage="parseResult.InvokeAsync cancellationToken" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;int&gt; InvokeAsync (System.CommandLine.InvocationConfiguration? configuration = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;int32&gt; InvokeAsync(class System.CommandLine.InvocationConfiguration configuration, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CommandLine.ParseResult.InvokeAsync(System.CommandLine.InvocationConfiguration,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function InvokeAsync (Optional configuration As InvocationConfiguration = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.InvokeAsync : System.CommandLine.InvocationConfiguration * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;int&gt;" Usage="parseResult.InvokeAsync (configuration, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.CommandLine</AssemblyName>
@@ -599,12 +673,23 @@
         <ReturnType>System.Threading.Tasks.Task&lt;System.Int32&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="configuration" Type="System.CommandLine.InvocationConfiguration">
+          <Attributes>
+            <Attribute FrameworkAlternate="net-10.0-pp;net-8.0-pp;net-9.0-pp">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.Nullable(2)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.Nullable(2)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="configuration">The configuration used to define invocation behaviors.</param>
+        <param name="cancellationToken">A token that can be used to cancel an invocation.</param>
+        <summary>
+            Invokes the appropriate command handler for a parsed command line input.
+            </summary>
+        <returns>A task whose result can be used as a process exit code.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -624,7 +709,9 @@
         <ReturnType>System.CommandLine.Parsing.CommandResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the root command result.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -645,7 +732,9 @@
         <ReturnType>System.Collections.Generic.IReadOnlyList&lt;System.CommandLine.Parsing.Token&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the tokens identified while parsing command line input.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -670,6 +759,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="UnmatchedTokens">
@@ -688,7 +778,9 @@
         <ReturnType>System.Collections.Generic.IReadOnlyList&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the list of tokens used on the command line that were not matched by the parser.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

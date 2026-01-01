@@ -110,6 +110,12 @@
 
  A system process is uniquely identified on the system by its process identifier. Like many Windows resources, a process is also identified by its handle, which might not be unique on the computer. A handle is the generic term for an identifier of a resource. The operating system persists the process handle, which is accessed through the <xref:System.Diagnostics.Process.Handle%2A> property of the <xref:System.Diagnostics.Process> component, even when the process has exited. Thus, you can get the process's administrative information, such as the <xref:System.Diagnostics.Process.ExitCode%2A> (usually either zero for success or a nonzero error code) and the <xref:System.Diagnostics.Process.ExitTime%2A>. Handles are an extremely valuable resource, so leaking handles is more virulent than leaking memory.
 
+On macOS, the following properties return 0:
+
+ - <xref:System.Diagnostics.Process.PeakVirtualMemorySize64>
+ - <xref:System.Diagnostics.Process.PrivateMemorySize64>
+ - <xref:System.Diagnostics.Process.PeakWorkingSet64>
+
 > [!NOTE]
 >  This class contains a link demand and an inheritance demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when either the immediate caller or the derived class does not have full-trust permission. For details about security demands, see [Link Demands](/dotnet/framework/misc/link-demands).
 
@@ -7182,15 +7188,6 @@ No process is associated with this <see cref="T:System.Diagnostics.Process" /> o
  The working set of a process is the set of memory pages currently visible to the process in physical RAM memory. These pages are resident and available for an application to use without triggering a page fault.
 
  The working set includes both shared and private data. The shared data includes the pages that contain all the instructions that the process executes, including the process modules and the system libraries.
-
-
-
-## Examples
- The following example starts an instance of Notepad. The example then retrieves and displays various properties of the associated process. The example detects when the process exits, and displays the process' exit code.
-
- :::code language="csharp" source="~/snippets/csharp/System.Diagnostics/Process/WorkingSet/process_sample.cs" id="Snippet1":::
- :::code language="fsharp" source="~/snippets/fsharp/System.Diagnostics/Process/WorkingSet/process_sample.fs" id="Snippet1":::
- :::code language="vb" source="~/snippets/visualbasic/System.Diagnostics/Process/WorkingSet/process_sample.vb" id="Snippet1":::
 
  ]]></format>
         </remarks>

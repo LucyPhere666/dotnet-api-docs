@@ -12,6 +12,9 @@
     <AssemblyVersion>9.5.0.0</AssemblyVersion>
     <AssemblyVersion>9.6.0.0</AssemblyVersion>
     <AssemblyVersion>9.7.0.0</AssemblyVersion>
+    <AssemblyVersion>9.9.0.0</AssemblyVersion>
+    <AssemblyVersion>9.10.0.0</AssemblyVersion>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -27,10 +30,10 @@
     <summary>Represents the response to a chat request.</summary>
     <remarks>
       <see cref="T:Microsoft.Extensions.AI.ChatResponse" /> provides one or more response messages and metadata about the response.
-            A typical response will contain a single message, however a response may contain multiple messages
+            A typical response will contain a single message, however a response might contain multiple messages
             in a variety of scenarios. For example, if automatic function calling is employed, such that a single
-            request to a <see cref="T:Microsoft.Extensions.AI.IChatClient" /> may actually generate multiple roundtrips to an inner <see cref="T:Microsoft.Extensions.AI.IChatClient" />
-            it uses, all of the involved messages may be surfaced as part of the final <see cref="T:Microsoft.Extensions.AI.ChatResponse" />.
+            request to a <see cref="T:Microsoft.Extensions.AI.IChatClient" /> might actually generate multiple round-trips to an inner <see cref="T:Microsoft.Extensions.AI.IChatClient" />
+            it uses, all of the involved messages might be surfaced as part of the final <see cref="T:Microsoft.Extensions.AI.ChatResponse" />.
             </remarks>
   </Docs>
   <Members>
@@ -43,7 +46,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Extensions.AI.Abstractions</AssemblyName>
-        <AssemblyVersion>9.7.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -61,7 +64,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Extensions.AI.Abstractions</AssemblyName>
-        <AssemblyVersion>9.7.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="message" Type="Microsoft.Extensions.AI.ChatMessage" />
@@ -84,7 +87,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Extensions.AI.Abstractions</AssemblyName>
-        <AssemblyVersion>9.7.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="messages" Type="System.Collections.Generic.IList&lt;Microsoft.Extensions.AI.ChatMessage&gt;">
@@ -112,7 +115,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Extensions.AI.Abstractions</AssemblyName>
-        <AssemblyVersion>9.7.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Extensions.AI.AdditionalPropertiesDictionary</ReturnType>
@@ -121,6 +124,47 @@
         <summary>Gets or sets any additional properties associated with the chat response.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContinuationToken">
+      <MemberSignature Language="C#" Value="public object? ContinuationToken { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ContinuationToken" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Extensions.AI.ChatResponse.ContinuationToken" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContinuationToken As Object" />
+      <MemberSignature Language="F#" Value="member this.ContinuationToken : obj with get, set" Usage="Microsoft.Extensions.AI.ChatResponse.ContinuationToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ContinuationToken { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Extensions.AI.Abstractions</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-10.0-pp;net-8.0-pp;net-9.0-pp">
+          <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.Experimental("MEAI001")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.Experimental("MEAI001")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName Language="C#">[System.Text.Json.Serialization.JsonIgnore]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Text.Json.Serialization.JsonIgnore&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the continuation token for getting result of the background chat response.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <see cref="T:Microsoft.Extensions.AI.IChatClient" /> implementations that support background responses will return
+            a continuation token if background responses are allowed in <see cref="P:Microsoft.Extensions.AI.ChatOptions.AllowBackgroundResponses" />
+            and the result of the response has not been obtained yet. If the response has completed and the result has been obtained,
+            the token will be <see langword="null" />.
+            <para>
+            This property should be used in conjunction with <see cref="P:Microsoft.Extensions.AI.ChatOptions.ContinuationToken" /> to
+            continue to poll for the completion of the response. Pass this token to
+            <see cref="P:Microsoft.Extensions.AI.ChatOptions.ContinuationToken" /> on subsequent calls to <see cref="M:Microsoft.Extensions.AI.IChatClient.GetResponseAsync(System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.ChatMessage},Microsoft.Extensions.AI.ChatOptions,System.Threading.CancellationToken)" />
+            to poll for completion.
+            </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ConversationId">
@@ -133,7 +177,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Extensions.AI.Abstractions</AssemblyName>
-        <AssemblyVersion>9.7.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -146,8 +190,7 @@
             the input messages supplied to <see cref="M:Microsoft.Extensions.AI.IChatClient.GetResponseAsync(System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.ChatMessage},Microsoft.Extensions.AI.ChatOptions,System.Threading.CancellationToken)" /> need only be the additional messages beyond
             what's already stored. If this property is non-<see langword="null" />, it represents an identifier for that state,
             and it should be used in a subsequent <see cref="P:Microsoft.Extensions.AI.ChatOptions.ConversationId" /> instead of supplying the same messages
-            (and this <see cref="T:Microsoft.Extensions.AI.ChatResponse" />'s message) as part of the <c>messages</c> parameter. Note that the value may
-            or may not differ on every response, depending on whether the underlying provider uses a fixed ID for each conversation
+            (and this <see cref="T:Microsoft.Extensions.AI.ChatResponse" />'s message) as part of the <c>messages</c> parameter. Note that the value might differ on every response, depending on whether the underlying provider uses a fixed ID for each conversation
             or updates it for each message.
             </remarks>
         <related type="Article" href="https://learn.microsoft.com/dotnet/ai/microsoft-extensions-ai#stateless-vs-stateful-clients">Stateless vs. stateful clients.</related>
@@ -163,7 +206,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Extensions.AI.Abstractions</AssemblyName>
-        <AssemblyVersion>9.7.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
@@ -184,7 +227,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Extensions.AI.Abstractions</AssemblyName>
-        <AssemblyVersion>9.7.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;Microsoft.Extensions.AI.ChatFinishReason&gt;</ReturnType>
@@ -205,7 +248,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Extensions.AI.Abstractions</AssemblyName>
-        <AssemblyVersion>9.7.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="net-10.0-pp;net-8.0-pp;net-9.0-pp">
@@ -232,7 +275,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Extensions.AI.Abstractions</AssemblyName>
-        <AssemblyVersion>9.7.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -253,7 +296,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Extensions.AI.Abstractions</AssemblyName>
-        <AssemblyVersion>9.7.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -284,7 +327,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Extensions.AI.Abstractions</AssemblyName>
-        <AssemblyVersion>9.7.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -305,7 +348,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Extensions.AI.Abstractions</AssemblyName>
-        <AssemblyVersion>9.7.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="net-10.0-pp;net-8.0-pp;net-9.0-pp">
@@ -339,7 +382,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Extensions.AI.Abstractions</AssemblyName>
-        <AssemblyVersion>9.7.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Extensions.AI.ChatResponseUpdate[]</ReturnType>
@@ -347,7 +390,7 @@
       <Parameters />
       <Docs>
         <summary>Creates an array of <see cref="T:Microsoft.Extensions.AI.ChatResponseUpdate" /> instances that represent this <see cref="T:Microsoft.Extensions.AI.ChatResponse" />.</summary>
-        <returns>An array of <see cref="T:Microsoft.Extensions.AI.ChatResponseUpdate" /> instances that may be used to represent this <see cref="T:Microsoft.Extensions.AI.ChatResponse" />.</returns>
+        <returns>An array of <see cref="T:Microsoft.Extensions.AI.ChatResponseUpdate" /> instances that can be used to represent this <see cref="T:Microsoft.Extensions.AI.ChatResponse" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -361,7 +404,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Extensions.AI.Abstractions</AssemblyName>
-        <AssemblyVersion>9.7.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -384,7 +427,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Extensions.AI.Abstractions</AssemblyName>
-        <AssemblyVersion>9.7.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Extensions.AI.UsageDetails</ReturnType>

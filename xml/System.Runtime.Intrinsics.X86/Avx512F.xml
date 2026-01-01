@@ -3314,7 +3314,10 @@
         <param name="merge">To be added.</param>
         <param name="mask">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+          <para>__m512d _mm512_mask_compress_pd (__m512d s, __mmask8 k, __m512d a)</para>
+          <para>  VCOMPRESSPD zmm1 {k1}{z}, zmm2</para>
+        </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3343,7 +3346,10 @@
         <param name="merge">To be added.</param>
         <param name="mask">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+          <para>__m512i _mm512_mask_compress_epi32 (__m512i s, __mmask16 k, __m512i a)</para>
+          <para>  VPCOMPRESSD zmm1 {k1}{z}, zmm2</para>
+        </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3372,7 +3378,10 @@
         <param name="merge">To be added.</param>
         <param name="mask">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+          <para>__m512i _mm512_mask_compress_epi64 (__m512i s, __mmask8 k, __m512i a)</para>
+          <para>  VPCOMPRESSQ zmm1 {k1}{z}, zmm2</para>
+        </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3401,7 +3410,10 @@
         <param name="merge">To be added.</param>
         <param name="mask">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+          <para>__m512 _mm512_mask_compress_ps (__m512 s, __mmask16 k, __m512 a)</para>
+          <para>  VCOMPRESSPS zmm1 {k1}{z}, zmm2</para>
+        </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3430,7 +3442,10 @@
         <param name="merge">To be added.</param>
         <param name="mask">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+          <para>__m512i _mm512_mask_compress_epi32 (__m512i s, __mmask16 k, __m512i a)</para>
+          <para>  VPCOMPRESSD zmm1 {k1}{z}, zmm2</para>
+        </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3459,8 +3474,191 @@
         <param name="merge">To be added.</param>
         <param name="mask">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+          <para>__m512i _mm512_mask_compress_epi64 (__m512i s, __mmask8 k, __m512i a)</para>
+          <para>  VPCOMPRESSQ zmm1 {k1}{z}, zmm2</para>
+        </summary>
         <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompressStore">
+      <MemberSignature Language="C#" Value="public static void CompressStore (double* address, System.Runtime.Intrinsics.Vector512&lt;double&gt; mask, System.Runtime.Intrinsics.Vector512&lt;double&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CompressStore(float64* address, valuetype System.Runtime.Intrinsics.Vector512`1&lt;float64&gt; mask, valuetype System.Runtime.Intrinsics.Vector512`1&lt;float64&gt; source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx512F.CompressStore(System.Double*,System.Runtime.Intrinsics.Vector512{System.Double},System.Runtime.Intrinsics.Vector512{System.Double})" />
+      <MemberSignature Language="F#" Value="static member CompressStore : nativeptr&lt;double&gt; * System.Runtime.Intrinsics.Vector512&lt;double&gt; * System.Runtime.Intrinsics.Vector512&lt;double&gt; -&gt; unit" Usage="System.Runtime.Intrinsics.X86.Avx512F.CompressStore (address, mask, source)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void CompressStore(double* address, System::Runtime::Intrinsics::Vector512&lt;double&gt; mask, System::Runtime::Intrinsics::Vector512&lt;double&gt; source);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.Double*" Index="0" FrameworkAlternate="net-10.0" />
+        <Parameter Name="mask" Type="System.Runtime.Intrinsics.Vector512&lt;System.Double&gt;" Index="1" FrameworkAlternate="net-10.0" />
+        <Parameter Name="source" Type="System.Runtime.Intrinsics.Vector512&lt;System.Double&gt;" Index="2" FrameworkAlternate="net-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <param name="mask">To be added.</param>
+        <param name="source">To be added.</param>
+        <summary>
+          <para>__m512d _mm512_mask_compressstoreu_pd (void * s, __mmask8 k, __m512d a)</para>
+          <para>  VCOMPRESSPD m512 {k1}{z}, zmm2</para>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompressStore">
+      <MemberSignature Language="C#" Value="public static void CompressStore (int* address, System.Runtime.Intrinsics.Vector512&lt;int&gt; mask, System.Runtime.Intrinsics.Vector512&lt;int&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CompressStore(int32* address, valuetype System.Runtime.Intrinsics.Vector512`1&lt;int32&gt; mask, valuetype System.Runtime.Intrinsics.Vector512`1&lt;int32&gt; source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx512F.CompressStore(System.Int32*,System.Runtime.Intrinsics.Vector512{System.Int32},System.Runtime.Intrinsics.Vector512{System.Int32})" />
+      <MemberSignature Language="F#" Value="static member CompressStore : nativeptr&lt;int&gt; * System.Runtime.Intrinsics.Vector512&lt;int&gt; * System.Runtime.Intrinsics.Vector512&lt;int&gt; -&gt; unit" Usage="System.Runtime.Intrinsics.X86.Avx512F.CompressStore (address, mask, source)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void CompressStore(int* address, System::Runtime::Intrinsics::Vector512&lt;int&gt; mask, System::Runtime::Intrinsics::Vector512&lt;int&gt; source);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.Int32*" Index="0" FrameworkAlternate="net-10.0" />
+        <Parameter Name="mask" Type="System.Runtime.Intrinsics.Vector512&lt;System.Int32&gt;" Index="1" FrameworkAlternate="net-10.0" />
+        <Parameter Name="source" Type="System.Runtime.Intrinsics.Vector512&lt;System.Int32&gt;" Index="2" FrameworkAlternate="net-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <param name="mask">To be added.</param>
+        <param name="source">To be added.</param>
+        <summary>
+          <para>void _mm512_mask_compressstoreu_epi32 (void * s, __mmask16 k, __m512i a)</para>
+          <para>  VPCOMPRESSD m512 {k1}{z}, zmm2</para>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompressStore">
+      <MemberSignature Language="C#" Value="public static void CompressStore (long* address, System.Runtime.Intrinsics.Vector512&lt;long&gt; mask, System.Runtime.Intrinsics.Vector512&lt;long&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CompressStore(int64* address, valuetype System.Runtime.Intrinsics.Vector512`1&lt;int64&gt; mask, valuetype System.Runtime.Intrinsics.Vector512`1&lt;int64&gt; source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx512F.CompressStore(System.Int64*,System.Runtime.Intrinsics.Vector512{System.Int64},System.Runtime.Intrinsics.Vector512{System.Int64})" />
+      <MemberSignature Language="F#" Value="static member CompressStore : nativeptr&lt;int64&gt; * System.Runtime.Intrinsics.Vector512&lt;int64&gt; * System.Runtime.Intrinsics.Vector512&lt;int64&gt; -&gt; unit" Usage="System.Runtime.Intrinsics.X86.Avx512F.CompressStore (address, mask, source)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void CompressStore(long* address, System::Runtime::Intrinsics::Vector512&lt;long&gt; mask, System::Runtime::Intrinsics::Vector512&lt;long&gt; source);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.Int64*" Index="0" FrameworkAlternate="net-10.0" />
+        <Parameter Name="mask" Type="System.Runtime.Intrinsics.Vector512&lt;System.Int64&gt;" Index="1" FrameworkAlternate="net-10.0" />
+        <Parameter Name="source" Type="System.Runtime.Intrinsics.Vector512&lt;System.Int64&gt;" Index="2" FrameworkAlternate="net-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <param name="mask">To be added.</param>
+        <param name="source">To be added.</param>
+        <summary>
+          <para>void _mm512_mask_compressstoreu_epi64 (void * s, __mmask8 k, __m512i a)</para>
+          <para>  VPCOMPRESSQ m512 {k1}{z}, zmm2</para>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompressStore">
+      <MemberSignature Language="C#" Value="public static void CompressStore (float* address, System.Runtime.Intrinsics.Vector512&lt;float&gt; mask, System.Runtime.Intrinsics.Vector512&lt;float&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CompressStore(float32* address, valuetype System.Runtime.Intrinsics.Vector512`1&lt;float32&gt; mask, valuetype System.Runtime.Intrinsics.Vector512`1&lt;float32&gt; source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx512F.CompressStore(System.Single*,System.Runtime.Intrinsics.Vector512{System.Single},System.Runtime.Intrinsics.Vector512{System.Single})" />
+      <MemberSignature Language="F#" Value="static member CompressStore : nativeptr&lt;single&gt; * System.Runtime.Intrinsics.Vector512&lt;single&gt; * System.Runtime.Intrinsics.Vector512&lt;single&gt; -&gt; unit" Usage="System.Runtime.Intrinsics.X86.Avx512F.CompressStore (address, mask, source)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void CompressStore(float* address, System::Runtime::Intrinsics::Vector512&lt;float&gt; mask, System::Runtime::Intrinsics::Vector512&lt;float&gt; source);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.Single*" Index="0" FrameworkAlternate="net-10.0" />
+        <Parameter Name="mask" Type="System.Runtime.Intrinsics.Vector512&lt;System.Single&gt;" Index="1" FrameworkAlternate="net-10.0" />
+        <Parameter Name="source" Type="System.Runtime.Intrinsics.Vector512&lt;System.Single&gt;" Index="2" FrameworkAlternate="net-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <param name="mask">To be added.</param>
+        <param name="source">To be added.</param>
+        <summary>
+          <para>__m512 _mm512_mask_compressstoreu_ps (void * s, __mmask16 k, __m512 a)</para>
+          <para>  VCOMPRESSPS m512 {k1}{z}, zmm2</para>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompressStore">
+      <MemberSignature Language="C#" Value="public static void CompressStore (uint* address, System.Runtime.Intrinsics.Vector512&lt;uint&gt; mask, System.Runtime.Intrinsics.Vector512&lt;uint&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CompressStore(unsigned int32* address, valuetype System.Runtime.Intrinsics.Vector512`1&lt;unsigned int32&gt; mask, valuetype System.Runtime.Intrinsics.Vector512`1&lt;unsigned int32&gt; source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx512F.CompressStore(System.UInt32*,System.Runtime.Intrinsics.Vector512{System.UInt32},System.Runtime.Intrinsics.Vector512{System.UInt32})" />
+      <MemberSignature Language="F#" Value="static member CompressStore : nativeptr&lt;uint32&gt; * System.Runtime.Intrinsics.Vector512&lt;uint32&gt; * System.Runtime.Intrinsics.Vector512&lt;uint32&gt; -&gt; unit" Usage="System.Runtime.Intrinsics.X86.Avx512F.CompressStore (address, mask, source)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void CompressStore(System::UInt32* address, System::Runtime::Intrinsics::Vector512&lt;System::UInt32&gt; mask, System::Runtime::Intrinsics::Vector512&lt;System::UInt32&gt; source);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.UInt32*" Index="0" FrameworkAlternate="net-10.0" />
+        <Parameter Name="mask" Type="System.Runtime.Intrinsics.Vector512&lt;System.UInt32&gt;" Index="1" FrameworkAlternate="net-10.0" />
+        <Parameter Name="source" Type="System.Runtime.Intrinsics.Vector512&lt;System.UInt32&gt;" Index="2" FrameworkAlternate="net-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <param name="mask">To be added.</param>
+        <param name="source">To be added.</param>
+        <summary>
+          <para>void _mm512_mask_compressstoreu_epi32 (void * s, __mmask16 k, __m512i a)</para>
+          <para>  VPCOMPRESSD m512 {k1}{z}, zmm2</para>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompressStore">
+      <MemberSignature Language="C#" Value="public static void CompressStore (ulong* address, System.Runtime.Intrinsics.Vector512&lt;ulong&gt; mask, System.Runtime.Intrinsics.Vector512&lt;ulong&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CompressStore(unsigned int64* address, valuetype System.Runtime.Intrinsics.Vector512`1&lt;unsigned int64&gt; mask, valuetype System.Runtime.Intrinsics.Vector512`1&lt;unsigned int64&gt; source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx512F.CompressStore(System.UInt64*,System.Runtime.Intrinsics.Vector512{System.UInt64},System.Runtime.Intrinsics.Vector512{System.UInt64})" />
+      <MemberSignature Language="F#" Value="static member CompressStore : nativeptr&lt;uint64&gt; * System.Runtime.Intrinsics.Vector512&lt;uint64&gt; * System.Runtime.Intrinsics.Vector512&lt;uint64&gt; -&gt; unit" Usage="System.Runtime.Intrinsics.X86.Avx512F.CompressStore (address, mask, source)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void CompressStore(System::UInt64* address, System::Runtime::Intrinsics::Vector512&lt;System::UInt64&gt; mask, System::Runtime::Intrinsics::Vector512&lt;System::UInt64&gt; source);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.UInt64*" Index="0" FrameworkAlternate="net-10.0" />
+        <Parameter Name="mask" Type="System.Runtime.Intrinsics.Vector512&lt;System.UInt64&gt;" Index="1" FrameworkAlternate="net-10.0" />
+        <Parameter Name="source" Type="System.Runtime.Intrinsics.Vector512&lt;System.UInt64&gt;" Index="2" FrameworkAlternate="net-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <param name="mask">To be added.</param>
+        <param name="source">To be added.</param>
+        <summary>
+          <para>void _mm512_mask_compressstoreu_epi64 (void * s, __mmask8 k, __m512i a)</para>
+          <para>  VPCOMPRESSQ m512 {k1}{z}, zmm2</para>
+        </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -5016,7 +5214,10 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="mode">To be added.</param>
-        <summary>&lt;para&gt;__m256i _mm512_cvt_roundpd_epu32 (__m512d a, int rounding) &lt;para&gt;  VCVTPD2UDQ ymm1, zmm2 {er}&lt;/para&gt;</summary>
+        <summary>
+          <para>__m256i _mm512_cvt_roundpd_epu32 (__m512d a, int rounding)</para>
+          <para>VCVTPD2UDQ ymm1, zmm2 {er}</para>
+        </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6441,7 +6642,10 @@
         <param name="merge">To be added.</param>
         <param name="mask">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+          <para>__m512d _mm512_mask_expand_pd (__m512d s, __mmask8 k, __m512d a)</para>
+          <para>  VEXPANDPD zmm1 {k1}{z}, zmm2</para>
+        </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6470,7 +6674,10 @@
         <param name="merge">To be added.</param>
         <param name="mask">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+          <para>__m512i _mm512_mask_expand_epi32 (__m512i s, __mmask16 k, __m512i a)</para>
+          <para>  VPEXPANDD zmm1 {k1}{z}, zmm2</para>
+        </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6499,7 +6706,10 @@
         <param name="merge">To be added.</param>
         <param name="mask">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+          <para>__m512i _mm512_mask_expand_epi64 (__m512i s, __mmask8 k, __m512i a)</para>
+          <para>  VPEXPANDQ zmm1 {k1}{z}, zmm2</para>
+        </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6528,7 +6738,10 @@
         <param name="merge">To be added.</param>
         <param name="mask">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+          <para>__m512 _mm512_mask_expand_ps (__m512 s, __mmask16 k, __m512 a)</para>
+          <para>  VEXPANDPS zmm1 {k1}{z}, zmm2</para>
+        </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6557,7 +6770,10 @@
         <param name="merge">To be added.</param>
         <param name="mask">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+          <para>__m512i _mm512_mask_expand_epi32 (__m512i s, __mmask16 k, __m512i a)</para>
+          <para>  VPEXPANDD zmm1 {k1}{z}, zmm2</para>
+        </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6586,9 +6802,198 @@
         <param name="merge">To be added.</param>
         <param name="mask">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+          <para>__m512i _mm512_mask_expand_epi64 (__m512i s, __mmask8 k, __m512i a)</para>
+          <para>  VPEXPANDQ zmm1 {k1}{z}, zmm2</para>
+        </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpandLoad">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector512&lt;double&gt; ExpandLoad (double* address, System.Runtime.Intrinsics.Vector512&lt;double&gt; mask, System.Runtime.Intrinsics.Vector512&lt;double&gt; merge);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector512`1&lt;float64&gt; ExpandLoad(float64* address, valuetype System.Runtime.Intrinsics.Vector512`1&lt;float64&gt; mask, valuetype System.Runtime.Intrinsics.Vector512`1&lt;float64&gt; merge) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx512F.ExpandLoad(System.Double*,System.Runtime.Intrinsics.Vector512{System.Double},System.Runtime.Intrinsics.Vector512{System.Double})" />
+      <MemberSignature Language="F#" Value="static member ExpandLoad : nativeptr&lt;double&gt; * System.Runtime.Intrinsics.Vector512&lt;double&gt; * System.Runtime.Intrinsics.Vector512&lt;double&gt; -&gt; System.Runtime.Intrinsics.Vector512&lt;double&gt;" Usage="System.Runtime.Intrinsics.X86.Avx512F.ExpandLoad (address, mask, merge)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector512&lt;double&gt; ExpandLoad(double* address, System::Runtime::Intrinsics::Vector512&lt;double&gt; mask, System::Runtime::Intrinsics::Vector512&lt;double&gt; merge);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector512&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.Double*" Index="0" FrameworkAlternate="net-10.0" />
+        <Parameter Name="mask" Type="System.Runtime.Intrinsics.Vector512&lt;System.Double&gt;" Index="1" FrameworkAlternate="net-10.0" />
+        <Parameter Name="merge" Type="System.Runtime.Intrinsics.Vector512&lt;System.Double&gt;" Index="2" FrameworkAlternate="net-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <param name="mask">To be added.</param>
+        <param name="merge">To be added.</param>
+        <summary>
+          <para>__m512d _mm512_mask_expandloadu_pd (__m512d s, __mmask8 k, void * const a)</para>
+          <para>  VEXPANDPD zmm1 {k1}{z}, m512</para>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>The native and managed intrinsics have different order of parameters.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpandLoad">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector512&lt;int&gt; ExpandLoad (int* address, System.Runtime.Intrinsics.Vector512&lt;int&gt; mask, System.Runtime.Intrinsics.Vector512&lt;int&gt; merge);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector512`1&lt;int32&gt; ExpandLoad(int32* address, valuetype System.Runtime.Intrinsics.Vector512`1&lt;int32&gt; mask, valuetype System.Runtime.Intrinsics.Vector512`1&lt;int32&gt; merge) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx512F.ExpandLoad(System.Int32*,System.Runtime.Intrinsics.Vector512{System.Int32},System.Runtime.Intrinsics.Vector512{System.Int32})" />
+      <MemberSignature Language="F#" Value="static member ExpandLoad : nativeptr&lt;int&gt; * System.Runtime.Intrinsics.Vector512&lt;int&gt; * System.Runtime.Intrinsics.Vector512&lt;int&gt; -&gt; System.Runtime.Intrinsics.Vector512&lt;int&gt;" Usage="System.Runtime.Intrinsics.X86.Avx512F.ExpandLoad (address, mask, merge)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector512&lt;int&gt; ExpandLoad(int* address, System::Runtime::Intrinsics::Vector512&lt;int&gt; mask, System::Runtime::Intrinsics::Vector512&lt;int&gt; merge);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector512&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.Int32*" Index="0" FrameworkAlternate="net-10.0" />
+        <Parameter Name="mask" Type="System.Runtime.Intrinsics.Vector512&lt;System.Int32&gt;" Index="1" FrameworkAlternate="net-10.0" />
+        <Parameter Name="merge" Type="System.Runtime.Intrinsics.Vector512&lt;System.Int32&gt;" Index="2" FrameworkAlternate="net-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <param name="mask">To be added.</param>
+        <param name="merge">To be added.</param>
+        <summary>
+          <para>__m512i _mm512_mask_expandloadu_epi32 (__m512i s, __mmask16 k, void * const a)</para>
+          <para>  VPEXPANDD zmm1 {k1}{z}, m512</para>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>The native and managed intrinsics have different order of parameters.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpandLoad">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector512&lt;long&gt; ExpandLoad (long* address, System.Runtime.Intrinsics.Vector512&lt;long&gt; mask, System.Runtime.Intrinsics.Vector512&lt;long&gt; merge);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector512`1&lt;int64&gt; ExpandLoad(int64* address, valuetype System.Runtime.Intrinsics.Vector512`1&lt;int64&gt; mask, valuetype System.Runtime.Intrinsics.Vector512`1&lt;int64&gt; merge) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx512F.ExpandLoad(System.Int64*,System.Runtime.Intrinsics.Vector512{System.Int64},System.Runtime.Intrinsics.Vector512{System.Int64})" />
+      <MemberSignature Language="F#" Value="static member ExpandLoad : nativeptr&lt;int64&gt; * System.Runtime.Intrinsics.Vector512&lt;int64&gt; * System.Runtime.Intrinsics.Vector512&lt;int64&gt; -&gt; System.Runtime.Intrinsics.Vector512&lt;int64&gt;" Usage="System.Runtime.Intrinsics.X86.Avx512F.ExpandLoad (address, mask, merge)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector512&lt;long&gt; ExpandLoad(long* address, System::Runtime::Intrinsics::Vector512&lt;long&gt; mask, System::Runtime::Intrinsics::Vector512&lt;long&gt; merge);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector512&lt;System.Int64&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.Int64*" Index="0" FrameworkAlternate="net-10.0" />
+        <Parameter Name="mask" Type="System.Runtime.Intrinsics.Vector512&lt;System.Int64&gt;" Index="1" FrameworkAlternate="net-10.0" />
+        <Parameter Name="merge" Type="System.Runtime.Intrinsics.Vector512&lt;System.Int64&gt;" Index="2" FrameworkAlternate="net-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <param name="mask">To be added.</param>
+        <param name="merge">To be added.</param>
+        <summary>
+          <para>__m512i _mm512_mask_expandloadu_epi64 (__m512i s, __mmask8 k, void * const a)</para>
+          <para>  VPEXPANDQ zmm1 {k1}{z}, m512</para>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>The native and managed intrinsics have different order of parameters.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpandLoad">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector512&lt;float&gt; ExpandLoad (float* address, System.Runtime.Intrinsics.Vector512&lt;float&gt; mask, System.Runtime.Intrinsics.Vector512&lt;float&gt; merge);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector512`1&lt;float32&gt; ExpandLoad(float32* address, valuetype System.Runtime.Intrinsics.Vector512`1&lt;float32&gt; mask, valuetype System.Runtime.Intrinsics.Vector512`1&lt;float32&gt; merge) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx512F.ExpandLoad(System.Single*,System.Runtime.Intrinsics.Vector512{System.Single},System.Runtime.Intrinsics.Vector512{System.Single})" />
+      <MemberSignature Language="F#" Value="static member ExpandLoad : nativeptr&lt;single&gt; * System.Runtime.Intrinsics.Vector512&lt;single&gt; * System.Runtime.Intrinsics.Vector512&lt;single&gt; -&gt; System.Runtime.Intrinsics.Vector512&lt;single&gt;" Usage="System.Runtime.Intrinsics.X86.Avx512F.ExpandLoad (address, mask, merge)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector512&lt;float&gt; ExpandLoad(float* address, System::Runtime::Intrinsics::Vector512&lt;float&gt; mask, System::Runtime::Intrinsics::Vector512&lt;float&gt; merge);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector512&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.Single*" Index="0" FrameworkAlternate="net-10.0" />
+        <Parameter Name="mask" Type="System.Runtime.Intrinsics.Vector512&lt;System.Single&gt;" Index="1" FrameworkAlternate="net-10.0" />
+        <Parameter Name="merge" Type="System.Runtime.Intrinsics.Vector512&lt;System.Single&gt;" Index="2" FrameworkAlternate="net-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <param name="mask">To be added.</param>
+        <param name="merge">To be added.</param>
+        <summary>
+          <para>__m512 _mm512_mask_expandloadu_ps (__m512 s, __mmask16 k, void * const a)</para>
+          <para>  VEXPANDPS zmm1 {k1}{z}, m512</para>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>The native and managed intrinsics have different order of parameters.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpandLoad">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector512&lt;uint&gt; ExpandLoad (uint* address, System.Runtime.Intrinsics.Vector512&lt;uint&gt; mask, System.Runtime.Intrinsics.Vector512&lt;uint&gt; merge);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector512`1&lt;unsigned int32&gt; ExpandLoad(unsigned int32* address, valuetype System.Runtime.Intrinsics.Vector512`1&lt;unsigned int32&gt; mask, valuetype System.Runtime.Intrinsics.Vector512`1&lt;unsigned int32&gt; merge) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx512F.ExpandLoad(System.UInt32*,System.Runtime.Intrinsics.Vector512{System.UInt32},System.Runtime.Intrinsics.Vector512{System.UInt32})" />
+      <MemberSignature Language="F#" Value="static member ExpandLoad : nativeptr&lt;uint32&gt; * System.Runtime.Intrinsics.Vector512&lt;uint32&gt; * System.Runtime.Intrinsics.Vector512&lt;uint32&gt; -&gt; System.Runtime.Intrinsics.Vector512&lt;uint32&gt;" Usage="System.Runtime.Intrinsics.X86.Avx512F.ExpandLoad (address, mask, merge)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector512&lt;System::UInt32&gt; ExpandLoad(System::UInt32* address, System::Runtime::Intrinsics::Vector512&lt;System::UInt32&gt; mask, System::Runtime::Intrinsics::Vector512&lt;System::UInt32&gt; merge);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector512&lt;System.UInt32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.UInt32*" Index="0" FrameworkAlternate="net-10.0" />
+        <Parameter Name="mask" Type="System.Runtime.Intrinsics.Vector512&lt;System.UInt32&gt;" Index="1" FrameworkAlternate="net-10.0" />
+        <Parameter Name="merge" Type="System.Runtime.Intrinsics.Vector512&lt;System.UInt32&gt;" Index="2" FrameworkAlternate="net-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <param name="mask">To be added.</param>
+        <param name="merge">To be added.</param>
+        <summary>
+          <para>__m512i _mm512_mask_expandloadu_epi32 (__m512i s, __mmask16 k, void * const a)</para>
+          <para>  VPEXPANDD zmm1 {k1}{z}, m512</para>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>The native and managed intrinsics have different order of parameters.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpandLoad">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector512&lt;ulong&gt; ExpandLoad (ulong* address, System.Runtime.Intrinsics.Vector512&lt;ulong&gt; mask, System.Runtime.Intrinsics.Vector512&lt;ulong&gt; merge);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector512`1&lt;unsigned int64&gt; ExpandLoad(unsigned int64* address, valuetype System.Runtime.Intrinsics.Vector512`1&lt;unsigned int64&gt; mask, valuetype System.Runtime.Intrinsics.Vector512`1&lt;unsigned int64&gt; merge) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx512F.ExpandLoad(System.UInt64*,System.Runtime.Intrinsics.Vector512{System.UInt64},System.Runtime.Intrinsics.Vector512{System.UInt64})" />
+      <MemberSignature Language="F#" Value="static member ExpandLoad : nativeptr&lt;uint64&gt; * System.Runtime.Intrinsics.Vector512&lt;uint64&gt; * System.Runtime.Intrinsics.Vector512&lt;uint64&gt; -&gt; System.Runtime.Intrinsics.Vector512&lt;uint64&gt;" Usage="System.Runtime.Intrinsics.X86.Avx512F.ExpandLoad (address, mask, merge)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector512&lt;System::UInt64&gt; ExpandLoad(System::UInt64* address, System::Runtime::Intrinsics::Vector512&lt;System::UInt64&gt; mask, System::Runtime::Intrinsics::Vector512&lt;System::UInt64&gt; merge);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector512&lt;System.UInt64&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.UInt64*" Index="0" FrameworkAlternate="net-10.0" />
+        <Parameter Name="mask" Type="System.Runtime.Intrinsics.Vector512&lt;System.UInt64&gt;" Index="1" FrameworkAlternate="net-10.0" />
+        <Parameter Name="merge" Type="System.Runtime.Intrinsics.Vector512&lt;System.UInt64&gt;" Index="2" FrameworkAlternate="net-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <param name="mask">To be added.</param>
+        <param name="merge">To be added.</param>
+        <summary>
+          <para>__m512i _mm512_mask_expandloadu_epi64 (__m512i s, __mmask8 k, void * const a)</para>
+          <para>  VPEXPANDQ zmm1 {k1}{z}, m512</para>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>The native and managed intrinsics have different order of parameters.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExtractVector128">
@@ -10865,6 +11270,738 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="MaskLoad">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector512&lt;double&gt; MaskLoad (double* address, System.Runtime.Intrinsics.Vector512&lt;double&gt; mask, System.Runtime.Intrinsics.Vector512&lt;double&gt; merge);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector512`1&lt;float64&gt; MaskLoad(float64* address, valuetype System.Runtime.Intrinsics.Vector512`1&lt;float64&gt; mask, valuetype System.Runtime.Intrinsics.Vector512`1&lt;float64&gt; merge) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx512F.MaskLoad(System.Double*,System.Runtime.Intrinsics.Vector512{System.Double},System.Runtime.Intrinsics.Vector512{System.Double})" />
+      <MemberSignature Language="F#" Value="static member MaskLoad : nativeptr&lt;double&gt; * System.Runtime.Intrinsics.Vector512&lt;double&gt; * System.Runtime.Intrinsics.Vector512&lt;double&gt; -&gt; System.Runtime.Intrinsics.Vector512&lt;double&gt;" Usage="System.Runtime.Intrinsics.X86.Avx512F.MaskLoad (address, mask, merge)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector512&lt;double&gt; MaskLoad(double* address, System::Runtime::Intrinsics::Vector512&lt;double&gt; mask, System::Runtime::Intrinsics::Vector512&lt;double&gt; merge);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector512&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.Double*" Index="0" FrameworkAlternate="net-10.0" />
+        <Parameter Name="mask" Type="System.Runtime.Intrinsics.Vector512&lt;System.Double&gt;" Index="1" FrameworkAlternate="net-10.0" />
+        <Parameter Name="merge" Type="System.Runtime.Intrinsics.Vector512&lt;System.Double&gt;" Index="2" FrameworkAlternate="net-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <param name="mask">To be added.</param>
+        <param name="merge">To be added.</param>
+        <summary>
+          <para>__m512d _mm512_mask_loadu_pd (__m512d s, __mmask8 k, void const * mem_addr)</para>
+          <para>  VMOVUPD zmm1 {k1}{z}, m512</para>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>The native and managed intrinsics have different order of parameters.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaskLoad">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector512&lt;int&gt; MaskLoad (int* address, System.Runtime.Intrinsics.Vector512&lt;int&gt; mask, System.Runtime.Intrinsics.Vector512&lt;int&gt; merge);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector512`1&lt;int32&gt; MaskLoad(int32* address, valuetype System.Runtime.Intrinsics.Vector512`1&lt;int32&gt; mask, valuetype System.Runtime.Intrinsics.Vector512`1&lt;int32&gt; merge) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx512F.MaskLoad(System.Int32*,System.Runtime.Intrinsics.Vector512{System.Int32},System.Runtime.Intrinsics.Vector512{System.Int32})" />
+      <MemberSignature Language="F#" Value="static member MaskLoad : nativeptr&lt;int&gt; * System.Runtime.Intrinsics.Vector512&lt;int&gt; * System.Runtime.Intrinsics.Vector512&lt;int&gt; -&gt; System.Runtime.Intrinsics.Vector512&lt;int&gt;" Usage="System.Runtime.Intrinsics.X86.Avx512F.MaskLoad (address, mask, merge)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector512&lt;int&gt; MaskLoad(int* address, System::Runtime::Intrinsics::Vector512&lt;int&gt; mask, System::Runtime::Intrinsics::Vector512&lt;int&gt; merge);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector512&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.Int32*" Index="0" FrameworkAlternate="net-10.0" />
+        <Parameter Name="mask" Type="System.Runtime.Intrinsics.Vector512&lt;System.Int32&gt;" Index="1" FrameworkAlternate="net-10.0" />
+        <Parameter Name="merge" Type="System.Runtime.Intrinsics.Vector512&lt;System.Int32&gt;" Index="2" FrameworkAlternate="net-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <param name="mask">To be added.</param>
+        <param name="merge">To be added.</param>
+        <summary>
+          <para>__m512i _mm512_mask_loadu_epi32 (__m512i s, __mmask16 k, void const * mem_addr)</para>
+          <para>  VMOVDQU32 zmm1 {k1}{z}, m512</para>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>The native and managed intrinsics have different order of parameters.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaskLoad">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector512&lt;long&gt; MaskLoad (long* address, System.Runtime.Intrinsics.Vector512&lt;long&gt; mask, System.Runtime.Intrinsics.Vector512&lt;long&gt; merge);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector512`1&lt;int64&gt; MaskLoad(int64* address, valuetype System.Runtime.Intrinsics.Vector512`1&lt;int64&gt; mask, valuetype System.Runtime.Intrinsics.Vector512`1&lt;int64&gt; merge) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx512F.MaskLoad(System.Int64*,System.Runtime.Intrinsics.Vector512{System.Int64},System.Runtime.Intrinsics.Vector512{System.Int64})" />
+      <MemberSignature Language="F#" Value="static member MaskLoad : nativeptr&lt;int64&gt; * System.Runtime.Intrinsics.Vector512&lt;int64&gt; * System.Runtime.Intrinsics.Vector512&lt;int64&gt; -&gt; System.Runtime.Intrinsics.Vector512&lt;int64&gt;" Usage="System.Runtime.Intrinsics.X86.Avx512F.MaskLoad (address, mask, merge)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector512&lt;long&gt; MaskLoad(long* address, System::Runtime::Intrinsics::Vector512&lt;long&gt; mask, System::Runtime::Intrinsics::Vector512&lt;long&gt; merge);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector512&lt;System.Int64&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.Int64*" Index="0" FrameworkAlternate="net-10.0" />
+        <Parameter Name="mask" Type="System.Runtime.Intrinsics.Vector512&lt;System.Int64&gt;" Index="1" FrameworkAlternate="net-10.0" />
+        <Parameter Name="merge" Type="System.Runtime.Intrinsics.Vector512&lt;System.Int64&gt;" Index="2" FrameworkAlternate="net-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <param name="mask">To be added.</param>
+        <param name="merge">To be added.</param>
+        <summary>
+          <para>__m512i _mm512_mask_loadu_epi64 (__m512i s, __mmask8 k, void const * mem_addr)</para>
+          <para>  VMOVDQU64 zmm1 {k1}{z}, m512</para>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>The native and managed intrinsics have different order of parameters.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaskLoad">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector512&lt;float&gt; MaskLoad (float* address, System.Runtime.Intrinsics.Vector512&lt;float&gt; mask, System.Runtime.Intrinsics.Vector512&lt;float&gt; merge);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector512`1&lt;float32&gt; MaskLoad(float32* address, valuetype System.Runtime.Intrinsics.Vector512`1&lt;float32&gt; mask, valuetype System.Runtime.Intrinsics.Vector512`1&lt;float32&gt; merge) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx512F.MaskLoad(System.Single*,System.Runtime.Intrinsics.Vector512{System.Single},System.Runtime.Intrinsics.Vector512{System.Single})" />
+      <MemberSignature Language="F#" Value="static member MaskLoad : nativeptr&lt;single&gt; * System.Runtime.Intrinsics.Vector512&lt;single&gt; * System.Runtime.Intrinsics.Vector512&lt;single&gt; -&gt; System.Runtime.Intrinsics.Vector512&lt;single&gt;" Usage="System.Runtime.Intrinsics.X86.Avx512F.MaskLoad (address, mask, merge)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector512&lt;float&gt; MaskLoad(float* address, System::Runtime::Intrinsics::Vector512&lt;float&gt; mask, System::Runtime::Intrinsics::Vector512&lt;float&gt; merge);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector512&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.Single*" Index="0" FrameworkAlternate="net-10.0" />
+        <Parameter Name="mask" Type="System.Runtime.Intrinsics.Vector512&lt;System.Single&gt;" Index="1" FrameworkAlternate="net-10.0" />
+        <Parameter Name="merge" Type="System.Runtime.Intrinsics.Vector512&lt;System.Single&gt;" Index="2" FrameworkAlternate="net-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <param name="mask">To be added.</param>
+        <param name="merge">To be added.</param>
+        <summary>
+          <para>__m512 _mm512_mask_loadu_ps (__m512 s, __mmask16 k, void const * mem_addr)</para>
+          <para>  VMOVUPS zmm1 {k1}{z}, m512</para>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>The native and managed intrinsics have different order of parameters.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaskLoad">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector512&lt;uint&gt; MaskLoad (uint* address, System.Runtime.Intrinsics.Vector512&lt;uint&gt; mask, System.Runtime.Intrinsics.Vector512&lt;uint&gt; merge);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector512`1&lt;unsigned int32&gt; MaskLoad(unsigned int32* address, valuetype System.Runtime.Intrinsics.Vector512`1&lt;unsigned int32&gt; mask, valuetype System.Runtime.Intrinsics.Vector512`1&lt;unsigned int32&gt; merge) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx512F.MaskLoad(System.UInt32*,System.Runtime.Intrinsics.Vector512{System.UInt32},System.Runtime.Intrinsics.Vector512{System.UInt32})" />
+      <MemberSignature Language="F#" Value="static member MaskLoad : nativeptr&lt;uint32&gt; * System.Runtime.Intrinsics.Vector512&lt;uint32&gt; * System.Runtime.Intrinsics.Vector512&lt;uint32&gt; -&gt; System.Runtime.Intrinsics.Vector512&lt;uint32&gt;" Usage="System.Runtime.Intrinsics.X86.Avx512F.MaskLoad (address, mask, merge)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector512&lt;System::UInt32&gt; MaskLoad(System::UInt32* address, System::Runtime::Intrinsics::Vector512&lt;System::UInt32&gt; mask, System::Runtime::Intrinsics::Vector512&lt;System::UInt32&gt; merge);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector512&lt;System.UInt32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.UInt32*" Index="0" FrameworkAlternate="net-10.0" />
+        <Parameter Name="mask" Type="System.Runtime.Intrinsics.Vector512&lt;System.UInt32&gt;" Index="1" FrameworkAlternate="net-10.0" />
+        <Parameter Name="merge" Type="System.Runtime.Intrinsics.Vector512&lt;System.UInt32&gt;" Index="2" FrameworkAlternate="net-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <param name="mask">To be added.</param>
+        <param name="merge">To be added.</param>
+        <summary>
+          <para>__m512i _mm512_mask_loadu_epi32 (__m512i s, __mmask16 k, void const * mem_addr)</para>
+          <para>  VMOVDQU32 zmm1 {k1}{z}, m512</para>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>The native and managed intrinsics have different order of parameters.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaskLoad">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector512&lt;ulong&gt; MaskLoad (ulong* address, System.Runtime.Intrinsics.Vector512&lt;ulong&gt; mask, System.Runtime.Intrinsics.Vector512&lt;ulong&gt; merge);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector512`1&lt;unsigned int64&gt; MaskLoad(unsigned int64* address, valuetype System.Runtime.Intrinsics.Vector512`1&lt;unsigned int64&gt; mask, valuetype System.Runtime.Intrinsics.Vector512`1&lt;unsigned int64&gt; merge) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx512F.MaskLoad(System.UInt64*,System.Runtime.Intrinsics.Vector512{System.UInt64},System.Runtime.Intrinsics.Vector512{System.UInt64})" />
+      <MemberSignature Language="F#" Value="static member MaskLoad : nativeptr&lt;uint64&gt; * System.Runtime.Intrinsics.Vector512&lt;uint64&gt; * System.Runtime.Intrinsics.Vector512&lt;uint64&gt; -&gt; System.Runtime.Intrinsics.Vector512&lt;uint64&gt;" Usage="System.Runtime.Intrinsics.X86.Avx512F.MaskLoad (address, mask, merge)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector512&lt;System::UInt64&gt; MaskLoad(System::UInt64* address, System::Runtime::Intrinsics::Vector512&lt;System::UInt64&gt; mask, System::Runtime::Intrinsics::Vector512&lt;System::UInt64&gt; merge);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector512&lt;System.UInt64&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.UInt64*" Index="0" FrameworkAlternate="net-10.0" />
+        <Parameter Name="mask" Type="System.Runtime.Intrinsics.Vector512&lt;System.UInt64&gt;" Index="1" FrameworkAlternate="net-10.0" />
+        <Parameter Name="merge" Type="System.Runtime.Intrinsics.Vector512&lt;System.UInt64&gt;" Index="2" FrameworkAlternate="net-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <param name="mask">To be added.</param>
+        <param name="merge">To be added.</param>
+        <summary>
+          <para>__m512i _mm512_mask_loadu_epi64 (__m512i s, __mmask8 k, void const * mem_addr)</para>
+          <para>  VMOVDQU64 zmm1 {k1}{z}, m512</para>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>The native and managed intrinsics have different order of parameters.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaskLoadAligned">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector512&lt;double&gt; MaskLoadAligned (double* address, System.Runtime.Intrinsics.Vector512&lt;double&gt; mask, System.Runtime.Intrinsics.Vector512&lt;double&gt; merge);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector512`1&lt;float64&gt; MaskLoadAligned(float64* address, valuetype System.Runtime.Intrinsics.Vector512`1&lt;float64&gt; mask, valuetype System.Runtime.Intrinsics.Vector512`1&lt;float64&gt; merge) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx512F.MaskLoadAligned(System.Double*,System.Runtime.Intrinsics.Vector512{System.Double},System.Runtime.Intrinsics.Vector512{System.Double})" />
+      <MemberSignature Language="F#" Value="static member MaskLoadAligned : nativeptr&lt;double&gt; * System.Runtime.Intrinsics.Vector512&lt;double&gt; * System.Runtime.Intrinsics.Vector512&lt;double&gt; -&gt; System.Runtime.Intrinsics.Vector512&lt;double&gt;" Usage="System.Runtime.Intrinsics.X86.Avx512F.MaskLoadAligned (address, mask, merge)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector512&lt;double&gt; MaskLoadAligned(double* address, System::Runtime::Intrinsics::Vector512&lt;double&gt; mask, System::Runtime::Intrinsics::Vector512&lt;double&gt; merge);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector512&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.Double*" Index="0" FrameworkAlternate="net-10.0" />
+        <Parameter Name="mask" Type="System.Runtime.Intrinsics.Vector512&lt;System.Double&gt;" Index="1" FrameworkAlternate="net-10.0" />
+        <Parameter Name="merge" Type="System.Runtime.Intrinsics.Vector512&lt;System.Double&gt;" Index="2" FrameworkAlternate="net-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <param name="mask">To be added.</param>
+        <param name="merge">To be added.</param>
+        <summary>
+          <para>__m512d _mm512_mask_load_pd (__m512d s, __mmask8 k, void const * mem_addr)</para>
+          <para>  VMOVAPD zmm1 {k1}{z}, m512</para>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>The native and managed intrinsics have different order of parameters.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaskLoadAligned">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector512&lt;int&gt; MaskLoadAligned (int* address, System.Runtime.Intrinsics.Vector512&lt;int&gt; mask, System.Runtime.Intrinsics.Vector512&lt;int&gt; merge);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector512`1&lt;int32&gt; MaskLoadAligned(int32* address, valuetype System.Runtime.Intrinsics.Vector512`1&lt;int32&gt; mask, valuetype System.Runtime.Intrinsics.Vector512`1&lt;int32&gt; merge) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx512F.MaskLoadAligned(System.Int32*,System.Runtime.Intrinsics.Vector512{System.Int32},System.Runtime.Intrinsics.Vector512{System.Int32})" />
+      <MemberSignature Language="F#" Value="static member MaskLoadAligned : nativeptr&lt;int&gt; * System.Runtime.Intrinsics.Vector512&lt;int&gt; * System.Runtime.Intrinsics.Vector512&lt;int&gt; -&gt; System.Runtime.Intrinsics.Vector512&lt;int&gt;" Usage="System.Runtime.Intrinsics.X86.Avx512F.MaskLoadAligned (address, mask, merge)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector512&lt;int&gt; MaskLoadAligned(int* address, System::Runtime::Intrinsics::Vector512&lt;int&gt; mask, System::Runtime::Intrinsics::Vector512&lt;int&gt; merge);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector512&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.Int32*" Index="0" FrameworkAlternate="net-10.0" />
+        <Parameter Name="mask" Type="System.Runtime.Intrinsics.Vector512&lt;System.Int32&gt;" Index="1" FrameworkAlternate="net-10.0" />
+        <Parameter Name="merge" Type="System.Runtime.Intrinsics.Vector512&lt;System.Int32&gt;" Index="2" FrameworkAlternate="net-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <param name="mask">To be added.</param>
+        <param name="merge">To be added.</param>
+        <summary>
+          <para>__m512i _mm512_mask_load_epi32 (__m512i s, __mmask16 k, void const * mem_addr)</para>
+          <para>  VMOVDQA32 zmm1 {k1}{z}, m512</para>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>The native and managed intrinsics have different order of parameters.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaskLoadAligned">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector512&lt;long&gt; MaskLoadAligned (long* address, System.Runtime.Intrinsics.Vector512&lt;long&gt; mask, System.Runtime.Intrinsics.Vector512&lt;long&gt; merge);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector512`1&lt;int64&gt; MaskLoadAligned(int64* address, valuetype System.Runtime.Intrinsics.Vector512`1&lt;int64&gt; mask, valuetype System.Runtime.Intrinsics.Vector512`1&lt;int64&gt; merge) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx512F.MaskLoadAligned(System.Int64*,System.Runtime.Intrinsics.Vector512{System.Int64},System.Runtime.Intrinsics.Vector512{System.Int64})" />
+      <MemberSignature Language="F#" Value="static member MaskLoadAligned : nativeptr&lt;int64&gt; * System.Runtime.Intrinsics.Vector512&lt;int64&gt; * System.Runtime.Intrinsics.Vector512&lt;int64&gt; -&gt; System.Runtime.Intrinsics.Vector512&lt;int64&gt;" Usage="System.Runtime.Intrinsics.X86.Avx512F.MaskLoadAligned (address, mask, merge)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector512&lt;long&gt; MaskLoadAligned(long* address, System::Runtime::Intrinsics::Vector512&lt;long&gt; mask, System::Runtime::Intrinsics::Vector512&lt;long&gt; merge);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector512&lt;System.Int64&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.Int64*" Index="0" FrameworkAlternate="net-10.0" />
+        <Parameter Name="mask" Type="System.Runtime.Intrinsics.Vector512&lt;System.Int64&gt;" Index="1" FrameworkAlternate="net-10.0" />
+        <Parameter Name="merge" Type="System.Runtime.Intrinsics.Vector512&lt;System.Int64&gt;" Index="2" FrameworkAlternate="net-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <param name="mask">To be added.</param>
+        <param name="merge">To be added.</param>
+        <summary>
+          <para>__m512i _mm512_mask_load_epi64 (__m512i s, __mmask8 k, void const * mem_addr)</para>
+          <para>  VMOVDQA64 zmm1 {k1}{z}, m512</para>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>The native and managed intrinsics have different order of parameters.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaskLoadAligned">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector512&lt;float&gt; MaskLoadAligned (float* address, System.Runtime.Intrinsics.Vector512&lt;float&gt; mask, System.Runtime.Intrinsics.Vector512&lt;float&gt; merge);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector512`1&lt;float32&gt; MaskLoadAligned(float32* address, valuetype System.Runtime.Intrinsics.Vector512`1&lt;float32&gt; mask, valuetype System.Runtime.Intrinsics.Vector512`1&lt;float32&gt; merge) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx512F.MaskLoadAligned(System.Single*,System.Runtime.Intrinsics.Vector512{System.Single},System.Runtime.Intrinsics.Vector512{System.Single})" />
+      <MemberSignature Language="F#" Value="static member MaskLoadAligned : nativeptr&lt;single&gt; * System.Runtime.Intrinsics.Vector512&lt;single&gt; * System.Runtime.Intrinsics.Vector512&lt;single&gt; -&gt; System.Runtime.Intrinsics.Vector512&lt;single&gt;" Usage="System.Runtime.Intrinsics.X86.Avx512F.MaskLoadAligned (address, mask, merge)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector512&lt;float&gt; MaskLoadAligned(float* address, System::Runtime::Intrinsics::Vector512&lt;float&gt; mask, System::Runtime::Intrinsics::Vector512&lt;float&gt; merge);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector512&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.Single*" Index="0" FrameworkAlternate="net-10.0" />
+        <Parameter Name="mask" Type="System.Runtime.Intrinsics.Vector512&lt;System.Single&gt;" Index="1" FrameworkAlternate="net-10.0" />
+        <Parameter Name="merge" Type="System.Runtime.Intrinsics.Vector512&lt;System.Single&gt;" Index="2" FrameworkAlternate="net-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <param name="mask">To be added.</param>
+        <param name="merge">To be added.</param>
+        <summary>
+          <para>__m512 _mm512_mask_load_ps (__m512 s, __mmask16 k, void const * mem_addr)</para>
+          <para>  VMOVAPS zmm1 {k1}{z}, m512</para>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>The native and managed intrinsics have different order of parameters.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaskLoadAligned">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector512&lt;uint&gt; MaskLoadAligned (uint* address, System.Runtime.Intrinsics.Vector512&lt;uint&gt; mask, System.Runtime.Intrinsics.Vector512&lt;uint&gt; merge);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector512`1&lt;unsigned int32&gt; MaskLoadAligned(unsigned int32* address, valuetype System.Runtime.Intrinsics.Vector512`1&lt;unsigned int32&gt; mask, valuetype System.Runtime.Intrinsics.Vector512`1&lt;unsigned int32&gt; merge) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx512F.MaskLoadAligned(System.UInt32*,System.Runtime.Intrinsics.Vector512{System.UInt32},System.Runtime.Intrinsics.Vector512{System.UInt32})" />
+      <MemberSignature Language="F#" Value="static member MaskLoadAligned : nativeptr&lt;uint32&gt; * System.Runtime.Intrinsics.Vector512&lt;uint32&gt; * System.Runtime.Intrinsics.Vector512&lt;uint32&gt; -&gt; System.Runtime.Intrinsics.Vector512&lt;uint32&gt;" Usage="System.Runtime.Intrinsics.X86.Avx512F.MaskLoadAligned (address, mask, merge)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector512&lt;System::UInt32&gt; MaskLoadAligned(System::UInt32* address, System::Runtime::Intrinsics::Vector512&lt;System::UInt32&gt; mask, System::Runtime::Intrinsics::Vector512&lt;System::UInt32&gt; merge);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector512&lt;System.UInt32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.UInt32*" Index="0" FrameworkAlternate="net-10.0" />
+        <Parameter Name="mask" Type="System.Runtime.Intrinsics.Vector512&lt;System.UInt32&gt;" Index="1" FrameworkAlternate="net-10.0" />
+        <Parameter Name="merge" Type="System.Runtime.Intrinsics.Vector512&lt;System.UInt32&gt;" Index="2" FrameworkAlternate="net-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <param name="mask">To be added.</param>
+        <param name="merge">To be added.</param>
+        <summary>
+          <para>__m512i _mm512_mask_load_epi32 (__m512i s, __mmask16 k, void const * mem_addr)</para>
+          <para>  VMOVDQA32 zmm1 {k1}{z}, m512</para>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>The native and managed intrinsics have different order of parameters.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaskLoadAligned">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector512&lt;ulong&gt; MaskLoadAligned (ulong* address, System.Runtime.Intrinsics.Vector512&lt;ulong&gt; mask, System.Runtime.Intrinsics.Vector512&lt;ulong&gt; merge);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector512`1&lt;unsigned int64&gt; MaskLoadAligned(unsigned int64* address, valuetype System.Runtime.Intrinsics.Vector512`1&lt;unsigned int64&gt; mask, valuetype System.Runtime.Intrinsics.Vector512`1&lt;unsigned int64&gt; merge) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx512F.MaskLoadAligned(System.UInt64*,System.Runtime.Intrinsics.Vector512{System.UInt64},System.Runtime.Intrinsics.Vector512{System.UInt64})" />
+      <MemberSignature Language="F#" Value="static member MaskLoadAligned : nativeptr&lt;uint64&gt; * System.Runtime.Intrinsics.Vector512&lt;uint64&gt; * System.Runtime.Intrinsics.Vector512&lt;uint64&gt; -&gt; System.Runtime.Intrinsics.Vector512&lt;uint64&gt;" Usage="System.Runtime.Intrinsics.X86.Avx512F.MaskLoadAligned (address, mask, merge)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector512&lt;System::UInt64&gt; MaskLoadAligned(System::UInt64* address, System::Runtime::Intrinsics::Vector512&lt;System::UInt64&gt; mask, System::Runtime::Intrinsics::Vector512&lt;System::UInt64&gt; merge);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector512&lt;System.UInt64&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.UInt64*" Index="0" FrameworkAlternate="net-10.0" />
+        <Parameter Name="mask" Type="System.Runtime.Intrinsics.Vector512&lt;System.UInt64&gt;" Index="1" FrameworkAlternate="net-10.0" />
+        <Parameter Name="merge" Type="System.Runtime.Intrinsics.Vector512&lt;System.UInt64&gt;" Index="2" FrameworkAlternate="net-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <param name="mask">To be added.</param>
+        <param name="merge">To be added.</param>
+        <summary>
+          <para>__m512i _mm512_mask_load_epi64 (__m512i s, __mmask8 k, void const * mem_addr)</para>
+          <para>  VMOVDQA64 zmm1 {k1}{z}, m512</para>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>The native and managed intrinsics have different order of parameters.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaskStore">
+      <MemberSignature Language="C#" Value="public static void MaskStore (double* address, System.Runtime.Intrinsics.Vector512&lt;double&gt; mask, System.Runtime.Intrinsics.Vector512&lt;double&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void MaskStore(float64* address, valuetype System.Runtime.Intrinsics.Vector512`1&lt;float64&gt; mask, valuetype System.Runtime.Intrinsics.Vector512`1&lt;float64&gt; source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx512F.MaskStore(System.Double*,System.Runtime.Intrinsics.Vector512{System.Double},System.Runtime.Intrinsics.Vector512{System.Double})" />
+      <MemberSignature Language="F#" Value="static member MaskStore : nativeptr&lt;double&gt; * System.Runtime.Intrinsics.Vector512&lt;double&gt; * System.Runtime.Intrinsics.Vector512&lt;double&gt; -&gt; unit" Usage="System.Runtime.Intrinsics.X86.Avx512F.MaskStore (address, mask, source)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void MaskStore(double* address, System::Runtime::Intrinsics::Vector512&lt;double&gt; mask, System::Runtime::Intrinsics::Vector512&lt;double&gt; source);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.Double*" Index="0" FrameworkAlternate="net-10.0" />
+        <Parameter Name="mask" Type="System.Runtime.Intrinsics.Vector512&lt;System.Double&gt;" Index="1" FrameworkAlternate="net-10.0" />
+        <Parameter Name="source" Type="System.Runtime.Intrinsics.Vector512&lt;System.Double&gt;" Index="2" FrameworkAlternate="net-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <param name="mask">To be added.</param>
+        <param name="source">To be added.</param>
+        <summary>
+          <para>void _mm512_mask_storeu_pd (void * mem_addr, __mmask8 k, __m512d a)</para>
+          <para>  VMOVUPD m512 {k1}{z}, zmm1</para>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaskStore">
+      <MemberSignature Language="C#" Value="public static void MaskStore (int* address, System.Runtime.Intrinsics.Vector512&lt;int&gt; mask, System.Runtime.Intrinsics.Vector512&lt;int&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void MaskStore(int32* address, valuetype System.Runtime.Intrinsics.Vector512`1&lt;int32&gt; mask, valuetype System.Runtime.Intrinsics.Vector512`1&lt;int32&gt; source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx512F.MaskStore(System.Int32*,System.Runtime.Intrinsics.Vector512{System.Int32},System.Runtime.Intrinsics.Vector512{System.Int32})" />
+      <MemberSignature Language="F#" Value="static member MaskStore : nativeptr&lt;int&gt; * System.Runtime.Intrinsics.Vector512&lt;int&gt; * System.Runtime.Intrinsics.Vector512&lt;int&gt; -&gt; unit" Usage="System.Runtime.Intrinsics.X86.Avx512F.MaskStore (address, mask, source)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void MaskStore(int* address, System::Runtime::Intrinsics::Vector512&lt;int&gt; mask, System::Runtime::Intrinsics::Vector512&lt;int&gt; source);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.Int32*" Index="0" FrameworkAlternate="net-10.0" />
+        <Parameter Name="mask" Type="System.Runtime.Intrinsics.Vector512&lt;System.Int32&gt;" Index="1" FrameworkAlternate="net-10.0" />
+        <Parameter Name="source" Type="System.Runtime.Intrinsics.Vector512&lt;System.Int32&gt;" Index="2" FrameworkAlternate="net-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <param name="mask">To be added.</param>
+        <param name="source">To be added.</param>
+        <summary>
+          <para>void _mm512_mask_storeu_epi32 (void * mem_addr, __mmask16 k, __m512i a)</para>
+          <para>  VMOVDQU32 m512 {k1}{z}, zmm1</para>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaskStore">
+      <MemberSignature Language="C#" Value="public static void MaskStore (long* address, System.Runtime.Intrinsics.Vector512&lt;long&gt; mask, System.Runtime.Intrinsics.Vector512&lt;long&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void MaskStore(int64* address, valuetype System.Runtime.Intrinsics.Vector512`1&lt;int64&gt; mask, valuetype System.Runtime.Intrinsics.Vector512`1&lt;int64&gt; source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx512F.MaskStore(System.Int64*,System.Runtime.Intrinsics.Vector512{System.Int64},System.Runtime.Intrinsics.Vector512{System.Int64})" />
+      <MemberSignature Language="F#" Value="static member MaskStore : nativeptr&lt;int64&gt; * System.Runtime.Intrinsics.Vector512&lt;int64&gt; * System.Runtime.Intrinsics.Vector512&lt;int64&gt; -&gt; unit" Usage="System.Runtime.Intrinsics.X86.Avx512F.MaskStore (address, mask, source)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void MaskStore(long* address, System::Runtime::Intrinsics::Vector512&lt;long&gt; mask, System::Runtime::Intrinsics::Vector512&lt;long&gt; source);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.Int64*" Index="0" FrameworkAlternate="net-10.0" />
+        <Parameter Name="mask" Type="System.Runtime.Intrinsics.Vector512&lt;System.Int64&gt;" Index="1" FrameworkAlternate="net-10.0" />
+        <Parameter Name="source" Type="System.Runtime.Intrinsics.Vector512&lt;System.Int64&gt;" Index="2" FrameworkAlternate="net-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <param name="mask">To be added.</param>
+        <param name="source">To be added.</param>
+        <summary>
+          <para>void _mm512_mask_storeu_epi64 (void * mem_addr, __mmask8 k, __m512i a)</para>
+          <para>  VMOVDQU64 m512 {k1}{z}, zmm1</para>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaskStore">
+      <MemberSignature Language="C#" Value="public static void MaskStore (float* address, System.Runtime.Intrinsics.Vector512&lt;float&gt; mask, System.Runtime.Intrinsics.Vector512&lt;float&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void MaskStore(float32* address, valuetype System.Runtime.Intrinsics.Vector512`1&lt;float32&gt; mask, valuetype System.Runtime.Intrinsics.Vector512`1&lt;float32&gt; source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx512F.MaskStore(System.Single*,System.Runtime.Intrinsics.Vector512{System.Single},System.Runtime.Intrinsics.Vector512{System.Single})" />
+      <MemberSignature Language="F#" Value="static member MaskStore : nativeptr&lt;single&gt; * System.Runtime.Intrinsics.Vector512&lt;single&gt; * System.Runtime.Intrinsics.Vector512&lt;single&gt; -&gt; unit" Usage="System.Runtime.Intrinsics.X86.Avx512F.MaskStore (address, mask, source)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void MaskStore(float* address, System::Runtime::Intrinsics::Vector512&lt;float&gt; mask, System::Runtime::Intrinsics::Vector512&lt;float&gt; source);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.Single*" Index="0" FrameworkAlternate="net-10.0" />
+        <Parameter Name="mask" Type="System.Runtime.Intrinsics.Vector512&lt;System.Single&gt;" Index="1" FrameworkAlternate="net-10.0" />
+        <Parameter Name="source" Type="System.Runtime.Intrinsics.Vector512&lt;System.Single&gt;" Index="2" FrameworkAlternate="net-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <param name="mask">To be added.</param>
+        <param name="source">To be added.</param>
+        <summary>
+          <para>void _mm512_mask_storeu_ps (void * mem_addr, __mmask16 k, __m512 a)</para>
+          <para>  VMOVUPS m512 {k1}{z}, zmm1</para>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaskStore">
+      <MemberSignature Language="C#" Value="public static void MaskStore (uint* address, System.Runtime.Intrinsics.Vector512&lt;uint&gt; mask, System.Runtime.Intrinsics.Vector512&lt;uint&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void MaskStore(unsigned int32* address, valuetype System.Runtime.Intrinsics.Vector512`1&lt;unsigned int32&gt; mask, valuetype System.Runtime.Intrinsics.Vector512`1&lt;unsigned int32&gt; source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx512F.MaskStore(System.UInt32*,System.Runtime.Intrinsics.Vector512{System.UInt32},System.Runtime.Intrinsics.Vector512{System.UInt32})" />
+      <MemberSignature Language="F#" Value="static member MaskStore : nativeptr&lt;uint32&gt; * System.Runtime.Intrinsics.Vector512&lt;uint32&gt; * System.Runtime.Intrinsics.Vector512&lt;uint32&gt; -&gt; unit" Usage="System.Runtime.Intrinsics.X86.Avx512F.MaskStore (address, mask, source)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void MaskStore(System::UInt32* address, System::Runtime::Intrinsics::Vector512&lt;System::UInt32&gt; mask, System::Runtime::Intrinsics::Vector512&lt;System::UInt32&gt; source);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.UInt32*" Index="0" FrameworkAlternate="net-10.0" />
+        <Parameter Name="mask" Type="System.Runtime.Intrinsics.Vector512&lt;System.UInt32&gt;" Index="1" FrameworkAlternate="net-10.0" />
+        <Parameter Name="source" Type="System.Runtime.Intrinsics.Vector512&lt;System.UInt32&gt;" Index="2" FrameworkAlternate="net-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <param name="mask">To be added.</param>
+        <param name="source">To be added.</param>
+        <summary>
+          <para>void _mm512_mask_storeu_epi32 (void * mem_addr, __mmask16 k, __m512i a)</para>
+          <para>  VMOVDQU32 m512 {k1}{z}, zmm1</para>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaskStore">
+      <MemberSignature Language="C#" Value="public static void MaskStore (ulong* address, System.Runtime.Intrinsics.Vector512&lt;ulong&gt; mask, System.Runtime.Intrinsics.Vector512&lt;ulong&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void MaskStore(unsigned int64* address, valuetype System.Runtime.Intrinsics.Vector512`1&lt;unsigned int64&gt; mask, valuetype System.Runtime.Intrinsics.Vector512`1&lt;unsigned int64&gt; source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx512F.MaskStore(System.UInt64*,System.Runtime.Intrinsics.Vector512{System.UInt64},System.Runtime.Intrinsics.Vector512{System.UInt64})" />
+      <MemberSignature Language="F#" Value="static member MaskStore : nativeptr&lt;uint64&gt; * System.Runtime.Intrinsics.Vector512&lt;uint64&gt; * System.Runtime.Intrinsics.Vector512&lt;uint64&gt; -&gt; unit" Usage="System.Runtime.Intrinsics.X86.Avx512F.MaskStore (address, mask, source)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void MaskStore(System::UInt64* address, System::Runtime::Intrinsics::Vector512&lt;System::UInt64&gt; mask, System::Runtime::Intrinsics::Vector512&lt;System::UInt64&gt; source);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.UInt64*" Index="0" FrameworkAlternate="net-10.0" />
+        <Parameter Name="mask" Type="System.Runtime.Intrinsics.Vector512&lt;System.UInt64&gt;" Index="1" FrameworkAlternate="net-10.0" />
+        <Parameter Name="source" Type="System.Runtime.Intrinsics.Vector512&lt;System.UInt64&gt;" Index="2" FrameworkAlternate="net-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <param name="mask">To be added.</param>
+        <param name="source">To be added.</param>
+        <summary>
+          <para>void _mm512_mask_storeu_epi64 (void * mem_addr, __mmask8 k, __m512i a)</para>
+          <para>  VMOVDQU64 m512 {k1}{z}, zmm1</para>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaskStoreAligned">
+      <MemberSignature Language="C#" Value="public static void MaskStoreAligned (double* address, System.Runtime.Intrinsics.Vector512&lt;double&gt; mask, System.Runtime.Intrinsics.Vector512&lt;double&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void MaskStoreAligned(float64* address, valuetype System.Runtime.Intrinsics.Vector512`1&lt;float64&gt; mask, valuetype System.Runtime.Intrinsics.Vector512`1&lt;float64&gt; source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx512F.MaskStoreAligned(System.Double*,System.Runtime.Intrinsics.Vector512{System.Double},System.Runtime.Intrinsics.Vector512{System.Double})" />
+      <MemberSignature Language="F#" Value="static member MaskStoreAligned : nativeptr&lt;double&gt; * System.Runtime.Intrinsics.Vector512&lt;double&gt; * System.Runtime.Intrinsics.Vector512&lt;double&gt; -&gt; unit" Usage="System.Runtime.Intrinsics.X86.Avx512F.MaskStoreAligned (address, mask, source)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void MaskStoreAligned(double* address, System::Runtime::Intrinsics::Vector512&lt;double&gt; mask, System::Runtime::Intrinsics::Vector512&lt;double&gt; source);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.Double*" Index="0" FrameworkAlternate="net-10.0" />
+        <Parameter Name="mask" Type="System.Runtime.Intrinsics.Vector512&lt;System.Double&gt;" Index="1" FrameworkAlternate="net-10.0" />
+        <Parameter Name="source" Type="System.Runtime.Intrinsics.Vector512&lt;System.Double&gt;" Index="2" FrameworkAlternate="net-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <param name="mask">To be added.</param>
+        <param name="source">To be added.</param>
+        <summary>
+          <para>void _mm512_mask_store_pd (void * mem_addr, __mmask8 k, __m512d a)</para>
+          <para>  VMOVAPD m512 {k1}{z}, zmm1</para>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaskStoreAligned">
+      <MemberSignature Language="C#" Value="public static void MaskStoreAligned (int* address, System.Runtime.Intrinsics.Vector512&lt;int&gt; mask, System.Runtime.Intrinsics.Vector512&lt;int&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void MaskStoreAligned(int32* address, valuetype System.Runtime.Intrinsics.Vector512`1&lt;int32&gt; mask, valuetype System.Runtime.Intrinsics.Vector512`1&lt;int32&gt; source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx512F.MaskStoreAligned(System.Int32*,System.Runtime.Intrinsics.Vector512{System.Int32},System.Runtime.Intrinsics.Vector512{System.Int32})" />
+      <MemberSignature Language="F#" Value="static member MaskStoreAligned : nativeptr&lt;int&gt; * System.Runtime.Intrinsics.Vector512&lt;int&gt; * System.Runtime.Intrinsics.Vector512&lt;int&gt; -&gt; unit" Usage="System.Runtime.Intrinsics.X86.Avx512F.MaskStoreAligned (address, mask, source)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void MaskStoreAligned(int* address, System::Runtime::Intrinsics::Vector512&lt;int&gt; mask, System::Runtime::Intrinsics::Vector512&lt;int&gt; source);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.Int32*" Index="0" FrameworkAlternate="net-10.0" />
+        <Parameter Name="mask" Type="System.Runtime.Intrinsics.Vector512&lt;System.Int32&gt;" Index="1" FrameworkAlternate="net-10.0" />
+        <Parameter Name="source" Type="System.Runtime.Intrinsics.Vector512&lt;System.Int32&gt;" Index="2" FrameworkAlternate="net-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <param name="mask">To be added.</param>
+        <param name="source">To be added.</param>
+        <summary>
+          <para>void _mm512_mask_store_epi32 (void * mem_addr, __mmask16 k, __m512i a)</para>
+          <para>  VMOVDQA32 m512 {k1}{z}, zmm1</para>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaskStoreAligned">
+      <MemberSignature Language="C#" Value="public static void MaskStoreAligned (long* address, System.Runtime.Intrinsics.Vector512&lt;long&gt; mask, System.Runtime.Intrinsics.Vector512&lt;long&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void MaskStoreAligned(int64* address, valuetype System.Runtime.Intrinsics.Vector512`1&lt;int64&gt; mask, valuetype System.Runtime.Intrinsics.Vector512`1&lt;int64&gt; source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx512F.MaskStoreAligned(System.Int64*,System.Runtime.Intrinsics.Vector512{System.Int64},System.Runtime.Intrinsics.Vector512{System.Int64})" />
+      <MemberSignature Language="F#" Value="static member MaskStoreAligned : nativeptr&lt;int64&gt; * System.Runtime.Intrinsics.Vector512&lt;int64&gt; * System.Runtime.Intrinsics.Vector512&lt;int64&gt; -&gt; unit" Usage="System.Runtime.Intrinsics.X86.Avx512F.MaskStoreAligned (address, mask, source)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void MaskStoreAligned(long* address, System::Runtime::Intrinsics::Vector512&lt;long&gt; mask, System::Runtime::Intrinsics::Vector512&lt;long&gt; source);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.Int64*" Index="0" FrameworkAlternate="net-10.0" />
+        <Parameter Name="mask" Type="System.Runtime.Intrinsics.Vector512&lt;System.Int64&gt;" Index="1" FrameworkAlternate="net-10.0" />
+        <Parameter Name="source" Type="System.Runtime.Intrinsics.Vector512&lt;System.Int64&gt;" Index="2" FrameworkAlternate="net-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <param name="mask">To be added.</param>
+        <param name="source">To be added.</param>
+        <summary>
+          <para>void _mm512_mask_store_epi64 (void * mem_addr, __mmask8 k, __m512i a)</para>
+          <para>  VMOVDQA32 m512 {k1}{z}, zmm1</para>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaskStoreAligned">
+      <MemberSignature Language="C#" Value="public static void MaskStoreAligned (float* address, System.Runtime.Intrinsics.Vector512&lt;float&gt; mask, System.Runtime.Intrinsics.Vector512&lt;float&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void MaskStoreAligned(float32* address, valuetype System.Runtime.Intrinsics.Vector512`1&lt;float32&gt; mask, valuetype System.Runtime.Intrinsics.Vector512`1&lt;float32&gt; source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx512F.MaskStoreAligned(System.Single*,System.Runtime.Intrinsics.Vector512{System.Single},System.Runtime.Intrinsics.Vector512{System.Single})" />
+      <MemberSignature Language="F#" Value="static member MaskStoreAligned : nativeptr&lt;single&gt; * System.Runtime.Intrinsics.Vector512&lt;single&gt; * System.Runtime.Intrinsics.Vector512&lt;single&gt; -&gt; unit" Usage="System.Runtime.Intrinsics.X86.Avx512F.MaskStoreAligned (address, mask, source)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void MaskStoreAligned(float* address, System::Runtime::Intrinsics::Vector512&lt;float&gt; mask, System::Runtime::Intrinsics::Vector512&lt;float&gt; source);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.Single*" Index="0" FrameworkAlternate="net-10.0" />
+        <Parameter Name="mask" Type="System.Runtime.Intrinsics.Vector512&lt;System.Single&gt;" Index="1" FrameworkAlternate="net-10.0" />
+        <Parameter Name="source" Type="System.Runtime.Intrinsics.Vector512&lt;System.Single&gt;" Index="2" FrameworkAlternate="net-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <param name="mask">To be added.</param>
+        <param name="source">To be added.</param>
+        <summary>
+          <para>void _mm512_mask_store_ps (void * mem_addr, __mmask16 k, __m512 a)</para>
+          <para>  VMOVAPS m512 {k1}{z}, zmm1</para>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaskStoreAligned">
+      <MemberSignature Language="C#" Value="public static void MaskStoreAligned (uint* address, System.Runtime.Intrinsics.Vector512&lt;uint&gt; mask, System.Runtime.Intrinsics.Vector512&lt;uint&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void MaskStoreAligned(unsigned int32* address, valuetype System.Runtime.Intrinsics.Vector512`1&lt;unsigned int32&gt; mask, valuetype System.Runtime.Intrinsics.Vector512`1&lt;unsigned int32&gt; source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx512F.MaskStoreAligned(System.UInt32*,System.Runtime.Intrinsics.Vector512{System.UInt32},System.Runtime.Intrinsics.Vector512{System.UInt32})" />
+      <MemberSignature Language="F#" Value="static member MaskStoreAligned : nativeptr&lt;uint32&gt; * System.Runtime.Intrinsics.Vector512&lt;uint32&gt; * System.Runtime.Intrinsics.Vector512&lt;uint32&gt; -&gt; unit" Usage="System.Runtime.Intrinsics.X86.Avx512F.MaskStoreAligned (address, mask, source)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void MaskStoreAligned(System::UInt32* address, System::Runtime::Intrinsics::Vector512&lt;System::UInt32&gt; mask, System::Runtime::Intrinsics::Vector512&lt;System::UInt32&gt; source);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.UInt32*" Index="0" FrameworkAlternate="net-10.0" />
+        <Parameter Name="mask" Type="System.Runtime.Intrinsics.Vector512&lt;System.UInt32&gt;" Index="1" FrameworkAlternate="net-10.0" />
+        <Parameter Name="source" Type="System.Runtime.Intrinsics.Vector512&lt;System.UInt32&gt;" Index="2" FrameworkAlternate="net-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <param name="mask">To be added.</param>
+        <param name="source">To be added.</param>
+        <summary>
+          <para>void _mm512_mask_store_epi32 (void * mem_addr, __mmask16 k, __m512i a)</para>
+          <para>  VMOVDQA32 m512 {k1}{z}, zmm1</para>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaskStoreAligned">
+      <MemberSignature Language="C#" Value="public static void MaskStoreAligned (ulong* address, System.Runtime.Intrinsics.Vector512&lt;ulong&gt; mask, System.Runtime.Intrinsics.Vector512&lt;ulong&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void MaskStoreAligned(unsigned int64* address, valuetype System.Runtime.Intrinsics.Vector512`1&lt;unsigned int64&gt; mask, valuetype System.Runtime.Intrinsics.Vector512`1&lt;unsigned int64&gt; source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx512F.MaskStoreAligned(System.UInt64*,System.Runtime.Intrinsics.Vector512{System.UInt64},System.Runtime.Intrinsics.Vector512{System.UInt64})" />
+      <MemberSignature Language="F#" Value="static member MaskStoreAligned : nativeptr&lt;uint64&gt; * System.Runtime.Intrinsics.Vector512&lt;uint64&gt; * System.Runtime.Intrinsics.Vector512&lt;uint64&gt; -&gt; unit" Usage="System.Runtime.Intrinsics.X86.Avx512F.MaskStoreAligned (address, mask, source)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void MaskStoreAligned(System::UInt64* address, System::Runtime::Intrinsics::Vector512&lt;System::UInt64&gt; mask, System::Runtime::Intrinsics::Vector512&lt;System::UInt64&gt; source);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.UInt64*" Index="0" FrameworkAlternate="net-10.0" />
+        <Parameter Name="mask" Type="System.Runtime.Intrinsics.Vector512&lt;System.UInt64&gt;" Index="1" FrameworkAlternate="net-10.0" />
+        <Parameter Name="source" Type="System.Runtime.Intrinsics.Vector512&lt;System.UInt64&gt;" Index="2" FrameworkAlternate="net-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <param name="mask">To be added.</param>
+        <param name="source">To be added.</param>
+        <summary>
+          <para>void _mm512_mask_store_epi64 (void * mem_addr, __mmask8 k, __m512i a)</para>
+          <para>  VMOVDQA32 m512 {k1}{z}, zmm1</para>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Max">
       <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector512&lt;double&gt; Max (System.Runtime.Intrinsics.Vector512&lt;double&gt; left, System.Runtime.Intrinsics.Vector512&lt;double&gt; right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector512`1&lt;float64&gt; Max(valuetype System.Runtime.Intrinsics.Vector512`1&lt;float64&gt; left, valuetype System.Runtime.Intrinsics.Vector512`1&lt;float64&gt; right) cil managed" />
@@ -11244,6 +12381,202 @@
         <summary>
           <para>__m512i _mm512_min_epu64 (__m512i a, __m512i b)</para>
           <para>VPMINUQ zmm1 {k1}{z}, zmm2, zmm3/m512/m64bcst</para>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveMask">
+      <MemberSignature Language="C#" Value="public static int MoveMask (System.Runtime.Intrinsics.Vector128&lt;byte&gt; value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 MoveMask(valuetype System.Runtime.Intrinsics.Vector128`1&lt;unsigned int8&gt; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx512F.MoveMask(System.Runtime.Intrinsics.Vector128{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MoveMask (value As Vector128(Of Byte)) As Integer" />
+      <MemberSignature Language="F#" Value="static member MoveMask : System.Runtime.Intrinsics.Vector128&lt;byte&gt; -&gt; int" Usage="System.Runtime.Intrinsics.X86.Avx512F.MoveMask value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int MoveMask(System::Runtime::Intrinsics::Vector128&lt;System::Byte&gt; value);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.Byte&gt;" Index="0" FrameworkAlternate="net-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>
+          <para>unsigned int _cvtmask16_u32 (__mmask16 a)</para>
+          <para>  KMOVW r32, k1</para>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveMask">
+      <MemberSignature Language="C#" Value="public static int MoveMask (System.Runtime.Intrinsics.Vector128&lt;sbyte&gt; value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 MoveMask(valuetype System.Runtime.Intrinsics.Vector128`1&lt;int8&gt; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx512F.MoveMask(System.Runtime.Intrinsics.Vector128{System.SByte})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MoveMask (value As Vector128(Of SByte)) As Integer" />
+      <MemberSignature Language="F#" Value="static member MoveMask : System.Runtime.Intrinsics.Vector128&lt;sbyte&gt; -&gt; int" Usage="System.Runtime.Intrinsics.X86.Avx512F.MoveMask value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int MoveMask(System::Runtime::Intrinsics::Vector128&lt;System::SByte&gt; value);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.SByte&gt;" Index="0" FrameworkAlternate="net-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>
+          <para>unsigned int _cvtmask16_u32 (__mmask16 a)</para>
+          <para>  KMOVW r32, k1</para>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveMask">
+      <MemberSignature Language="C#" Value="public static int MoveMask (System.Runtime.Intrinsics.Vector256&lt;short&gt; value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 MoveMask(valuetype System.Runtime.Intrinsics.Vector256`1&lt;int16&gt; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx512F.MoveMask(System.Runtime.Intrinsics.Vector256{System.Int16})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MoveMask (value As Vector256(Of Short)) As Integer" />
+      <MemberSignature Language="F#" Value="static member MoveMask : System.Runtime.Intrinsics.Vector256&lt;int16&gt; -&gt; int" Usage="System.Runtime.Intrinsics.X86.Avx512F.MoveMask value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int MoveMask(System::Runtime::Intrinsics::Vector256&lt;short&gt; value);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector256&lt;System.Int16&gt;" Index="0" FrameworkAlternate="net-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>
+          <para>unsigned int _cvtmask16_u32 (__mmask16 a)</para>
+          <para>  KMOVW r32, k1</para>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveMask">
+      <MemberSignature Language="C#" Value="public static int MoveMask (System.Runtime.Intrinsics.Vector256&lt;ushort&gt; value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 MoveMask(valuetype System.Runtime.Intrinsics.Vector256`1&lt;unsigned int16&gt; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx512F.MoveMask(System.Runtime.Intrinsics.Vector256{System.UInt16})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MoveMask (value As Vector256(Of UShort)) As Integer" />
+      <MemberSignature Language="F#" Value="static member MoveMask : System.Runtime.Intrinsics.Vector256&lt;uint16&gt; -&gt; int" Usage="System.Runtime.Intrinsics.X86.Avx512F.MoveMask value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int MoveMask(System::Runtime::Intrinsics::Vector256&lt;System::UInt16&gt; value);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector256&lt;System.UInt16&gt;" Index="0" FrameworkAlternate="net-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>
+          <para>unsigned int _cvtmask16_u32 (__mmask16 a)</para>
+          <para>  KMOVW r32, k1</para>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveMask">
+      <MemberSignature Language="C#" Value="public static int MoveMask (System.Runtime.Intrinsics.Vector512&lt;int&gt; value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 MoveMask(valuetype System.Runtime.Intrinsics.Vector512`1&lt;int32&gt; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx512F.MoveMask(System.Runtime.Intrinsics.Vector512{System.Int32})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MoveMask (value As Vector512(Of Integer)) As Integer" />
+      <MemberSignature Language="F#" Value="static member MoveMask : System.Runtime.Intrinsics.Vector512&lt;int&gt; -&gt; int" Usage="System.Runtime.Intrinsics.X86.Avx512F.MoveMask value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int MoveMask(System::Runtime::Intrinsics::Vector512&lt;int&gt; value);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector512&lt;System.Int32&gt;" Index="0" FrameworkAlternate="net-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>
+          <para>unsigned int _cvtmask16_u32 (__mmask16 a)</para>
+          <para>  KMOVW r32, k1</para>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveMask">
+      <MemberSignature Language="C#" Value="public static int MoveMask (System.Runtime.Intrinsics.Vector512&lt;float&gt; value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 MoveMask(valuetype System.Runtime.Intrinsics.Vector512`1&lt;float32&gt; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx512F.MoveMask(System.Runtime.Intrinsics.Vector512{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MoveMask (value As Vector512(Of Single)) As Integer" />
+      <MemberSignature Language="F#" Value="static member MoveMask : System.Runtime.Intrinsics.Vector512&lt;single&gt; -&gt; int" Usage="System.Runtime.Intrinsics.X86.Avx512F.MoveMask value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int MoveMask(System::Runtime::Intrinsics::Vector512&lt;float&gt; value);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector512&lt;System.Single&gt;" Index="0" FrameworkAlternate="net-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>
+          <para>unsigned int _cvtmask16_u32 (__mmask16 a)</para>
+          <para>  KMOVW r32, k1</para>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveMask">
+      <MemberSignature Language="C#" Value="public static int MoveMask (System.Runtime.Intrinsics.Vector512&lt;uint&gt; value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 MoveMask(valuetype System.Runtime.Intrinsics.Vector512`1&lt;unsigned int32&gt; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Avx512F.MoveMask(System.Runtime.Intrinsics.Vector512{System.UInt32})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MoveMask (value As Vector512(Of UInteger)) As Integer" />
+      <MemberSignature Language="F#" Value="static member MoveMask : System.Runtime.Intrinsics.Vector512&lt;uint32&gt; -&gt; int" Usage="System.Runtime.Intrinsics.X86.Avx512F.MoveMask value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int MoveMask(System::Runtime::Intrinsics::Vector512&lt;System::UInt32&gt; value);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector512&lt;System.UInt32&gt;" Index="0" FrameworkAlternate="net-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>
+          <para>unsigned int _cvtmask16_u32 (__mmask16 a)</para>
+          <para>  KMOVW r32, k1</para>
         </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -12081,7 +13414,7 @@
           <para>VPERMD zmm1 {k1}{z}, zmm2, zmm3/m512/m32bcst</para>
         </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>The native and managed intrinsics have different order of parameters.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PermuteVar16x32">
@@ -12113,7 +13446,7 @@
           <para>VPERMPS zmm1 {k1}{z}, zmm2, zmm3/m512/m32bcst</para>
         </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>The native and managed intrinsics have different order of parameters.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PermuteVar16x32">
@@ -12145,7 +13478,7 @@
           <para>VPERMD zmm1 {k1}{z}, zmm2, zmm3/m512/m32bcst</para>
         </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>The native and managed intrinsics have different order of parameters.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PermuteVar16x32x2">
@@ -12343,7 +13676,7 @@
           <para>VPERMPD zmm1 {k1}{z}, zmm2, zmm3/m512/m64bcst</para>
         </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>The native and managed intrinsics have different order of parameters.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PermuteVar8x64">
@@ -12375,7 +13708,7 @@
           <para>VPERMQ zmm1 {k1}{z}, zmm2, zmm3/m512/m64bcst</para>
         </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>The native and managed intrinsics have different order of parameters.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PermuteVar8x64">
@@ -12407,7 +13740,7 @@
           <para>VPERMQ zmm1 {k1}{z}, zmm2, zmm3/m512/m64bcst</para>
         </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>The native and managed intrinsics have different order of parameters.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PermuteVar8x64x2">

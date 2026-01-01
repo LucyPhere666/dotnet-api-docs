@@ -11,6 +11,9 @@
     <AssemblyVersion>9.5.0.0</AssemblyVersion>
     <AssemblyVersion>9.6.0.0</AssemblyVersion>
     <AssemblyVersion>9.7.0.0</AssemblyVersion>
+    <AssemblyVersion>9.9.0.0</AssemblyVersion>
+    <AssemblyVersion>9.10.0.0</AssemblyVersion>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -36,7 +39,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Extensions.AI</AssemblyName>
-        <AssemblyVersion>9.7.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Extensions.AI.SpeechToTextClientBuilder</ReturnType>
@@ -67,7 +70,7 @@
             If not supplied, a required instance will be resolved from the service provider.
             </param>
         <param name="configure">An optional callback that can be used to configure the <see cref="T:Microsoft.Extensions.AI.LoggingSpeechToTextClient" /> instance.</param>
-        <summary>Adds logging to the audio transcription client pipeline.</summary>
+        <summary>Adds logging to the speech-to-text client pipeline.</summary>
         <returns>The <paramref name="builder" />.</returns>
         <remarks>
           <para>

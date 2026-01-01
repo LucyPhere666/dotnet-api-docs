@@ -2035,11 +2035,26 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="exportParameters">To be added.</param>
-        <param name="password">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="exportParameters">The algorithm parameters to use for the export.</param>
+        <param name="password">The password to use for the export.</param>
+        <summary>Exports the certificate and private key in PKCS#12 / PFX format.</summary>
+        <returns>A byte array containing the encoded PKCS#12.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="password" /> contains a Unicode 'NULL' character.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="exportParameters" /> is <see langword="null" /> .</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">
+          <para>The current instance is disposed.</para>
+          <para>-or-</para>
+          <para>The export operation failed.</para>
+          <para>-or-</para>
+          <para>
+            <paramref name="exportParameters" /> specifies a <see cref="P:System.Security.Cryptography.PbeParameters.HashAlgorithm" /> value that is not supported for the <see cref="P:System.Security.Cryptography.PbeParameters.EncryptionAlgorithm" /> value.</para>
+          <para>-or-</para>
+          <para>
+            <paramref name="exportParameters" /> contains an invalid encryption algorithm for <see cref="P:System.Security.Cryptography.PbeParameters.EncryptionAlgorithm" />.</para>
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="ExportPkcs12">
@@ -2075,11 +2090,20 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="exportParameters">To be added.</param>
-        <param name="password">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="exportParameters">The algorithm parameters to use for the export.</param>
+        <param name="password">The password to use for the export.</param>
+        <summary>Exports the certificate and private key in PKCS#12 / PFX format.</summary>
+        <returns>A byte array containing the encoded PKCS#12.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="password" /> contains a Unicode 'NULL' character.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="exportParameters" /> is not a valid value.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">
+          <para>The current instance is disposed.</para>
+          <para>-or-</para>
+          <para>The export operation failed.</para>
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="FormatDate">
@@ -2675,17 +2699,7 @@
       <Docs>
         <summary>Returns the name of the certification authority that issued the X.509v3 certificate.</summary>
         <returns>The name of the certification authority that issued the X.509 certificate.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[
-
-## Examples
- The following example uses the <xref:System.Security.Cryptography.X509Certificates.X509Certificate.GetIssuerName%2A> method to return the certificate issuer's name and displays it to the console.
-
- :::code language="csharp" source="~/snippets/csharp/System.Security.Cryptography.X509Certificates/X509Certificate/GetIssuerName/example.cs" id="Snippet1":::
- :::code language="vb" source="~/snippets/visualbasic/System.Security.Cryptography.X509Certificates/X509Certificate/GetIssuerName/example.vb" id="Snippet1":::
-
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
         <exception cref="T:System.Security.Cryptography.CryptographicException">An error with the certificate occurs. For example:
 
 - The certificate file does not exist.
@@ -2949,17 +2963,7 @@
       <Docs>
         <summary>Returns the name of the principal to which the certificate was issued.</summary>
         <returns>The name of the principal to which the certificate was issued.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[
-
-## Examples
- The following example uses the <xref:System.Security.Cryptography.X509Certificates.X509Certificate.GetName%2A> method to return the name of a certificate's principal and displays it to the console.
-
- :::code language="csharp" source="~/snippets/csharp/System.Security.Cryptography.X509Certificates/X509Certificate/GetName/example.cs" id="Snippet1":::
- :::code language="vb" source="~/snippets/visualbasic/System.Security.Cryptography.X509Certificates/X509Certificate/GetName/example.vb" id="Snippet1":::
-
- ]]></format>
-        </remarks>
+        <remarks>To be added.</remarks>
         <exception cref="T:System.Security.Cryptography.CryptographicException">The certificate context is invalid.</exception>
       </Docs>
     </Member>

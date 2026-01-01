@@ -222,7 +222,9 @@
       <Docs>
         <param name="fileName">To be added.</param>
         <param name="arguments">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+          <para>Initializes a new instance of the <see cref="T:System.Diagnostics.ProcessStartInfo" /> class and specifies the name of the application to start and a set of command-line arguments to pass to the application.</para>
+        </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -452,6 +454,41 @@ If you use this property to set command-line arguments, <xref:System.Diagnostics
  :::code language="vb" source="~/snippets/visualbasic/System.Diagnostics/Process/Overview/processstartstatic2.vb":::
 
  ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateNewProcessGroup">
+      <MemberSignature Language="C#" Value="public bool CreateNewProcessGroup { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CreateNewProcessGroup" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.ProcessStartInfo.CreateNewProcessGroup" />
+      <MemberSignature Language="VB.NET" Value="Public Property CreateNewProcessGroup As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CreateNewProcessGroup : bool with get, set" Usage="System.Diagnostics.ProcessStartInfo.CreateNewProcessGroup" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CreateNewProcessGroup { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Process</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-10.0">
+          <AttributeName Language="C#">[System.Runtime.Versioning.SupportedOSPlatform("windows")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Versioning.SupportedOSPlatform("windows")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether to start the process in a new process group.</summary>
+        <value>
+          <see langword="true" /> if the process starts in a new process group; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <para>When a process is created in a new process group, it becomes the root of a new process group.</para>
+          <para>An implicit call to <c>SetConsoleCtrlHandler(NULL,TRUE)</c> is made on behalf of the new process, which means that the new process has Ctrl+C disabled.</para>
+          <para>This property is useful for preventing console control events sent to the child process from affecting the parent process.</para>
         </remarks>
       </Docs>
     </Member>
@@ -1703,9 +1740,17 @@ You can use asynchronous read operations to avoid these dependencies and their d
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+          Gets or sets a value that indicates whether the user credentials are only used for network resources.
+        </summary>
+        <value>
+          <see langword="true" /> if the user credentials are only used for network resources; otherwise, <see langword="false" />.
+        </value>
+        <remarks>
+          <para>This property is referenced if the process is being started by using the user name, password, and domain.</para>
+          <para>If the value is <see langword="true" />, the process is started with the caller's identity. The system creates a new logon session with the given credentials, which is used on the network only.</para>
+          <para>The system does not validate the specified credentials. Therefore, the process can start, but it may not have access to network resources.</para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UserName">

@@ -1,10 +1,10 @@
 <Type Name="Enum" FullName="System.Enum">
-  <TypeSignature Language="C#" Value="public abstract class Enum : ValueType, IComparable, IConvertible, IFormattable" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.6.2-pp;netframework-4.7;netframework-4.7.1;netframework-4.7.1-pp;netframework-4.7.2;netframework-4.7.2-pp;netframework-4.7-pp;netframework-4.8;netframework-4.8.1;netframework-4.8.1-pp;netframework-4.8-pp;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Enum extends System.ValueType implements class System.IComparable, class System.IConvertible, class System.IFormattable" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.6.2-pp;netframework-4.7.1-pp;netframework-4.7.2-pp;netframework-4.7-pp;netframework-4.8.1-pp;netframework-4.8-pp;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+  <TypeSignature Language="C#" Value="public abstract class Enum : ValueType, IComparable, IConvertible, IFormattable" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Enum extends System.ValueType implements class System.IComparable, class System.IConvertible, class System.IFormattable" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
   <TypeSignature Language="DocId" Value="T:System.Enum" />
-  <TypeSignature Language="VB.NET" Value="Public MustInherit Class Enum&#xA;Inherits ValueType&#xA;Implements IComparable, IConvertible, IFormattable" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.6.2-pp;netframework-4.7;netframework-4.7.1;netframework-4.7.1-pp;netframework-4.7.2;netframework-4.7.2-pp;netframework-4.7-pp;netframework-4.8;netframework-4.8.1;netframework-4.8.1-pp;netframework-4.8-pp;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
-  <TypeSignature Language="F#" Value="type Enum = class&#xA;    inherit ValueType&#xA;    interface IComparable&#xA;    interface IConvertible&#xA;    interface IFormattable" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.6.2-pp;netframework-4.7.1-pp;netframework-4.7.2-pp;netframework-4.7-pp;netframework-4.8.1-pp;netframework-4.8-pp;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
-  <TypeSignature Language="C++ CLI" Value="public ref class Enum abstract : ValueType, IComparable, IConvertible, IFormattable" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.6.2-pp;netframework-4.7;netframework-4.7.1;netframework-4.7.1-pp;netframework-4.7.2;netframework-4.7.2-pp;netframework-4.7-pp;netframework-4.8;netframework-4.8.1;netframework-4.8.1-pp;netframework-4.8-pp;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class Enum&#xA;Inherits ValueType&#xA;Implements IComparable, IConvertible, IFormattable" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+  <TypeSignature Language="F#" Value="type Enum = class&#xA;    inherit ValueType&#xA;    interface IComparable&#xA;    interface IConvertible&#xA;    interface IFormattable" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Enum abstract : ValueType, IComparable, IConvertible, IFormattable" FrameworkAlternate="dotnet-uwp-10.0;net-5.0;net-6.0;net-7.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
   <TypeSignature Language="C#" Value="public abstract class Enum : ValueType, IComparable, IConvertible, ISpanFormattable" FrameworkAlternate="net-10.0;net-8.0;net-9.0" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Enum extends System.ValueType implements class System.IComparable, class System.IConvertible, class System.IFormattable, class System.ISpanFormattable" FrameworkAlternate="net-10.0;net-8.0;net-9.0" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Enum&#xA;Inherits ValueType&#xA;Implements IComparable, IConvertible, ISpanFormattable" FrameworkAlternate="net-10.0;net-8.0;net-9.0" />
@@ -54,7 +54,6 @@
     <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="7.0.0.0" FrameworkAlternate="net-7.0" />
     <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="8.0.0.0" FrameworkAlternate="net-8.0" />
     <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="9.0.0.0" FrameworkAlternate="net-9.0" />
-    <TypeForwarding From="System.Runtime" FromVersion="4.1.1.1" To="mscorlib" ToVersion="4.0.0.0" FrameworkAlternate="netframework-4.6.2-pp;netframework-4.7.1-pp;netframework-4.7.2-pp;netframework-4.7-pp;netframework-4.8.1-pp;netframework-4.8-pp" />
   </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
@@ -63,7 +62,7 @@
     <Interface>
       <InterfaceName>System.IComparable</InterfaceName>
     </Interface>
-    <Interface FrameworkAlternate="dotnet-uwp-10.0;net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.6.2-pp;netframework-4.7;netframework-4.7.1;netframework-4.7.1-pp;netframework-4.7.2;netframework-4.7.2-pp;netframework-4.7-pp;netframework-4.8;netframework-4.8.1;netframework-4.8.1-pp;netframework-4.8-pp;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1">
+    <Interface FrameworkAlternate="dotnet-uwp-10.0;net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1">
       <InterfaceName>System.IConvertible</InterfaceName>
     </Interface>
     <Interface>
@@ -143,7 +142,7 @@
       <MemberSignature Language="VB.NET" Value="Public Function CompareTo (target As Object) As Integer" />
       <MemberSignature Language="F#" Value="abstract member CompareTo : obj -&gt; int&#xA;override this.CompareTo : obj -&gt; int" Usage="enum.CompareTo target" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int CompareTo(System::Object ^ target);" />
-      <MemberSignature Language="C#" Value="public int CompareTo (object? target);" FrameworkAlternate="net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-3.0;netcore-3.1;netframework-4.6.2-pp;netframework-4.7.1-pp;netframework-4.7.2-pp;netframework-4.7-pp;netframework-4.8.1-pp;netframework-4.8-pp" />
+      <MemberSignature Language="C#" Value="public int CompareTo (object? target);" FrameworkAlternate="net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IComparable.CompareTo(System.Object)</InterfaceMember>
@@ -214,7 +213,7 @@
 ## Examples
  The following example illustrates the use of `CompareTo` in the context of `Enum`.
 
- :::code language="csharp" source="~/snippets/csharp/System/Enum/CompareTo/EnumCompareTo.cs" interactive="try-dotnet" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System/Enum/CompareTo/EnumCompareTo.cs" id="Snippet1":::
  :::code language="fsharp" source="~/snippets/fsharp/System/Enum/CompareTo/EnumCompareTo.fs" id="Snippet1":::
  :::code language="vb" source="~/snippets/visualbasic/System/Enum/CompareTo/EnumCompareTo.vb" id="Snippet1":::
 
@@ -235,7 +234,7 @@
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="enum.Equals obj" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
-      <MemberSignature Language="C#" Value="public override bool Equals (object? obj);" FrameworkAlternate="net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-3.0;netcore-3.1;netframework-4.6.2-pp;netframework-4.7.1-pp;netframework-4.7.2-pp;netframework-4.7-pp;netframework-4.8.1-pp;netframework-4.8-pp" />
+      <MemberSignature Language="C#" Value="public override bool Equals (object? obj);" FrameworkAlternate="net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -300,13 +299,13 @@
 ## Examples
  The following example illustrates the use of the <xref:System.Enum.Equals%2A> method.
 
- :::code language="csharp" source="~/snippets/csharp/System/Enum/Equals/EnumEquals.cs" interactive="try-dotnet" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System/Enum/Equals/EnumEquals.cs" id="Snippet1":::
  :::code language="fsharp" source="~/snippets/fsharp/System/Enum/Equals/EnumEquals.fs" id="Snippet1":::
  :::code language="vb" source="~/snippets/visualbasic/System/Enum/Equals/EnumEquals.vb" id="Snippet1":::
 
  The following example defines two enumeration types, `SledDog` and `WorkDog`. The `SledDog` enumeration has two members, `SledDog.AlaskanMalamute` and `SledDog.Malamute`, that have the same underlying value. The call to the <xref:System.Enum.Equals%2A> method indicates that these values are equal because their underlying values are the same. The `SledDog.Malamute` and `WorkDog.Newfoundland` members have the same underlying value, although they represent different enumeration types. A call to the <xref:System.Enum.Equals%2A> method indicates that these values are not equal.
 
- :::code language="csharp" source="~/snippets/csharp/System/Enum/Equals/enumequals1.cs" interactive="try-dotnet" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System/Enum/Equals/enumequals1.cs" id="Snippet1":::
  :::code language="fsharp" source="~/snippets/fsharp/System/Enum/Equals/enumequals1.fs" id="Snippet1":::
  :::code language="vb" source="~/snippets/visualbasic/System/Enum/Equals/enumequals1.vb" id="Snippet1":::
 
@@ -395,7 +394,7 @@
 ## Examples
  The following example illustrates the use of `Format` in the context of `Enum`.
 
- :::code language="csharp" source="~/snippets/csharp/System/Enum/Format/EnumFormat.cs" interactive="try-dotnet" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System/Enum/Format/EnumFormat.cs" id="Snippet1":::
  :::code language="fsharp" source="~/snippets/fsharp/System/Enum/Format/EnumFormat.fs" id="Snippet1":::
  :::code language="vb" source="~/snippets/visualbasic/System/Enum/Format/EnumFormat.vb" id="Snippet1":::
 
@@ -483,7 +482,7 @@
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetName (enumType As Type, value As Object) As String" />
       <MemberSignature Language="F#" Value="static member GetName : Type * obj -&gt; string" Usage="System.Enum.GetName (enumType, value)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetName(Type ^ enumType, System::Object ^ value);" />
-      <MemberSignature Language="C#" Value="public static string? GetName (Type enumType, object value);" FrameworkAlternate="net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-3.0;netcore-3.1;netframework-4.6.2-pp;netframework-4.7.1-pp;netframework-4.7.2-pp;netframework-4.7-pp;netframework-4.8.1-pp;netframework-4.8-pp" />
+      <MemberSignature Language="C#" Value="public static string? GetName (Type enumType, object value);" FrameworkAlternate="net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -540,7 +539,7 @@
 ## Examples
  The following example illustrates the use of `GetName`.
 
- :::code language="csharp" source="~/snippets/csharp/System/Enum/GetName/EnumGetName.cs" interactive="try-dotnet" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System/Enum/GetName/EnumGetName.cs" id="Snippet1":::
  :::code language="fsharp" source="~/snippets/fsharp/System/Enum/GetName/EnumGetName.fs" id="Snippet1":::
  :::code language="vb" source="~/snippets/visualbasic/System/Enum/GetName/EnumGetName.vb" id="Snippet1":::
 
@@ -669,7 +668,7 @@
 ## Remarks
  The elements of the return value array are sorted by the binary values of the enumerated constants (that is, by their unsigned magnitude). The following example provides displays information about the array returned by the <xref:System.Enum.GetNames%2A> method for an enumeration that includes a negative, zero, and a positive value.
 
- :::code language="csharp" source="~/snippets/csharp/System/Enum/GetNames/getnames1.cs" interactive="try-dotnet" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System/Enum/GetNames/getnames1.cs" id="Snippet1":::
  :::code language="fsharp" source="~/snippets/fsharp/System/Enum/GetNames/getnames1.fs" id="Snippet1":::
  :::code language="vb" source="~/snippets/visualbasic/System/Enum/GetNames/getnames1.vb" id="Snippet1":::
 
@@ -678,7 +677,7 @@
 ## Examples
  The following example illustrates the use of the <xref:System.Enum.GetNames%2A> method.
 
- :::code language="csharp" source="~/snippets/csharp/System/Enum/GetNames/EnumGetNames.cs" interactive="try-dotnet" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System/Enum/GetNames/EnumGetNames.cs" id="Snippet1":::
  :::code language="fsharp" source="~/snippets/fsharp/System/Enum/GetNames/EnumGetNames.fs" id="Snippet1":::
  :::code language="vb" source="~/snippets/visualbasic/System/Enum/GetNames/EnumGetNames.vb" id="Snippet1":::
 
@@ -744,17 +743,17 @@
     </Member>
     <Member MemberName="GetTypeCode">
       <MemberSignature Language="C#" Value="public TypeCode GetTypeCode ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.TypeCode GetTypeCode() cil managed" FrameworkAlternate="net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.6.2-pp;netframework-4.7;netframework-4.7.1;netframework-4.7.1-pp;netframework-4.7.2;netframework-4.7.2-pp;netframework-4.7-pp;netframework-4.8;netframework-4.8.1;netframework-4.8.1-pp;netframework-4.8-pp;netstandard-2.0;netstandard-2.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.TypeCode GetTypeCode() cil managed" FrameworkAlternate="net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="DocId" Value="M:System.Enum.GetTypeCode" />
       <MemberSignature Language="VB.NET" Value="Public Function GetTypeCode () As TypeCode" />
-      <MemberSignature Language="F#" Value="abstract member GetTypeCode : unit -&gt; TypeCode&#xA;override this.GetTypeCode : unit -&gt; TypeCode" Usage="enum.GetTypeCode " FrameworkAlternate="net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.6.2-pp;netframework-4.7;netframework-4.7.1;netframework-4.7.1-pp;netframework-4.7.2;netframework-4.7.2-pp;netframework-4.7-pp;netframework-4.8;netframework-4.8.1;netframework-4.8.1-pp;netframework-4.8-pp;netstandard-2.0;netstandard-2.1" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual TypeCode GetTypeCode();" FrameworkAlternate="net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.6.2-pp;netframework-4.7;netframework-4.7.1;netframework-4.7.1-pp;netframework-4.7.2;netframework-4.7.2-pp;netframework-4.7-pp;netframework-4.8;netframework-4.8.1;netframework-4.8.1-pp;netframework-4.8-pp;netstandard-2.0;netstandard-2.1" />
+      <MemberSignature Language="F#" Value="abstract member GetTypeCode : unit -&gt; TypeCode&#xA;override this.GetTypeCode : unit -&gt; TypeCode" Usage="enum.GetTypeCode " FrameworkAlternate="net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual TypeCode GetTypeCode();" FrameworkAlternate="net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.TypeCode GetTypeCode() cil managed" FrameworkAlternate="netcore-2.0" />
       <MemberSignature Language="F#" Value="member this.GetTypeCode : unit -&gt; TypeCode" Usage="enum.GetTypeCode " FrameworkAlternate="netcore-2.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TypeCode GetTypeCode();" FrameworkAlternate="netcore-2.0" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember FrameworkAlternate="net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.6.2-pp;netframework-4.7;netframework-4.7.1;netframework-4.7.1-pp;netframework-4.7.2;netframework-4.7.2-pp;netframework-4.7-pp;netframework-4.8;netframework-4.8.1;netframework-4.8.1-pp;netframework-4.8-pp;netstandard-2.0;netstandard-2.1">M:System.IConvertible.GetTypeCode</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1">M:System.IConvertible.GetTypeCode</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -859,7 +858,7 @@
 ## Examples
  The following example calls the <xref:System.Enum.GetUnderlyingType%2A> method to display the underlying type of some enumeration members.
 
- :::code language="csharp" source="~/snippets/csharp/System/Enum/GetUnderlyingType/getunderlyingtype1.cs" interactive="try-dotnet" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System/Enum/GetUnderlyingType/getunderlyingtype1.cs" id="Snippet1":::
  :::code language="fsharp" source="~/snippets/fsharp/System/Enum/GetUnderlyingType/getunderlyingtype1.fs" id="Snippet1":::
  :::code language="vb" source="~/snippets/visualbasic/System/Enum/GetUnderlyingType/getunderlyingtype1.vb" id="Snippet1":::
 
@@ -934,7 +933,7 @@
 ## Remarks
  The elements of the array are sorted by the binary values of the enumeration constants (that is, by their unsigned magnitude). The following example displays information about the array returned by the <xref:System.Enum.GetValues%2A> method for an enumeration that includes a negative value, zero, and a positive value.
 
- :::code language="csharp" source="~/snippets/csharp/System/Enum/GetValues/getvalues1.cs" interactive="try-dotnet" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System/Enum/GetValues/getvalues1.cs" id="Snippet1":::
  :::code language="fsharp" source="~/snippets/fsharp/System/Enum/GetValues/getvalues1.fs" id="Snippet1":::
  :::code language="vb" source="~/snippets/visualbasic/System/Enum/GetValues/getvalues1.vb" id="Snippet1":::
 
@@ -955,7 +954,7 @@
 ## Examples
  The following example illustrates the use of <xref:System.Enum.GetValues%2A>.
 
- :::code language="csharp" source="~/snippets/csharp/System/Enum/GetValues/EnumGetValues.cs" interactive="try-dotnet" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System/Enum/GetValues/EnumGetValues.cs" id="Snippet1":::
  :::code language="fsharp" source="~/snippets/fsharp/System/Enum/GetValues/EnumGetValues.fs" id="Snippet1":::
  :::code language="vb" source="~/snippets/visualbasic/System/Enum/GetValues/EnumGetValues.vb" id="Snippet1":::
 
@@ -1160,7 +1159,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="flag" Type="System.Enum" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.6.2-pp;netframework-4.7;netframework-4.7.1;netframework-4.7.1-pp;netframework-4.7.2;netframework-4.7.2-pp;netframework-4.7-pp;netframework-4.8;netframework-4.8.1;netframework-4.8.1-pp;netframework-4.8-pp;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+        <Parameter Name="flag" Type="System.Enum" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="flag">An enumeration value.</param>
@@ -1179,7 +1178,7 @@
 
  If the underlying value of `flag` is zero, the method returns `true`. If this behavior is not desirable, you can use the <xref:System.Enum.Equals%2A> method to test for equality with zero and call <xref:System.Enum.HasFlag%2A> only if the underlying value of `flag` is non-zero, as the following example illustrates.
 
- :::code language="csharp" source="~/snippets/csharp/System/Enum/HasFlag/hasflag0.cs" interactive="try-dotnet" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System/Enum/HasFlag/hasflag0.cs" id="Snippet1":::
  :::code language="fsharp" source="~/snippets/fsharp/System/Enum/HasFlag/hasflag0.fs" id="Snippet1":::
  :::code language="vb" source="~/snippets/visualbasic/System/Enum/HasFlag/hasflag0.vb" id="Snippet1":::
 
@@ -1190,7 +1189,7 @@
 ## Examples
  The following example defines an `DinnerItems` enumeration that reflects categories of items that a customer can order in a restaurant. The example tests whether the customer has ordered both an entrée and a beverage.
 
- :::code language="csharp" source="~/snippets/csharp/System/Enum/HasFlag/hasflag1.cs" interactive="try-dotnet" id="Snippet2":::
+ :::code language="csharp" source="~/snippets/csharp/System/Enum/HasFlag/hasflag1.cs" id="Snippet2":::
  :::code language="fsharp" source="~/snippets/fsharp/System/Enum/HasFlag/hasflag1.fs" id="Snippet2":::
  :::code language="vb" source="~/snippets/visualbasic/System/Enum/HasFlag/hasflag1.vb" id="Snippet2":::
 
@@ -1278,7 +1277,7 @@
 ## Examples
  The following example defines an enumeration named `PetType` that consists of individual bit fields. It then calls the <xref:System.Enum.IsDefined%2A> method with possible underlying enumeration values, string names, and composite values that result from setting multiple bit fields.
 
- :::code language="csharp" source="~/snippets/csharp/System/Enum/IsDefined/isdefined1.cs" interactive="try-dotnet" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System/Enum/IsDefined/isdefined1.cs" id="Snippet1":::
  :::code language="fsharp" source="~/snippets/fsharp/System/Enum/IsDefined/isdefined1.fs" id="Snippet1":::
  :::code language="vb" source="~/snippets/visualbasic/System/Enum/IsDefined/IsDefined1.vb" id="Snippet1":::
 
@@ -1301,7 +1300,7 @@
         <block subset="none" type="usage">
           <para>If <paramref name="enumType" /> is an enumeration that is defined by using the <see cref="T:System.FlagsAttribute" /> attribute, the method returns <see langword="false" /> if multiple bit fields in <paramref name="value" /> are set but <paramref name="value" /> does not correspond to a composite enumeration value, or if <paramref name="value" /> is a string concatenation of the names of multiple bit flags. In the following example, a <c>Pets</c> enumeration is defined with the <see cref="T:System.FlagsAttribute" /> attribute. The <see cref="M:System.Enum.IsDefined(System.Type,System.Object)" /> method returns <see langword="false" /> when you pass it an enumeration value that has two bit fields (<c>Pets.Dog</c> and <c>Pets.Cat</c>) set, and when you pass it the string representation of that enumeration value ("Dog, Cat").
 
- :::code language="csharp" source="~/snippets/csharp/System/Enum/IsDefined/isdefined2.cs" interactive="try-dotnet" id="Snippet2":::
+ :::code language="csharp" source="~/snippets/csharp/System/Enum/IsDefined/isdefined2.cs" id="Snippet2":::
  :::code language="fsharp" source="~/snippets/fsharp/System/Enum/IsDefined/isdefined2.fs" id="Snippet2":::
  :::code language="vb" source="~/snippets/visualbasic/System/Enum/IsDefined/isdefined2.vb" id="Snippet2":::
 
@@ -1492,7 +1491,7 @@
 
  If `value` is a name that does not correspond to a named constant of `enumType`, the method throws an <xref:System.ArgumentException>. If `value` is the string representation of an integer that does not represent an underlying value of the `enumType` enumeration, the method returns an enumeration member whose underlying value is `value` converted to an integral type. If this behavior is undesirable, call the <xref:System.Enum.IsDefined%2A> method to ensure that a particular string representation of an integer is actually a member of `enumType`. The following example defines a `Colors` enumeration, calls the <xref:System.Enum.Parse%28System.Type%2CSystem.String%29> method to convert strings to their corresponding enumeration values, and calls the <xref:System.Enum.IsDefined%2A> method to ensure that particular integral values are underlying values in the `Colors` enumeration.
 
- :::code language="csharp" source="~/snippets/csharp/System/Enum/Parse/ParseExample1.cs" interactive="try-dotnet" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System/Enum/Parse/ParseExample1.cs" id="Snippet1":::
  :::code language="fsharp" source="~/snippets/fsharp/System/Enum/Parse/ParseExample1.fs" id="Snippet1":::
  :::code language="vb" source="~/snippets/visualbasic/System/Enum/Parse/ParseExample1.vb" id="Snippet1":::
 
@@ -1501,7 +1500,7 @@
 ## Examples
  The following example uses the <xref:System.Enum.Parse%28System.Type%2CSystem.String%29> method to parse an array of strings that are created by calling the <xref:System.Enum.GetNames%2A> method. It also uses the <xref:System.Enum.Parse%28System.Type%2CSystem.String%29> method to parse an enumeration value that consists of a bit field.
 
- :::code language="csharp" source="~/snippets/csharp/System/Enum/Parse/EnumParse.cs" interactive="try-dotnet" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System/Enum/Parse/EnumParse.cs" id="Snippet1":::
  :::code language="fsharp" source="~/snippets/fsharp/System/Enum/Parse/EnumParse.fs" id="Snippet1":::
  :::code language="vb" source="~/snippets/visualbasic/System/Enum/Parse/EnumParse.vb" id="Snippet1":::
 
@@ -1653,7 +1652,7 @@
 ## Examples
  The following example uses the <xref:System.Enum.Parse%28System.Type%2CSystem.String%2CSystem.Boolean%29> method to parse an array of strings that are created by calling the <xref:System.Enum.GetNames%2A> method. It also uses the <xref:System.Enum.Parse%28System.Type%2CSystem.String%29> method to parse an enumeration value that consists of a bit field.
 
- :::code language="csharp" source="~/snippets/csharp/System/Enum/Parse/ParseExample2.cs" interactive="try-dotnet" id="Snippet2":::
+ :::code language="csharp" source="~/snippets/csharp/System/Enum/Parse/ParseExample2.cs" id="Snippet2":::
  :::code language="fsharp" source="~/snippets/fsharp/System/Enum/Parse/ParseExample2.fs" id="Snippet2":::
  :::code language="vb" source="~/snippets/visualbasic/System/Enum/Parse/ParseExample2.vb" id="Snippet2":::
 
@@ -1988,7 +1987,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="provider" Type="System.IFormatProvider" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.6.2-pp;netframework-4.7;netframework-4.7.1;netframework-4.7.1-pp;netframework-4.7.2;netframework-4.7.2-pp;netframework-4.7-pp;netframework-4.8;netframework-4.8.1;netframework-4.8.1-pp;netframework-4.8-pp;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+        <Parameter Name="provider" Type="System.IFormatProvider" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="provider">An object that supplies culture-specific formatting information.</param>
@@ -2046,7 +2045,7 @@
         <ReturnType>System.Byte</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="provider" Type="System.IFormatProvider" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.6.2-pp;netframework-4.7;netframework-4.7.1;netframework-4.7.1-pp;netframework-4.7.2;netframework-4.7.2-pp;netframework-4.7-pp;netframework-4.8;netframework-4.8.1;netframework-4.8.1-pp;netframework-4.8-pp;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+        <Parameter Name="provider" Type="System.IFormatProvider" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="provider">An object that supplies culture-specific formatting information.</param>
@@ -2103,7 +2102,7 @@
         <ReturnType>System.Char</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="provider" Type="System.IFormatProvider" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.6.2-pp;netframework-4.7;netframework-4.7.1;netframework-4.7.1-pp;netframework-4.7.2;netframework-4.7.2-pp;netframework-4.7-pp;netframework-4.8;netframework-4.8.1;netframework-4.8.1-pp;netframework-4.8-pp;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+        <Parameter Name="provider" Type="System.IFormatProvider" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="provider">An object that supplies culture-specific formatting information.</param>
@@ -2161,7 +2160,7 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="provider" Type="System.IFormatProvider" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.6.2-pp;netframework-4.7;netframework-4.7.1;netframework-4.7.1-pp;netframework-4.7.2;netframework-4.7.2-pp;netframework-4.7-pp;netframework-4.8;netframework-4.8.1;netframework-4.8.1-pp;netframework-4.8-pp;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+        <Parameter Name="provider" Type="System.IFormatProvider" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="provider">An object that supplies culture-specific formatting information.</param>
@@ -2219,7 +2218,7 @@
         <ReturnType>System.Decimal</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="provider" Type="System.IFormatProvider" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.6.2-pp;netframework-4.7;netframework-4.7.1;netframework-4.7.1-pp;netframework-4.7.2;netframework-4.7.2-pp;netframework-4.7-pp;netframework-4.8;netframework-4.8.1;netframework-4.8.1-pp;netframework-4.8-pp;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+        <Parameter Name="provider" Type="System.IFormatProvider" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="provider">An object that supplies culture-specific formatting information.</param>
@@ -2277,7 +2276,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="provider" Type="System.IFormatProvider" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.6.2-pp;netframework-4.7;netframework-4.7.1;netframework-4.7.1-pp;netframework-4.7.2;netframework-4.7.2-pp;netframework-4.7-pp;netframework-4.8;netframework-4.8.1;netframework-4.8.1-pp;netframework-4.8-pp;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+        <Parameter Name="provider" Type="System.IFormatProvider" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="provider">An object that supplies culture-specific formatting information.</param>
@@ -2335,7 +2334,7 @@
         <ReturnType>System.Int16</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="provider" Type="System.IFormatProvider" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.6.2-pp;netframework-4.7;netframework-4.7.1;netframework-4.7.1-pp;netframework-4.7.2;netframework-4.7.2-pp;netframework-4.7-pp;netframework-4.8;netframework-4.8.1;netframework-4.8.1-pp;netframework-4.8-pp;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+        <Parameter Name="provider" Type="System.IFormatProvider" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="provider">An object that supplies culture-specific formatting information.</param>
@@ -2392,7 +2391,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="provider" Type="System.IFormatProvider" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.6.2-pp;netframework-4.7;netframework-4.7.1;netframework-4.7.1-pp;netframework-4.7.2;netframework-4.7.2-pp;netframework-4.7-pp;netframework-4.8;netframework-4.8.1;netframework-4.8.1-pp;netframework-4.8-pp;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+        <Parameter Name="provider" Type="System.IFormatProvider" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="provider">An object that supplies culture-specific formatting information.</param>
@@ -2449,7 +2448,7 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="provider" Type="System.IFormatProvider" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.6.2-pp;netframework-4.7;netframework-4.7.1;netframework-4.7.1-pp;netframework-4.7.2;netframework-4.7.2-pp;netframework-4.7-pp;netframework-4.8;netframework-4.8.1;netframework-4.8.1-pp;netframework-4.8-pp;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+        <Parameter Name="provider" Type="System.IFormatProvider" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="provider">An object that supplies culture-specific formatting information.</param>
@@ -2512,7 +2511,7 @@
         <ReturnType>System.SByte</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="provider" Type="System.IFormatProvider" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.6.2-pp;netframework-4.7;netframework-4.7.1;netframework-4.7.1-pp;netframework-4.7.2;netframework-4.7.2-pp;netframework-4.7-pp;netframework-4.8;netframework-4.8.1;netframework-4.8.1-pp;netframework-4.8-pp;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+        <Parameter Name="provider" Type="System.IFormatProvider" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="provider">An object that supplies culture-specific formatting information.</param>
@@ -2569,7 +2568,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="provider" Type="System.IFormatProvider" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.6.2-pp;netframework-4.7;netframework-4.7.1;netframework-4.7.1-pp;netframework-4.7.2;netframework-4.7.2-pp;netframework-4.7-pp;netframework-4.8;netframework-4.8.1;netframework-4.8.1-pp;netframework-4.8-pp;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+        <Parameter Name="provider" Type="System.IFormatProvider" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="provider">An object that supplies culture-specific formatting information.</param>
@@ -2668,8 +2667,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="type" Type="System.Type" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.6.2-pp;netframework-4.7;netframework-4.7.1;netframework-4.7.1-pp;netframework-4.7.2;netframework-4.7.2-pp;netframework-4.7-pp;netframework-4.8;netframework-4.8.1;netframework-4.8.1-pp;netframework-4.8-pp;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
-        <Parameter Name="provider" Type="System.IFormatProvider" Index="1" FrameworkAlternate="dotnet-uwp-10.0;net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.6.2-pp;netframework-4.7;netframework-4.7.1;netframework-4.7.1-pp;netframework-4.7.2;netframework-4.7.2-pp;netframework-4.7-pp;netframework-4.8;netframework-4.8.1;netframework-4.8.1-pp;netframework-4.8-pp;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+        <Parameter Name="type" Type="System.Type" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+        <Parameter Name="provider" Type="System.IFormatProvider" Index="1" FrameworkAlternate="dotnet-uwp-10.0;net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="type">The type to convert to.</param>
@@ -2733,7 +2732,7 @@
         <ReturnType>System.UInt16</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="provider" Type="System.IFormatProvider" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.6.2-pp;netframework-4.7;netframework-4.7.1;netframework-4.7.1-pp;netframework-4.7.2;netframework-4.7.2-pp;netframework-4.7-pp;netframework-4.8;netframework-4.8.1;netframework-4.8.1-pp;netframework-4.8-pp;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+        <Parameter Name="provider" Type="System.IFormatProvider" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="provider">An object that supplies culture-specific formatting information.</param>
@@ -2796,7 +2795,7 @@
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="provider" Type="System.IFormatProvider" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.6.2-pp;netframework-4.7;netframework-4.7.1;netframework-4.7.1-pp;netframework-4.7.2;netframework-4.7.2-pp;netframework-4.7-pp;netframework-4.8;netframework-4.8.1;netframework-4.8.1-pp;netframework-4.8-pp;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+        <Parameter Name="provider" Type="System.IFormatProvider" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="provider">An object that supplies culture-specific formatting information.</param>
@@ -2859,7 +2858,7 @@
         <ReturnType>System.UInt64</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="provider" Type="System.IFormatProvider" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.6.2-pp;netframework-4.7;netframework-4.7.1;netframework-4.7.1-pp;netframework-4.7.2;netframework-4.7.2-pp;netframework-4.7-pp;netframework-4.8;netframework-4.8.1;netframework-4.8.1-pp;netframework-4.8-pp;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+        <Parameter Name="provider" Type="System.IFormatProvider" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="provider">An object that supplies culture-specific formatting information.</param>
@@ -3374,7 +3373,7 @@
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.6.2-pp;netframework-4.7;netframework-4.7.1;netframework-4.7.1-pp;netframework-4.7.2;netframework-4.7.2-pp;netframework-4.7-pp;netframework-4.8;netframework-4.8.1;netframework-4.8.1-pp;netframework-4.8-pp;netstandard-2.0;netstandard-2.1">
+        <Attribute FrameworkAlternate="net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1">
           <AttributeName Language="C#">[System.CLSCompliant(false)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.CLSCompliant(false)&gt;]</AttributeName>
         </Attribute>
@@ -3450,7 +3449,7 @@
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.6.2-pp;netframework-4.7;netframework-4.7.1;netframework-4.7.1-pp;netframework-4.7.2;netframework-4.7.2-pp;netframework-4.7-pp;netframework-4.8;netframework-4.8.1;netframework-4.8.1-pp;netframework-4.8-pp;netstandard-2.0;netstandard-2.1">
+        <Attribute FrameworkAlternate="net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1">
           <AttributeName Language="C#">[System.CLSCompliant(false)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.CLSCompliant(false)&gt;]</AttributeName>
         </Attribute>
@@ -3526,7 +3525,7 @@
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.6.2-pp;netframework-4.7;netframework-4.7.1;netframework-4.7.1-pp;netframework-4.7.2;netframework-4.7.2-pp;netframework-4.7-pp;netframework-4.8;netframework-4.8.1;netframework-4.8.1-pp;netframework-4.8-pp;netstandard-2.0;netstandard-2.1">
+        <Attribute FrameworkAlternate="net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1">
           <AttributeName Language="C#">[System.CLSCompliant(false)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.CLSCompliant(false)&gt;]</AttributeName>
         </Attribute>
@@ -3602,7 +3601,7 @@
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.6.2-pp;netframework-4.7;netframework-4.7.1;netframework-4.7.1-pp;netframework-4.7.2;netframework-4.7.2-pp;netframework-4.7-pp;netframework-4.8;netframework-4.8.1;netframework-4.8.1-pp;netframework-4.8-pp;netstandard-2.0;netstandard-2.1">
+        <Attribute FrameworkAlternate="net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1">
           <AttributeName Language="C#">[System.CLSCompliant(false)]</AttributeName>
           <AttributeName Language="F#">[&lt;System.CLSCompliant(false)&gt;]</AttributeName>
         </Attribute>
@@ -3713,7 +3712,7 @@
 ## Examples
  The following example demonstrates converting an enumerated value to a string.
 
- :::code language="csharp" source="~/snippets/csharp/System/Enum/ToString/source.cs" interactive="try-dotnet" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System/Enum/ToString/source.cs" id="Snippet1":::
  :::code language="fsharp" source="~/snippets/fsharp/System/Enum/ToString/source.fs" id="Snippet1":::
  :::code language="vb" source="~/snippets/visualbasic/System/Enum/ToString/source.vb" id="Snippet1":::
 
@@ -3737,7 +3736,7 @@
       </Docs>
     </Member>
     <Member MemberName="ToString">
-      <MemberSignature Language="C#" Value="public string ToString (IFormatProvider? provider);" FrameworkAlternate="net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-3.0;netcore-3.1;netframework-4.6.2-pp;netframework-4.7.1-pp;netframework-4.7.2-pp;netframework-4.7-pp;netframework-4.8.1-pp;netframework-4.8-pp" />
+      <MemberSignature Language="C#" Value="public string ToString (IFormatProvider? provider);" FrameworkAlternate="net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-3.0;netcore-3.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ToString(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.ToString(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (provider As IFormatProvider) As String" />
@@ -3777,7 +3776,7 @@
           <AttributeName Language="C#">[System.Obsolete("The provider argument is not used. Use ToString() instead.")]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Obsolete("The provider argument is not used. Use ToString() instead.")&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="net-5.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.6.2-pp;netframework-4.7;netframework-4.7.1;netframework-4.7.1-pp;netframework-4.7.2;netframework-4.7.2-pp;netframework-4.7-pp;netframework-4.8;netframework-4.8.1;netframework-4.8.1-pp;netframework-4.8-pp;netstandard-2.0;netstandard-2.1">
+        <Attribute FrameworkAlternate="net-5.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1">
           <AttributeName Language="C#">[System.Obsolete("The provider argument is not used. Please use ToString().")]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Obsolete("The provider argument is not used. Please use ToString().")&gt;]</AttributeName>
         </Attribute>
@@ -3809,7 +3808,7 @@
       <MemberSignature Language="VB.NET" Value="Public Function ToString (format As String) As String" />
       <MemberSignature Language="F#" Value="override this.ToString : string -&gt; string" Usage="enum.ToString format" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(System::String ^ format);" />
-      <MemberSignature Language="C#" Value="public string ToString (string? format);" FrameworkAlternate="net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-3.0;netcore-3.1;netframework-4.6.2-pp;netframework-4.7.1-pp;netframework-4.7.2-pp;netframework-4.7-pp;netframework-4.8.1-pp;netframework-4.8-pp" />
+      <MemberSignature Language="C#" Value="public string ToString (string? format);" FrameworkAlternate="net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -3877,7 +3876,7 @@
 ## Examples
  The following example demonstrates how to convert an enumerated value to a string.
 
- :::code language="csharp" source="~/snippets/csharp/System/Enum/ToString/tostr.cs" interactive="try-dotnet" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System/Enum/ToString/tostr.cs" id="Snippet1":::
  :::code language="fsharp" source="~/snippets/fsharp/System/Enum/ToString/tostr.fs" id="Snippet1":::
  :::code language="vb" source="~/snippets/visualbasic/System/Enum/ToString/tostr.vb" id="Snippet1":::
 
@@ -3908,7 +3907,7 @@
       </Docs>
     </Member>
     <Member MemberName="ToString">
-      <MemberSignature Language="C#" Value="public string ToString (string? format, IFormatProvider? provider);" FrameworkAlternate="net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-3.0;netcore-3.1;netframework-4.6.2-pp;netframework-4.7.1-pp;netframework-4.7.2-pp;netframework-4.7-pp;netframework-4.8.1-pp;netframework-4.8-pp" />
+      <MemberSignature Language="C#" Value="public string ToString (string? format, IFormatProvider? provider);" FrameworkAlternate="net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-3.0;netcore-3.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ToString(string format, class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.ToString(System.String,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (format As String, provider As IFormatProvider) As String" />
@@ -3948,7 +3947,7 @@
           <AttributeName Language="C#">[System.Obsolete("The provider argument is not used. Use ToString(String) instead.")]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Obsolete("The provider argument is not used. Use ToString(String) instead.")&gt;]</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="net-5.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.6.2-pp;netframework-4.7;netframework-4.7.1;netframework-4.7.1-pp;netframework-4.7.2;netframework-4.7.2-pp;netframework-4.7-pp;netframework-4.8;netframework-4.8.1;netframework-4.8.1-pp;netframework-4.8-pp;netstandard-2.0;netstandard-2.1">
+        <Attribute FrameworkAlternate="net-5.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-2.0;netstandard-2.1">
           <AttributeName Language="C#">[System.Obsolete("The provider argument is not used. Please use ToString(String).")]</AttributeName>
           <AttributeName Language="F#">[&lt;System.Obsolete("The provider argument is not used. Please use ToString(String).")&gt;]</AttributeName>
         </Attribute>
@@ -4124,7 +4123,7 @@
       </Docs>
     </Member>
     <Member MemberName="TryParse">
-      <MemberSignature Language="C#" Value="public static bool TryParse (Type enumType, string? value, out object? result);" FrameworkAlternate="net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-3.0;netcore-3.1;netframework-4.6.2-pp;netframework-4.7.1-pp;netframework-4.7.2-pp;netframework-4.7-pp;netframework-4.8.1-pp;netframework-4.8-pp" />
+      <MemberSignature Language="C#" Value="public static bool TryParse (Type enumType, string? value, out object? result);" FrameworkAlternate="net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-3.0;netcore-3.1" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(class System.Type enumType, string value, [out] object&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.TryParse(System.Type,System.String,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (enumType As Type, value As String, ByRef result As Object) As Boolean" />
@@ -4247,7 +4246,7 @@
       </Docs>
     </Member>
     <Member MemberName="TryParse">
-      <MemberSignature Language="C#" Value="public static bool TryParse (Type enumType, string? value, bool ignoreCase, out object? result);" FrameworkAlternate="net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-3.0;netcore-3.1;netframework-4.6.2-pp;netframework-4.7.1-pp;netframework-4.7.2-pp;netframework-4.7-pp;netframework-4.8.1-pp;netframework-4.8-pp" />
+      <MemberSignature Language="C#" Value="public static bool TryParse (Type enumType, string? value, bool ignoreCase, out object? result);" FrameworkAlternate="net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-3.0;netcore-3.1" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(class System.Type enumType, string value, bool ignoreCase, [out] object&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.TryParse(System.Type,System.String,System.Boolean,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (enumType As Type, value As String, ignoreCase As Boolean, ByRef result As Object) As Boolean" />
@@ -4368,7 +4367,7 @@
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse(Of TEnum As Structure) (value As String, ByRef result As TEnum) As Boolean" />
       <MemberSignature Language="F#" Value="static member TryParse : string * 'Enum -&gt; bool (requires 'Enum : struct)" Usage="System.Enum.TryParse (value, result)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TEnum&gt;&#xA; where TEnum : value class static bool TryParse(System::String ^ value, [Runtime::InteropServices::Out] TEnum % result);" />
-      <MemberSignature Language="C#" Value="public static bool TryParse&lt;TEnum&gt; (string? value, out TEnum result) where TEnum : struct;" FrameworkAlternate="net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-3.0;netcore-3.1;netframework-4.6.2-pp;netframework-4.7.1-pp;netframework-4.7.2-pp;netframework-4.7-pp;netframework-4.8.1-pp;netframework-4.8-pp" />
+      <MemberSignature Language="C#" Value="public static bool TryParse&lt;TEnum&gt; (string? value, out TEnum result) where TEnum : struct;" FrameworkAlternate="net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4415,7 +4414,7 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="value" Type="System.String" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.6.2-pp;netframework-4.7;netframework-4.7.1;netframework-4.7.1-pp;netframework-4.7.2;netframework-4.7.2-pp;netframework-4.7-pp;netframework-4.8;netframework-4.8.1;netframework-4.8.1-pp;netframework-4.8-pp;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1">
+        <Parameter Name="value" Type="System.String" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1">
           <Attributes>
             <Attribute FrameworkAlternate="net-10.0;net-6.0;net-7.0;net-8.0;net-9.0">
               <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.NotNullWhen(true)]</AttributeName>
@@ -4427,7 +4426,7 @@
             </Attribute>
           </Attributes>
         </Parameter>
-        <Parameter Name="result" Type="TEnum" RefType="out" Index="1" FrameworkAlternate="dotnet-uwp-10.0;net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.6.2-pp;netframework-4.7;netframework-4.7.1;netframework-4.7.1-pp;netframework-4.7.2;netframework-4.7.2-pp;netframework-4.7-pp;netframework-4.8;netframework-4.8.1;netframework-4.8.1-pp;netframework-4.8-pp;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+        <Parameter Name="result" Type="TEnum" RefType="out" Index="1" FrameworkAlternate="dotnet-uwp-10.0;net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <typeparam name="TEnum">The enumeration type to which to convert <paramref name="value" />.</typeparam>
@@ -4452,7 +4451,7 @@ If the parse operation fails, the `result` parameter contains the default value 
 ## Examples
  The following example defines a `Colors` enumeration, calls the <xref:System.Enum.TryParse%60%601%28System.String%2C%60%600%40%29> method to convert strings to their corresponding enumeration values, and calls the <xref:System.Enum.IsDefined%2A> method to ensure that particular integral values are underlying values in the `Colors` enumeration.
 
- :::code language="csharp" source="~/snippets/csharp/System/Enum/TryParseTEnum/tryparse1.cs" interactive="try-dotnet" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System/Enum/TryParseTEnum/tryparse1.cs" id="Snippet1":::
  :::code language="fsharp" source="~/snippets/fsharp/System/Enum/TryParseTEnum/tryparse1.fs" id="Snippet1":::
  :::code language="vb" source="~/snippets/visualbasic/System/Enum/TryParseTEnum/tryparse1.vb" id="Snippet1":::
 
@@ -4525,7 +4524,7 @@ If the parse operation fails, the `result` parameter contains the default value 
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse(Of TEnum As Structure) (value As String, ignoreCase As Boolean, ByRef result As TEnum) As Boolean" />
       <MemberSignature Language="F#" Value="static member TryParse : string * bool * 'Enum -&gt; bool (requires 'Enum : struct)" Usage="System.Enum.TryParse (value, ignoreCase, result)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TEnum&gt;&#xA; where TEnum : value class static bool TryParse(System::String ^ value, bool ignoreCase, [Runtime::InteropServices::Out] TEnum % result);" />
-      <MemberSignature Language="C#" Value="public static bool TryParse&lt;TEnum&gt; (string? value, bool ignoreCase, out TEnum result) where TEnum : struct;" FrameworkAlternate="net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-3.0;netcore-3.1;netframework-4.6.2-pp;netframework-4.7.1-pp;netframework-4.7.2-pp;netframework-4.7-pp;netframework-4.8.1-pp;netframework-4.8-pp" />
+      <MemberSignature Language="C#" Value="public static bool TryParse&lt;TEnum&gt; (string? value, bool ignoreCase, out TEnum result) where TEnum : struct;" FrameworkAlternate="net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-3.0;netcore-3.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -4572,7 +4571,7 @@ If the parse operation fails, the `result` parameter contains the default value 
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="value" Type="System.String" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.6.2-pp;netframework-4.7;netframework-4.7.1;netframework-4.7.1-pp;netframework-4.7.2;netframework-4.7.2-pp;netframework-4.7-pp;netframework-4.8;netframework-4.8.1;netframework-4.8.1-pp;netframework-4.8-pp;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1">
+        <Parameter Name="value" Type="System.String" Index="0" FrameworkAlternate="dotnet-uwp-10.0;net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1">
           <Attributes>
             <Attribute FrameworkAlternate="net-10.0;net-6.0;net-7.0;net-8.0;net-9.0">
               <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.NotNullWhen(true)]</AttributeName>
@@ -4584,8 +4583,8 @@ If the parse operation fails, the `result` parameter contains the default value 
             </Attribute>
           </Attributes>
         </Parameter>
-        <Parameter Name="ignoreCase" Type="System.Boolean" Index="1" FrameworkAlternate="dotnet-uwp-10.0;net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.6.2-pp;netframework-4.7;netframework-4.7.1;netframework-4.7.1-pp;netframework-4.7.2;netframework-4.7.2-pp;netframework-4.7-pp;netframework-4.8;netframework-4.8.1;netframework-4.8.1-pp;netframework-4.8-pp;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
-        <Parameter Name="result" Type="TEnum" RefType="out" Index="2" FrameworkAlternate="dotnet-uwp-10.0;net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.6.2-pp;netframework-4.7;netframework-4.7.1;netframework-4.7.1-pp;netframework-4.7.2;netframework-4.7.2-pp;netframework-4.7-pp;netframework-4.8;netframework-4.8.1;netframework-4.8.1-pp;netframework-4.8-pp;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+        <Parameter Name="ignoreCase" Type="System.Boolean" Index="1" FrameworkAlternate="dotnet-uwp-10.0;net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
+        <Parameter Name="result" Type="TEnum" RefType="out" Index="2" FrameworkAlternate="dotnet-uwp-10.0;net-10.0;net-5.0;net-6.0;net-7.0;net-8.0;net-9.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netframework-4.8.1;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <typeparam name="TEnum">The enumeration type to which to convert <paramref name="value" />.</typeparam>
@@ -4612,7 +4611,7 @@ If the parse operation fails, the `result` parameter contains the default value 
 ## Examples
  The following example defines a `Colors` enumeration, calls the <xref:System.Enum.TryParse%60%601%28System.String%2CSystem.Boolean%2C%60%600%40%29> method to convert strings to their corresponding enumeration values, and calls the <xref:System.Enum.IsDefined%2A> method to ensure that particular integral values are underlying values in the `Colors` enumeration. The <xref:System.Enum.TryParse%60%601%28System.String%2CSystem.Boolean%2C%60%600%40%29> method uses case-insensitive comparison when trying to convert the string representations of named constants to their equivalent enumeration values.
 
- :::code language="csharp" source="~/snippets/csharp/System/Enum/TryParseTEnum/tryparse2.cs" interactive="try-dotnet" id="Snippet2":::
+ :::code language="csharp" source="~/snippets/csharp/System/Enum/TryParseTEnum/tryparse2.cs" id="Snippet2":::
  :::code language="fsharp" source="~/snippets/fsharp/System/Enum/TryParseTEnum/tryparse2.fs" id="Snippet2":::
  :::code language="vb" source="~/snippets/visualbasic/System/Enum/TryParseTEnum/tryparse2.vb" id="Snippet2":::
 

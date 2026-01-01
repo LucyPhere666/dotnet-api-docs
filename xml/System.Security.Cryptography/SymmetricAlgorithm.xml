@@ -653,7 +653,7 @@ We recommend that you specify the algorithm by calling the <xref:System.Security
 ## Examples
  The following example encrypts a string using the transform object returned from the <xref:System.Security.Cryptography.SymmetricAlgorithm.CreateEncryptor%2A> method.
 
- :::code language="csharp" source="~/snippets/csharp/System.Security.Cryptography/SymmetricAlgorithm/CreateEncryptor/encryptor.cs" interactive="try-dotnet" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Security.Cryptography/SymmetricAlgorithm/CreateEncryptor/encryptor.cs" id="Snippet1":::
  :::code language="vb" source="~/snippets/visualbasic/System.Security.Cryptography/SymmetricAlgorithm/CreateEncryptor/encryptor.vb" id="Snippet1":::
 
  ]]></format>
@@ -2860,7 +2860,7 @@ Allows an <see cref="T:System.Object" /> to attempt to free resources and perfor
 ## Examples
  The following example shows the value of <xref:System.Security.Cryptography.SymmetricAlgorithm.LegalKeySizes%2A> for the AES symmetric algorithm.
 
- :::code language="csharp" source="~/snippets/csharp/System.Security.Cryptography/SymmetricAlgorithm/LegalBlockSizes/program.cs" interactive="try-dotnet" id="Snippet1":::
+ :::code language="csharp" source="~/snippets/csharp/System.Security.Cryptography/SymmetricAlgorithm/LegalBlockSizes/program.cs" id="Snippet1":::
  :::code language="vb" source="~/snippets/visualbasic/System.Security.Cryptography/SymmetricAlgorithm/LegalBlockSizes/program.vb" id="Snippet1":::
 
  ]]></format>
@@ -3173,9 +3173,14 @@ Allows an <see cref="T:System.Object" /> to attempt to free resources and perfor
         <Parameter Name="key" Type="System.ReadOnlySpan&lt;System.Byte&gt;" Index="0" FrameworkAlternate="net-10.0" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="key">The new key for this instance.</param>
+        <summary>Sets the key for this instance.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">
+          <para>The key size is invalid.</para>
+          <para>-or-</para>
+          <para>An error occurred while setting the key.</para>
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="SetKeyCore">
@@ -3203,9 +3208,14 @@ Allows an <see cref="T:System.Object" /> to attempt to free resources and perfor
         <Parameter Name="key" Type="System.ReadOnlySpan&lt;System.Byte&gt;" Index="0" FrameworkAlternate="net-10.0" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="key">The new key for this instance.</param>
+        <summary>Sets the key for this instance.</summary>
+        <remarks>
+          <para>Other callers are expected to similarly ensure that this method is only called with validly sized inputs.</para>
+          <para>The base class implementation is to assign the <see cref="P:System.Security.Cryptography.SymmetricAlgorithm.Key" /> property.</para>
+          <para>Derived types should override this method to avoid copying the key into a new array.</para>
+        </remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">An error occurred while setting the key.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.IDisposable.Dispose">

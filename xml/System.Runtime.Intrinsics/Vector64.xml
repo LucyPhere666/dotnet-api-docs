@@ -185,6 +185,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.AddSaturate``1(System.Runtime.Intrinsics.Vector128{``0},System.Runtime.Intrinsics.Vector128{``0})" />
       </Docs>
     </Member>
     <Member MemberName="All&lt;T&gt;">
@@ -230,6 +231,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.All``1(System.Runtime.Intrinsics.Vector128{``0},``0)" />
       </Docs>
     </Member>
     <Member MemberName="AllWhereAllBitsSet&lt;T&gt;">
@@ -266,6 +268,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.AllWhereAllBitsSet``1(System.Runtime.Intrinsics.Vector128{``0})" />
       </Docs>
     </Member>
     <Member MemberName="AndNot&lt;T&gt;">
@@ -371,6 +374,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.Any``1(System.Runtime.Intrinsics.Vector128{``0},``0)" />
       </Docs>
     </Member>
     <Member MemberName="AnyWhereAllBitsSet&lt;T&gt;">
@@ -407,6 +411,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.AnyWhereAllBitsSet``1(System.Runtime.Intrinsics.Vector128{``0})" />
       </Docs>
     </Member>
     <Member MemberName="As&lt;T,U&gt;">
@@ -1425,14 +1430,14 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <param name="min">To be added.</param>
-        <param name="max">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of the elements in the vector.</typeparam>
+        <param name="value">The vector to restrict.</param>
+        <param name="min">The minimum value.</param>
+        <param name="max">The maximum value.</param>
+        <summary>Restricts a vector between a minimum and a maximum value.</summary>
+        <returns>The restricted vector.</returns>
         <remarks>To be added.</remarks>
-        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.Clamp``1(System.Runtime.Intrinsics.Vector128{``0},System.Runtime.Intrinsics.Vector128{``0},System.Runtime.Intrinsics.Vector128{``0})" />
+        <exception cref="T:System.NotSupportedException">The type of the elements in the vector (<typeparamref name="T" />) is not supported.</exception>
       </Docs>
     </Member>
     <Member MemberName="ClampNative&lt;T&gt;">
@@ -2173,10 +2178,11 @@
         <Parameter Name="vector" Type="System.Runtime.Intrinsics.Vector64&lt;System.Double&gt;" Index="0" FrameworkAlternate="net-10.0;net-9.0" />
       </Parameters>
       <Docs>
-        <param name="vector">The vector that will have its Cos computed.</param>
-        <summary>Computes the cos of each element in a vector.</summary>
-        <returns>A vector whose elements are the cos of the elements in <paramref name="vector" />.</returns>
+        <param name="vector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.Cos(System.Runtime.Intrinsics.Vector128{System.Double})" />
       </Docs>
     </Member>
     <Member MemberName="Cos">
@@ -2199,10 +2205,11 @@
         <Parameter Name="vector" Type="System.Runtime.Intrinsics.Vector64&lt;System.Single&gt;" Index="0" FrameworkAlternate="net-10.0;net-9.0" />
       </Parameters>
       <Docs>
-        <param name="vector">The vector that will have its Cos computed.</param>
-        <summary>Computes the cos of each element in a vector.</summary>
-        <returns>A vector whose elements are the cos of the elements in <paramref name="vector" />.</returns>
+        <param name="vector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.Cos(System.Runtime.Intrinsics.Vector128{System.Single})" />
       </Docs>
     </Member>
     <Member MemberName="Count&lt;T&gt;">
@@ -2248,6 +2255,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.Count``1(System.Runtime.Intrinsics.Vector128{``0},``0)" />
       </Docs>
     </Member>
     <Member MemberName="CountWhereAllBitsSet&lt;T&gt;">
@@ -2284,6 +2292,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.CountWhereAllBitsSet``1(System.Runtime.Intrinsics.Vector128{``0})" />
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -3278,7 +3287,7 @@ On x86, this method corresponds to __m64 _mm_setr_pi8
       <Docs>
         <typeparam name="T">The type of the elements in the vector.</typeparam>
         <param name="values">The array from which the vector is created.</param>
-        <param name="index">The index in <paramref name="values" /> at which to being reading elements.</param>
+        <param name="index">The index in <paramref name="values" /> at which to begin reading elements.</param>
         <summary>Creates a new <see cref="T:System.Runtime.Intrinsics.Vector64`1" /> from a given array.</summary>
         <returns>A new <see cref="T:System.Runtime.Intrinsics.Vector64`1" /> with its elements set to the first <see cref="P:System.Runtime.Intrinsics.Vector128`1.Count" /> elements from <paramref name="values" />.</returns>
         <remarks>To be added.</remarks>
@@ -4234,10 +4243,11 @@ On x86, this method corresponds to __m64 _mm_setr_pi8
         <Parameter Name="degrees" Type="System.Runtime.Intrinsics.Vector64&lt;System.Double&gt;" Index="0" FrameworkAlternate="net-10.0;net-9.0" />
       </Parameters>
       <Docs>
-        <param name="degrees">The vector to convert to radians.</param>
-        <summary>Converts a given vector from degrees to radians.</summary>
-        <returns>The vector of <paramref name="degrees" /> converted to radians.</returns>
+        <param name="degrees">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.DegreesToRadians(System.Runtime.Intrinsics.Vector128{System.Double})" />
       </Docs>
     </Member>
     <Member MemberName="DegreesToRadians">
@@ -4260,10 +4270,11 @@ On x86, this method corresponds to __m64 _mm_setr_pi8
         <Parameter Name="degrees" Type="System.Runtime.Intrinsics.Vector64&lt;System.Single&gt;" Index="0" FrameworkAlternate="net-10.0;net-9.0" />
       </Parameters>
       <Docs>
-        <param name="degrees">The vector to convert to radians.</param>
-        <summary>Converts a given vector from degrees to radians.</summary>
-        <returns>The vector of <paramref name="degrees" /> converted to radians.</returns>
+        <param name="degrees">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.DegreesToRadians(System.Runtime.Intrinsics.Vector128{System.Single})" />
       </Docs>
     </Member>
     <Member MemberName="Divide&lt;T&gt;">
@@ -4630,10 +4641,11 @@ On x86, this method corresponds to __m64 _mm_setr_pi8
         <Parameter Name="vector" Type="System.Runtime.Intrinsics.Vector64&lt;System.Double&gt;" Index="0" FrameworkAlternate="net-10.0;net-9.0" />
       </Parameters>
       <Docs>
-        <param name="vector">The vector that will have its Exp computed.</param>
-        <summary>Computes the exp of each element in a vector.</summary>
-        <returns>A vector whose elements are the exp of the elements in <paramref name="vector" />.</returns>
+        <param name="vector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.Exp(System.Runtime.Intrinsics.Vector128{System.Double})" />
       </Docs>
     </Member>
     <Member MemberName="Exp">
@@ -4656,10 +4668,11 @@ On x86, this method corresponds to __m64 _mm_setr_pi8
         <Parameter Name="vector" Type="System.Runtime.Intrinsics.Vector64&lt;System.Single&gt;" Index="0" FrameworkAlternate="net-10.0;net-9.0" />
       </Parameters>
       <Docs>
-        <param name="vector">The vector that will have its exp computed.</param>
-        <summary>Computes the exp of each element in a vector.</summary>
-        <returns>A vector whose elements are the exp of the elements in <paramref name="vector" />.</returns>
+        <param name="vector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.Exp(System.Runtime.Intrinsics.Vector128{System.Single})" />
       </Docs>
     </Member>
     <Member MemberName="ExtractMostSignificantBits&lt;T&gt;">
@@ -4793,15 +4806,13 @@ On x86, this method corresponds to __m64 _mm_setr_pi8
         <Parameter Name="addend" Type="System.Runtime.Intrinsics.Vector64&lt;System.Double&gt;" Index="2" FrameworkAlternate="net-10.0;net-9.0" />
       </Parameters>
       <Docs>
-        <param name="left">The vector to be multiplied with <paramref name="right" />.</param>
-        <param name="right">The vector to be multiplied with <paramref name="left" />.</param>
-        <param name="addend">The vector to be added to the result of <paramref name="left" /> multiplied by <paramref name="right" />.</param>
-        <summary>Computes (<paramref name="left" /> * <paramref name="right" />) + <paramref name="addend" />, rounded as one ternary operation.</summary>
-        <returns>(<paramref name="left" /> * <paramref name="right" />) + <paramref name="addend" />, rounded as one ternary operation.</returns>
-        <remarks>
-          <para>This computes (<paramref name="left" /> * <paramref name="right" />) as if to infinite precision, adds <paramref name="addend" /> to that result as if to infinite precision, and finally rounds to the nearest representable value.</para>
-          <para>This differs from the non-fused sequence, which would compute (<paramref name="left" /> * <paramref name="right" />) as if to infinite precision, round the result to the nearest representable value, add <paramref name="addend" /> to the rounded result as if to infinite precision, and finally round to the nearest representable value.</para>
-        </remarks>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <param name="addend">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.FusedMultiplyAdd(System.Runtime.Intrinsics.Vector128{System.Double},System.Runtime.Intrinsics.Vector128{System.Double},System.Runtime.Intrinsics.Vector128{System.Double})" />
       </Docs>
     </Member>
     <Member MemberName="FusedMultiplyAdd">
@@ -4826,15 +4837,13 @@ On x86, this method corresponds to __m64 _mm_setr_pi8
         <Parameter Name="addend" Type="System.Runtime.Intrinsics.Vector64&lt;System.Single&gt;" Index="2" FrameworkAlternate="net-10.0;net-9.0" />
       </Parameters>
       <Docs>
-        <param name="left">The vector to be multiplied with <paramref name="right" />.</param>
-        <param name="right">The vector to be multiplied with <paramref name="left" />.</param>
-        <param name="addend">The vector to be added to the result of <paramref name="left" /> multiplied by <paramref name="right" />.</param>
-        <summary>Computes (<paramref name="left" /> * <paramref name="right" />) + <paramref name="addend" />, rounded as one ternary operation.</summary>
-        <returns>(<paramref name="left" /> * <paramref name="right" />) + <paramref name="addend" />, rounded as one ternary operation.</returns>
-        <remarks>
-          <para>This computes (<paramref name="left" /> * <paramref name="right" />) as if to infinite precision, adds <paramref name="addend" /> to that result as if to infinite precision, and finally rounds to the nearest representable value.</para>
-          <para>This differs from the non-fused sequence, would compute (<paramref name="left" /> * <paramref name="right" />) as if to infinite precision, round the result to the nearest representable value, add <paramref name="addend" /> to the rounded result as if to infinite precision, and finally round to the nearest representable value.</para>
-        </remarks>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <param name="addend">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.FusedMultiplyAdd(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
       </Docs>
     </Member>
     <Member MemberName="GetElement&lt;T&gt;">
@@ -5258,11 +5267,12 @@ On x86, this method corresponds to __m64 _mm_setr_pi8
         <Parameter Name="y" Type="System.Runtime.Intrinsics.Vector64&lt;System.Double&gt;" Index="1" FrameworkAlternate="net-10.0;net-9.0" />
       </Parameters>
       <Docs>
-        <param name="x">The vector to square and add to <paramref name="y" />.</param>
-        <param name="y">The vector to square and add to <paramref name="x" />.</param>
-        <summary>Computes the hypotenuse given two vectors representing the lengths of the shorter sides in a right-angled triangle.</summary>
-        <returns>The square root of <paramref name="x" />-squared plus <paramref name="y" />-squared.</returns>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.Hypot(System.Runtime.Intrinsics.Vector128{System.Double},System.Runtime.Intrinsics.Vector128{System.Double})" />
       </Docs>
     </Member>
     <Member MemberName="Hypot">
@@ -5286,11 +5296,12 @@ On x86, this method corresponds to __m64 _mm_setr_pi8
         <Parameter Name="y" Type="System.Runtime.Intrinsics.Vector64&lt;System.Single&gt;" Index="1" FrameworkAlternate="net-10.0;net-9.0" />
       </Parameters>
       <Docs>
-        <param name="x">The vector to square and add to <paramref name="y" />.</param>
-        <param name="y">The vector to square and add to <paramref name="x" />.</param>
-        <summary>Computes the hypotenuse given two vectors representing the lengths of the shorter sides in a right-angled triangle.</summary>
-        <returns>The square root of <paramref name="x" />-squared plus <paramref name="y" />-squared.</returns>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.Hypot(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
       </Docs>
     </Member>
     <Member MemberName="IndexOf&lt;T&gt;">
@@ -5336,6 +5347,7 @@ On x86, this method corresponds to __m64 _mm_setr_pi8
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.IndexOf``1(System.Runtime.Intrinsics.Vector128{``0},``0)" />
       </Docs>
     </Member>
     <Member MemberName="IndexOfWhereAllBitsSet&lt;T&gt;">
@@ -5372,6 +5384,7 @@ On x86, this method corresponds to __m64 _mm_setr_pi8
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.IndexOfWhereAllBitsSet``1(System.Runtime.Intrinsics.Vector128{``0})" />
       </Docs>
     </Member>
     <Member MemberName="IsEvenInteger&lt;T&gt;">
@@ -5414,6 +5427,7 @@ On x86, this method corresponds to __m64 _mm_setr_pi8
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.IsEvenInteger``1(System.Runtime.Intrinsics.Vector128{``0})" />
       </Docs>
     </Member>
     <Member MemberName="IsFinite&lt;T&gt;">
@@ -5456,6 +5470,7 @@ On x86, this method corresponds to __m64 _mm_setr_pi8
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.IsFinite``1(System.Runtime.Intrinsics.Vector128{``0})" />
       </Docs>
     </Member>
     <Member MemberName="IsHardwareAccelerated">
@@ -5531,6 +5546,7 @@ On x86, this method corresponds to __m64 _mm_setr_pi8
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.IsInfinity``1(System.Runtime.Intrinsics.Vector128{``0})" />
       </Docs>
     </Member>
     <Member MemberName="IsInteger&lt;T&gt;">
@@ -5573,6 +5589,7 @@ On x86, this method corresponds to __m64 _mm_setr_pi8
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.IsInteger``1(System.Runtime.Intrinsics.Vector128{``0})" />
       </Docs>
     </Member>
     <Member MemberName="IsNaN&lt;T&gt;">
@@ -5703,6 +5720,7 @@ On x86, this method corresponds to __m64 _mm_setr_pi8
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.IsNegativeInfinity``1(System.Runtime.Intrinsics.Vector128{``0})" />
       </Docs>
     </Member>
     <Member MemberName="IsNormal&lt;T&gt;">
@@ -5745,6 +5763,7 @@ On x86, this method corresponds to __m64 _mm_setr_pi8
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.IsNormal``1(System.Runtime.Intrinsics.Vector128{``0})" />
       </Docs>
     </Member>
     <Member MemberName="IsOddInteger&lt;T&gt;">
@@ -5787,6 +5806,7 @@ On x86, this method corresponds to __m64 _mm_setr_pi8
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.IsOddInteger``1(System.Runtime.Intrinsics.Vector128{``0})" />
       </Docs>
     </Member>
     <Member MemberName="IsPositive&lt;T&gt;">
@@ -5917,6 +5937,7 @@ On x86, this method corresponds to __m64 _mm_setr_pi8
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.IsSubnormal``1(System.Runtime.Intrinsics.Vector128{``0})" />
       </Docs>
     </Member>
     <Member MemberName="IsZero&lt;T&gt;">
@@ -6006,6 +6027,7 @@ On x86, this method corresponds to __m64 _mm_setr_pi8
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.LastIndexOf``1(System.Runtime.Intrinsics.Vector128{``0},``0)" />
       </Docs>
     </Member>
     <Member MemberName="LastIndexOfWhereAllBitsSet&lt;T&gt;">
@@ -6042,6 +6064,7 @@ On x86, this method corresponds to __m64 _mm_setr_pi8
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.LastIndexOfWhereAllBitsSet``1(System.Runtime.Intrinsics.Vector128{``0})" />
       </Docs>
     </Member>
     <Member MemberName="Lerp">
@@ -6066,12 +6089,13 @@ On x86, this method corresponds to __m64 _mm_setr_pi8
         <Parameter Name="amount" Type="System.Runtime.Intrinsics.Vector64&lt;System.Double&gt;" Index="2" FrameworkAlternate="net-10.0;net-9.0" />
       </Parameters>
       <Docs>
-        <param name="x">The first vector.</param>
-        <param name="y">The second vector.</param>
-        <param name="amount">A value between 0 and 1 that indicates the weight of <paramref name="y" />.</param>
-        <summary>Performs a linear interpolation between two vectors based on the given weighting.</summary>
-        <returns>The interpolated vector.</returns>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="amount">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.Lerp(System.Runtime.Intrinsics.Vector128{System.Double},System.Runtime.Intrinsics.Vector128{System.Double},System.Runtime.Intrinsics.Vector128{System.Double})" />
       </Docs>
     </Member>
     <Member MemberName="Lerp">
@@ -6096,12 +6120,13 @@ On x86, this method corresponds to __m64 _mm_setr_pi8
         <Parameter Name="amount" Type="System.Runtime.Intrinsics.Vector64&lt;System.Single&gt;" Index="2" FrameworkAlternate="net-10.0;net-9.0" />
       </Parameters>
       <Docs>
-        <param name="x">The first vector.</param>
-        <param name="y">The second vector.</param>
-        <param name="amount">A value between 0 and 1 that indicates the weight of <paramref name="y" />.</param>
-        <summary>Performs a linear interpolation between two vectors based on the given weighting.</summary>
-        <returns>The interpolated vector.</returns>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <param name="amount">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.Lerp(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
       </Docs>
     </Member>
     <Member MemberName="LessThan&lt;T&gt;">
@@ -6618,7 +6643,7 @@ This method may bypass the cache on certain platforms.
       </Docs>
     </Member>
     <Member MemberName="LoadUnsafe&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector64&lt;T&gt; LoadUnsafe&lt;T&gt; (ref T source);" FrameworkAlternate="net-10.0;net-8.0;net-9.0" />
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector64&lt;T&gt; LoadUnsafe&lt;T&gt; (ref readonly T source);" FrameworkAlternate="net-10.0;net-8.0;net-9.0" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector64`1&lt;!!T&gt; LoadUnsafe&lt;T&gt;([in]!!T&amp; source) cil managed" FrameworkAlternate="net-10.0;net-8.0;net-9.0" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector64.LoadUnsafe``1(``0@)" />
       <MemberSignature Language="VB.NET" Value="Public Function LoadUnsafe(Of T) (ByRef source As T) As Vector64(Of T)" FrameworkAlternate="net-10.0;net-8.0;net-9.0" />
@@ -6676,7 +6701,7 @@ This method may bypass the cache on certain platforms.
       </Docs>
     </Member>
     <Member MemberName="LoadUnsafe&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector64&lt;T&gt; LoadUnsafe&lt;T&gt; (ref T source, UIntPtr elementOffset);" FrameworkAlternate="net-10.0;net-8.0;net-9.0" />
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector64&lt;T&gt; LoadUnsafe&lt;T&gt; (ref readonly T source, UIntPtr elementOffset);" FrameworkAlternate="net-10.0;net-8.0;net-9.0" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector64`1&lt;!!T&gt; LoadUnsafe&lt;T&gt;([in]!!T&amp; source, native unsigned int elementOffset) cil managed" FrameworkAlternate="net-10.0;net-8.0;net-9.0" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.Vector64.LoadUnsafe``1(``0@,System.UIntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Function LoadUnsafe(Of T) (ByRef source As T, elementOffset As UIntPtr) As Vector64(Of T)" FrameworkAlternate="net-10.0;net-8.0;net-9.0" />
@@ -6761,10 +6786,11 @@ This method may bypass the cache on certain platforms.
         <Parameter Name="vector" Type="System.Runtime.Intrinsics.Vector64&lt;System.Double&gt;" Index="0" FrameworkAlternate="net-10.0;net-9.0" />
       </Parameters>
       <Docs>
-        <param name="vector">The vector that will have its log computed.</param>
-        <summary>Computes the log of each element in a vector.</summary>
-        <returns>A vector whose elements are the log of the elements in <paramref name="vector" />.</returns>
+        <param name="vector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.Log(System.Runtime.Intrinsics.Vector128{System.Double})" />
       </Docs>
     </Member>
     <Member MemberName="Log">
@@ -6787,10 +6813,11 @@ This method may bypass the cache on certain platforms.
         <Parameter Name="vector" Type="System.Runtime.Intrinsics.Vector64&lt;System.Single&gt;" Index="0" FrameworkAlternate="net-10.0;net-9.0" />
       </Parameters>
       <Docs>
-        <param name="vector">The vector that will have its log computed.</param>
-        <summary>Computes the log of each element in a vector.</summary>
-        <returns>A vector whose elements are the log of the elements in <paramref name="vector" />.</returns>
+        <param name="vector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.Log(System.Runtime.Intrinsics.Vector128{System.Single})" />
       </Docs>
     </Member>
     <Member MemberName="Log2">
@@ -6813,10 +6840,11 @@ This method may bypass the cache on certain platforms.
         <Parameter Name="vector" Type="System.Runtime.Intrinsics.Vector64&lt;System.Double&gt;" Index="0" FrameworkAlternate="net-10.0;net-9.0" />
       </Parameters>
       <Docs>
-        <param name="vector">The vector that will have its log2 computed.</param>
-        <summary>Computes the log2 of each element in a vector.</summary>
-        <returns>A vector whose elements are the log2 of the elements in <paramref name="vector" />.</returns>
+        <param name="vector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.Log2(System.Runtime.Intrinsics.Vector128{System.Double})" />
       </Docs>
     </Member>
     <Member MemberName="Log2">
@@ -6839,10 +6867,11 @@ This method may bypass the cache on certain platforms.
         <Parameter Name="vector" Type="System.Runtime.Intrinsics.Vector64&lt;System.Single&gt;" Index="0" FrameworkAlternate="net-10.0;net-9.0" />
       </Parameters>
       <Docs>
-        <param name="vector">The vector that will have its log2 computed.</param>
-        <summary>Computes the log2 of each element in a vector.</summary>
-        <returns>A vector whose elements are the log2 of the elements in <paramref name="vector" />.</returns>
+        <param name="vector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.Log2(System.Runtime.Intrinsics.Vector128{System.Single})" />
       </Docs>
     </Member>
     <Member MemberName="Max&lt;T&gt;">
@@ -6901,9 +6930,8 @@ This method may bypass the cache on certain platforms.
         <param name="right">The vector to compare with <paramref name="left" />.</param>
         <summary>Computes the maximum of two vectors on a per-element basis.</summary>
         <returns>A vector whose elements are the maximum of the corresponding elements in <paramref name="left" /> and <paramref name="right" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>For <see cref="T:System.Numerics.IFloatingPoint`1" />, this method matches the IEEE 754:2019 <c>maximum</c> function. This requires NaN inputs to be propagated back to the caller and for <c>-0.0</c> to be treated as less than <c>+0.0</c>.</remarks>
         <exception cref="T:System.NotSupportedException">The type of <paramref name="left" /> and <paramref name="right" /> (<typeparamref name="T" />) is not supported.</exception>
-        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.Max``1(System.Runtime.Intrinsics.Vector128{``0},System.Runtime.Intrinsics.Vector128{``0})" />
       </Docs>
     </Member>
     <Member MemberName="MaxMagnitude&lt;T&gt;">
@@ -7174,9 +7202,8 @@ This method may bypass the cache on certain platforms.
         <param name="right">The vector to compare with <paramref name="left" />.</param>
         <summary>Computes the minimum of two vectors on a per-element basis.</summary>
         <returns>A vector whose elements are the minimum of the corresponding elements in <paramref name="left" /> and <paramref name="right" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>For <see cref="T:System.Numerics.IFloatingPoint`1" />, this method matches the IEEE 754:2019 <c>minimum</c> function. This requires NaN inputs to be propagated back to the caller and for <c>-0.0</c> to be treated as less than <c>+0.0</c>.</remarks>
         <exception cref="T:System.NotSupportedException">The type of <paramref name="left" /> and <paramref name="right" /> (<typeparamref name="T" />) is not supported.</exception>
-        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.Min``1(System.Runtime.Intrinsics.Vector128{``0},System.Runtime.Intrinsics.Vector128{``0})" />
       </Docs>
     </Member>
     <Member MemberName="MinMagnitude&lt;T&gt;">
@@ -7593,15 +7620,13 @@ This method may bypass the cache on certain platforms.
         <Parameter Name="addend" Type="System.Runtime.Intrinsics.Vector64&lt;System.Double&gt;" Index="2" FrameworkAlternate="net-10.0;net-9.0" />
       </Parameters>
       <Docs>
-        <param name="left">The vector to be multiplied with <paramref name="right" />.</param>
-        <param name="right">The vector to be multiplied with <paramref name="left" />.</param>
-        <param name="addend">The vector to be added to the result of <paramref name="left" /> multiplied by <paramref name="right" />.</param>
-        <summary>Computes an estimate of (<paramref name="left" /> * <paramref name="right" />) + <paramref name="addend" />.</summary>
-        <returns>An estimate of (<paramref name="left" /> * <paramref name="right" />) + <paramref name="addend" />.</returns>
-        <remarks>
-          <para>On hardware that natively supports <see cref="M:System.Runtime.Intrinsics.Vector64.FusedMultiplyAdd(System.Runtime.Intrinsics.Vector64{System.Double},System.Runtime.Intrinsics.Vector64{System.Double},System.Runtime.Intrinsics.Vector64{System.Double})" />, this may return a result that was rounded as one ternary operation.</para>
-          <para>On hardware without specialized support, this may just return (<paramref name="left" /> * <paramref name="right" />) + <paramref name="addend" />.</para>
-        </remarks>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <param name="addend">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.MultiplyAddEstimate(System.Runtime.Intrinsics.Vector128{System.Double},System.Runtime.Intrinsics.Vector128{System.Double},System.Runtime.Intrinsics.Vector128{System.Double})" />
       </Docs>
     </Member>
     <Member MemberName="MultiplyAddEstimate">
@@ -7626,15 +7651,13 @@ This method may bypass the cache on certain platforms.
         <Parameter Name="addend" Type="System.Runtime.Intrinsics.Vector64&lt;System.Single&gt;" Index="2" FrameworkAlternate="net-10.0;net-9.0" />
       </Parameters>
       <Docs>
-        <param name="left">The vector to be multiplied with <paramref name="right" />.</param>
-        <param name="right">The vector to be multiplied with <paramref name="left" />.</param>
-        <param name="addend">The vector to be added to the result of <paramref name="left" /> multiplied by <paramref name="right" />.</param>
-        <summary>Computes an estimate of (<paramref name="left" /> * <paramref name="right" />) + <paramref name="addend" />.</summary>
-        <returns>An estimate of (<paramref name="left" /> * <paramref name="right" />) + <paramref name="addend" />.</returns>
-        <remarks>
-          <para>On hardware that natively supports <see cref="M:System.Runtime.Intrinsics.Vector64.FusedMultiplyAdd(System.Runtime.Intrinsics.Vector64{System.Double},System.Runtime.Intrinsics.Vector64{System.Double},System.Runtime.Intrinsics.Vector64{System.Double})" />, this may return a result that was rounded as one ternary operation.</para>
-          <para>On hardware without specialized support, this may just return (<paramref name="left" /> * <paramref name="right" />) + <paramref name="addend" />.</para>
-        </remarks>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <param name="addend">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.MultiplyAddEstimate(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
       </Docs>
     </Member>
     <Member MemberName="Narrow">
@@ -7896,6 +7919,7 @@ This method may bypass the cache on certain platforms.
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.NarrowWithSaturation(System.Runtime.Intrinsics.Vector128{System.Double},System.Runtime.Intrinsics.Vector128{System.Double})" />
       </Docs>
     </Member>
     <Member MemberName="NarrowWithSaturation">
@@ -7929,6 +7953,7 @@ This method may bypass the cache on certain platforms.
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.NarrowWithSaturation(System.Runtime.Intrinsics.Vector128{System.Int16},System.Runtime.Intrinsics.Vector128{System.Int16})" />
       </Docs>
     </Member>
     <Member MemberName="NarrowWithSaturation">
@@ -7956,6 +7981,7 @@ This method may bypass the cache on certain platforms.
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.NarrowWithSaturation(System.Runtime.Intrinsics.Vector128{System.Int32},System.Runtime.Intrinsics.Vector128{System.Int32})" />
       </Docs>
     </Member>
     <Member MemberName="NarrowWithSaturation">
@@ -7983,6 +8009,7 @@ This method may bypass the cache on certain platforms.
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.NarrowWithSaturation(System.Runtime.Intrinsics.Vector128{System.Int64},System.Runtime.Intrinsics.Vector128{System.Int64})" />
       </Docs>
     </Member>
     <Member MemberName="NarrowWithSaturation">
@@ -8016,6 +8043,7 @@ This method may bypass the cache on certain platforms.
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.NarrowWithSaturation(System.Runtime.Intrinsics.Vector128{System.UInt16},System.Runtime.Intrinsics.Vector128{System.UInt16})" />
       </Docs>
     </Member>
     <Member MemberName="NarrowWithSaturation">
@@ -8049,6 +8077,7 @@ This method may bypass the cache on certain platforms.
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.NarrowWithSaturation(System.Runtime.Intrinsics.Vector128{System.UInt32},System.Runtime.Intrinsics.Vector128{System.UInt32})" />
       </Docs>
     </Member>
     <Member MemberName="NarrowWithSaturation">
@@ -8082,6 +8111,7 @@ This method may bypass the cache on certain platforms.
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.NarrowWithSaturation(System.Runtime.Intrinsics.Vector128{System.UInt64},System.Runtime.Intrinsics.Vector128{System.UInt64})" />
       </Docs>
     </Member>
     <Member MemberName="Negate&lt;T&gt;">
@@ -8178,6 +8208,7 @@ This method may bypass the cache on certain platforms.
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.None``1(System.Runtime.Intrinsics.Vector128{``0},``0)" />
       </Docs>
     </Member>
     <Member MemberName="NoneWhereAllBitsSet&lt;T&gt;">
@@ -8214,6 +8245,7 @@ This method may bypass the cache on certain platforms.
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.NoneWhereAllBitsSet``1(System.Runtime.Intrinsics.Vector128{``0})" />
       </Docs>
     </Member>
     <Member MemberName="OnesComplement&lt;T&gt;">
@@ -8287,10 +8319,11 @@ This method may bypass the cache on certain platforms.
         <Parameter Name="radians" Type="System.Runtime.Intrinsics.Vector64&lt;System.Double&gt;" Index="0" FrameworkAlternate="net-10.0;net-9.0" />
       </Parameters>
       <Docs>
-        <param name="radians">The vector to convert to degrees.</param>
-        <summary>Converts a given vector from radians to degrees.</summary>
-        <returns>The vector of <paramref name="radians" /> converted to degrees.</returns>
+        <param name="radians">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.RadiansToDegrees(System.Runtime.Intrinsics.Vector128{System.Double})" />
       </Docs>
     </Member>
     <Member MemberName="RadiansToDegrees">
@@ -8313,10 +8346,11 @@ This method may bypass the cache on certain platforms.
         <Parameter Name="radians" Type="System.Runtime.Intrinsics.Vector64&lt;System.Single&gt;" Index="0" FrameworkAlternate="net-10.0;net-9.0" />
       </Parameters>
       <Docs>
-        <param name="radians">The vector to convert to degrees.</param>
-        <summary>Converts a given vector from radians to degrees.</summary>
-        <returns>The vector of <paramref name="radians" /> converted to degrees.</returns>
+        <param name="radians">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.RadiansToDegrees(System.Runtime.Intrinsics.Vector128{System.Single})" />
       </Docs>
     </Member>
     <Member MemberName="Round">
@@ -8394,11 +8428,12 @@ This method may bypass the cache on certain platforms.
         <Parameter Name="mode" Type="System.MidpointRounding" Index="1" FrameworkAlternate="net-10.0;net-9.0" />
       </Parameters>
       <Docs>
-        <param name="vector">The vector to round.</param>
-        <param name="mode">The mode under which <paramref name="vector" /> should be rounded.</param>
-        <summary>Rounds each element in a vector to the nearest integer using the specified rounding mode.</summary>
-        <returns>The result of rounding each element in <paramref name="vector" /> to the nearest integer using <paramref name="mode" />.</returns>
+        <param name="vector">To be added.</param>
+        <param name="mode">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.Round(System.Runtime.Intrinsics.Vector128{System.Double},System.MidpointRounding)" />
       </Docs>
     </Member>
     <Member MemberName="Round">
@@ -8422,11 +8457,12 @@ This method may bypass the cache on certain platforms.
         <Parameter Name="mode" Type="System.MidpointRounding" Index="1" FrameworkAlternate="net-10.0;net-9.0" />
       </Parameters>
       <Docs>
-        <param name="vector">The vector to round.</param>
-        <param name="mode">The mode under which <paramref name="vector" /> should be rounded.</param>
-        <summary>Rounds each element in a vector to the nearest integer using the specified rounding mode.</summary>
-        <returns>The result of rounding each element in <paramref name="vector" /> to the nearest integer using <paramref name="mode" />.</returns>
+        <param name="vector">To be added.</param>
+        <param name="mode">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.Round(System.Runtime.Intrinsics.Vector128{System.Single},System.MidpointRounding)" />
       </Docs>
     </Member>
     <Member MemberName="ShiftLeft">
@@ -9493,11 +9529,14 @@ This method may bypass the cache on certain platforms.
         <Parameter Name="indices" Type="System.Runtime.Intrinsics.Vector64&lt;System.Byte&gt;" Index="1" FrameworkAlternate="net-10.0" />
       </Parameters>
       <Docs>
-        <param name="vector">To be added.</param>
-        <param name="indices">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="vector">The input vector from which values are selected.</param>
+        <param name="indices">The per-element indices used to select a value from <paramref name="vector" />.</param>
+        <summary>
+          <para>Creates a new vector by selecting values from an input vector using a set of indices.</para>
+          <para>Behavior is platform-dependent for out-of-range indices.</para>
+        </summary>
+        <returns>A new vector containing the values from <paramref name="vector" /> selected by the given <paramref name="indices" />.</returns>
+        <remarks>Unlike Shuffle, this method delegates to the underlying hardware intrinsic without ensuring that <paramref name="indices" /> are normalized to [0, 7].</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShuffleNative">
@@ -9520,11 +9559,11 @@ This method may bypass the cache on certain platforms.
         <Parameter Name="indices" Type="System.Runtime.Intrinsics.Vector64&lt;System.Int16&gt;" Index="1" FrameworkAlternate="net-10.0" />
       </Parameters>
       <Docs>
-        <param name="vector">To be added.</param>
-        <param name="indices">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="vector">The input vector from which values are selected.</param>
+        <param name="indices">The per-element indices used to select a value from <paramref name="vector" />.</param>
+        <summary>Creates a new vector by selecting values from an input vector using a set of indices.</summary>
+        <returns>A new vector containing the values from <paramref name="vector" /> selected by the given <paramref name="indices" />.</returns>
+        <remarks>Unlike Shuffle, this method delegates to the underlying hardware intrinsic without ensuring that <paramref name="indices" /> are normalized to [0, 3].</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShuffleNative">
@@ -9547,11 +9586,11 @@ This method may bypass the cache on certain platforms.
         <Parameter Name="indices" Type="System.Runtime.Intrinsics.Vector64&lt;System.Int32&gt;" Index="1" FrameworkAlternate="net-10.0" />
       </Parameters>
       <Docs>
-        <param name="vector">To be added.</param>
-        <param name="indices">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="vector">The input vector from which values are selected.</param>
+        <param name="indices">The per-element indices used to select a value from <paramref name="vector" />.</param>
+        <summary>Creates a new vector by selecting values from an input vector using a set of indices.</summary>
+        <returns>A new vector containing the values from <paramref name="vector" /> selected by the given <paramref name="indices" />.</returns>
+        <remarks>Unlike Shuffle, this method delegates to the underlying hardware intrinsic without ensuring that <paramref name="indices" /> are normalized to [0, 1].</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShuffleNative">
@@ -9580,11 +9619,14 @@ This method may bypass the cache on certain platforms.
         <Parameter Name="indices" Type="System.Runtime.Intrinsics.Vector64&lt;System.SByte&gt;" Index="1" FrameworkAlternate="net-10.0" />
       </Parameters>
       <Docs>
-        <param name="vector">To be added.</param>
-        <param name="indices">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="vector">The input vector from which values are selected.</param>
+        <param name="indices">The per-element indices used to select a value from <paramref name="vector" />.</param>
+        <summary>
+          <para>Creates a new vector by selecting values from an input vector using a set of indices.</para>
+          <para>Behavior is platform-dependent for out-of-range indices.</para>
+        </summary>
+        <returns>A new vector containing the values from <paramref name="vector" /> selected by the given <paramref name="indices" />.</returns>
+        <remarks>Unlike Shuffle, this method delegates to the underlying hardware intrinsic without ensuring that <paramref name="indices" /> are normalized to [0, 7].</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShuffleNative">
@@ -9607,11 +9649,11 @@ This method may bypass the cache on certain platforms.
         <Parameter Name="indices" Type="System.Runtime.Intrinsics.Vector64&lt;System.Int32&gt;" Index="1" FrameworkAlternate="net-10.0" />
       </Parameters>
       <Docs>
-        <param name="vector">To be added.</param>
-        <param name="indices">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="vector">The input vector from which values are selected.</param>
+        <param name="indices">The per-element indices used to select a value from <paramref name="vector" />.</param>
+        <summary>Creates a new vector by selecting values from an input vector using a set of indices.</summary>
+        <returns>A new vector containing the values from <paramref name="vector" /> selected by the given <paramref name="indices" />.</returns>
+        <remarks>Unlike Shuffle, this method delegates to the underlying hardware intrinsic without ensuring that <paramref name="indices" /> are normalized to [0, 1].</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShuffleNative">
@@ -9640,11 +9682,11 @@ This method may bypass the cache on certain platforms.
         <Parameter Name="indices" Type="System.Runtime.Intrinsics.Vector64&lt;System.UInt16&gt;" Index="1" FrameworkAlternate="net-10.0" />
       </Parameters>
       <Docs>
-        <param name="vector">To be added.</param>
-        <param name="indices">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="vector">The input vector from which values are selected.</param>
+        <param name="indices">The per-element indices used to select a value from <paramref name="vector" />.</param>
+        <summary>Creates a new vector by selecting values from an input vector using a set of indices.</summary>
+        <returns>A new vector containing the values from <paramref name="vector" /> selected by the given <paramref name="indices" />.</returns>
+        <remarks>Unlike Shuffle, this method delegates to the underlying hardware intrinsic without ensuring that <paramref name="indices" /> are normalized to [0, 3].</remarks>
       </Docs>
     </Member>
     <Member MemberName="ShuffleNative">
@@ -9673,11 +9715,11 @@ This method may bypass the cache on certain platforms.
         <Parameter Name="indices" Type="System.Runtime.Intrinsics.Vector64&lt;System.UInt32&gt;" Index="1" FrameworkAlternate="net-10.0" />
       </Parameters>
       <Docs>
-        <param name="vector">To be added.</param>
-        <param name="indices">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="vector">The input vector from which values are selected.</param>
+        <param name="indices">The per-element indices used to select a value from <paramref name="vector" />.</param>
+        <summary>Creates a new vector by selecting values from an input vector using a set of indices.</summary>
+        <returns>A new vector containing the values from <paramref name="vector" /> selected by the given <paramref name="indices" />.</returns>
+        <remarks>Unlike Shuffle, this method delegates to the underlying hardware intrinsic without ensuring that <paramref name="indices" /> are normalized to [0, 1].</remarks>
       </Docs>
     </Member>
     <Member MemberName="Sin">
@@ -9700,10 +9742,11 @@ This method may bypass the cache on certain platforms.
         <Parameter Name="vector" Type="System.Runtime.Intrinsics.Vector64&lt;System.Double&gt;" Index="0" FrameworkAlternate="net-10.0;net-9.0" />
       </Parameters>
       <Docs>
-        <param name="vector">The vector that will have its Sin computed.</param>
-        <summary>Computes the sin of each element in a vector.</summary>
-        <returns>A vector whose elements are the sin of the elements in <paramref name="vector" />.</returns>
+        <param name="vector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.Sin(System.Runtime.Intrinsics.Vector128{System.Double})" />
       </Docs>
     </Member>
     <Member MemberName="Sin">
@@ -9726,10 +9769,11 @@ This method may bypass the cache on certain platforms.
         <Parameter Name="vector" Type="System.Runtime.Intrinsics.Vector64&lt;System.Single&gt;" Index="0" FrameworkAlternate="net-10.0;net-9.0" />
       </Parameters>
       <Docs>
-        <param name="vector">The vector that will have its Sin computed.</param>
-        <summary>Computes the sin of each element in a vector.</summary>
-        <returns>A vector whose elements are the sin of the elements in <paramref name="vector" />.</returns>
+        <param name="vector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.Sin(System.Runtime.Intrinsics.Vector128{System.Single})" />
       </Docs>
     </Member>
     <Member MemberName="SinCos">
@@ -9758,10 +9802,11 @@ This method may bypass the cache on certain platforms.
         <Parameter Name="vector" Type="System.Runtime.Intrinsics.Vector64&lt;System.Double&gt;" Index="0" FrameworkAlternate="net-10.0;net-9.0" />
       </Parameters>
       <Docs>
-        <param name="vector">The vector that will have its SinCos computed.</param>
-        <summary>Computes the sincos of each element in a vector.</summary>
-        <returns>A vector whose elements are the sincos of the elements in <paramref name="vector" />.</returns>
+        <param name="vector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.SinCos(System.Runtime.Intrinsics.Vector128{System.Double})" />
       </Docs>
     </Member>
     <Member MemberName="SinCos">
@@ -9790,10 +9835,11 @@ This method may bypass the cache on certain platforms.
         <Parameter Name="vector" Type="System.Runtime.Intrinsics.Vector64&lt;System.Single&gt;" Index="0" FrameworkAlternate="net-10.0;net-9.0" />
       </Parameters>
       <Docs>
-        <param name="vector">The vector that will have its SinCos computed.</param>
-        <summary>Computes the sincos of each element in a vector.</summary>
-        <returns>A vector whose elements are the sincos of the elements in <paramref name="vector" />.</returns>
+        <param name="vector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.SinCos(System.Runtime.Intrinsics.Vector128{System.Single})" />
       </Docs>
     </Member>
     <Member MemberName="Sqrt&lt;T&gt;">
@@ -10249,6 +10295,7 @@ This method may bypass the cache on certain platforms.
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:System.Runtime.Intrinsics.Vector128.SubtractSaturate``1(System.Runtime.Intrinsics.Vector128{``0},System.Runtime.Intrinsics.Vector128{``0})" />
       </Docs>
     </Member>
     <Member MemberName="Sum&lt;T&gt;">

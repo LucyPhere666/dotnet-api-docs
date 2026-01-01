@@ -1412,6 +1412,53 @@ If you create an <xref:System.Security.Cryptography.X509Certificates.X509Certifi
       </Docs>
     </Member>
     <Member MemberName="CopyWithPrivateKey">
+      <MemberSignature Language="C#" Value="public System.Security.Cryptography.X509Certificates.X509Certificate2 CopyWithPrivateKey (System.Security.Cryptography.CompositeMLDsa privateKey);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.Cryptography.X509Certificates.X509Certificate2 CopyWithPrivateKey(class System.Security.Cryptography.CompositeMLDsa privateKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2.CopyWithPrivateKey(System.Security.Cryptography.CompositeMLDsa)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CopyWithPrivateKey (privateKey As CompositeMLDsa) As X509Certificate2" />
+      <MemberSignature Language="F#" Value="member this.CopyWithPrivateKey : System.Security.Cryptography.CompositeMLDsa -&gt; System.Security.Cryptography.X509Certificates.X509Certificate2" Usage="x509Certificate2.CopyWithPrivateKey privateKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::Cryptography::X509Certificates::X509Certificate2 ^ CopyWithPrivateKey(System::Security::Cryptography::CompositeMLDsa ^ privateKey);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-10.0">
+          <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.Experimental("SYSLIB5006", UrlFormat="https://aka.ms/dotnet-warnings/{0}")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.Experimental("SYSLIB5006", UrlFormat="https://aka.ms/dotnet-warnings/{0}")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.X509Certificates.X509Certificate2</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="privateKey" Type="System.Security.Cryptography.CompositeMLDsa" Index="0" FrameworkAlternate="net-10.0" />
+      </Parameters>
+      <Docs>
+        <param name="privateKey">The Composite ML-DSA private key that corresponds to the Composite ML-DSA public key in this certificate.</param>
+        <summary>
+          <para>Combines a private key with a certificate containing the associated public key into a new instance that can access the private key.</para>
+        </summary>
+        <returns>
+          <para>A new certificate with the <see cref="P:System.Security.Cryptography.X509Certificates.X509Certificate2.HasPrivateKey" /> property set to <see langword="true" />.</para>
+          <para>The current certificate isn't modified.</para>
+        </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="privateKey" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The specified private key doesn't match the public key for this certificate.</exception>
+        <exception cref="T:System.InvalidOperationException">The certificate already has an associated private key.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">Combining a certificate and a Composite ML-DSA private key is not supported on this platform.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyWithPrivateKey">
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.X509Certificates.X509Certificate2 CopyWithPrivateKey (System.Security.Cryptography.ECDiffieHellman privateKey);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.Cryptography.X509Certificates.X509Certificate2 CopyWithPrivateKey(class System.Security.Cryptography.ECDiffieHellman privateKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2.CopyWithPrivateKey(System.Security.Cryptography.ECDiffieHellman)" />
@@ -1486,10 +1533,19 @@ The specified private key doesn't match the public key for this certificate.</ex
         <Parameter Name="privateKey" Type="System.Security.Cryptography.MLDsa" Index="0" FrameworkAlternate="net-10.0" />
       </Parameters>
       <Docs>
-        <param name="privateKey">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="privateKey">The ML-DSA private key that corresponds to the ML-DSA public key in this certificate.</param>
+        <summary>
+          <para>Combines a private key with a certificate containing the associated public key into a new instance that can access the private key.</para>
+        </summary>
+        <returns>
+          <para>A new certificate with the <see cref="P:System.Security.Cryptography.X509Certificates.X509Certificate2.HasPrivateKey" /> property set to <see langword="true" />.</para>
+          <para>The current certificate isn't modified.</para>
+        </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="privateKey" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The specified private key doesn't match the public key for this certificate.</exception>
+        <exception cref="T:System.InvalidOperationException">The certificate already has an associated private key.</exception>
       </Docs>
     </Member>
     <Member MemberName="CopyWithPrivateKey">
@@ -1523,10 +1579,19 @@ The specified private key doesn't match the public key for this certificate.</ex
         <Parameter Name="privateKey" Type="System.Security.Cryptography.MLKem" Index="0" FrameworkAlternate="net-10.0" />
       </Parameters>
       <Docs>
-        <param name="privateKey">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="privateKey">The ML-KEM private key that corresponds to the ML-KEM public key in this certificate.</param>
+        <summary>
+          <para>Combines a private key with a certificate containing the associated public key into a new instance that can access the private key.</para>
+        </summary>
+        <returns>
+          <para>A new certificate with the <see cref="P:System.Security.Cryptography.X509Certificates.X509Certificate2.HasPrivateKey" /> property set to <see langword="true" />.</para>
+          <para>The current certificate isn't modified.</para>
+        </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="privateKey" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The specified private key doesn't match the public key for this certificate.</exception>
+        <exception cref="T:System.InvalidOperationException">The certificate already has an associated private key.</exception>
       </Docs>
     </Member>
     <Member MemberName="CopyWithPrivateKey">
@@ -1560,10 +1625,19 @@ The specified private key doesn't match the public key for this certificate.</ex
         <Parameter Name="privateKey" Type="System.Security.Cryptography.SlhDsa" Index="0" FrameworkAlternate="net-10.0" />
       </Parameters>
       <Docs>
-        <param name="privateKey">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="privateKey">The SLH-DSA private key that corresponds to the SLH-DSA public key in this certificate.</param>
+        <summary>
+          <para>Combines a private key with a certificate containing the associated public key into a new instance that can access the private key.</para>
+        </summary>
+        <returns>
+          <para>A new certificate with the <see cref="P:System.Security.Cryptography.X509Certificates.X509Certificate2.HasPrivateKey" /> property set to <see langword="true" />.</para>
+          <para>The current certificate isn't modified.</para>
+        </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="privateKey" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The specified private key doesn't match the public key for this certificate.</exception>
+        <exception cref="T:System.InvalidOperationException">The certificate already has an associated private key.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateFromEncryptedPem">
@@ -2338,6 +2412,78 @@ The certificate is encoded according to the IETF RFC 7468 "strict"
           <paramref name="fileName" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <Member MemberName="GetCompositeMLDsaPrivateKey">
+      <MemberSignature Language="C#" Value="public System.Security.Cryptography.CompositeMLDsa? GetCompositeMLDsaPrivateKey ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.Cryptography.CompositeMLDsa GetCompositeMLDsaPrivateKey() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2.GetCompositeMLDsaPrivateKey" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCompositeMLDsaPrivateKey () As CompositeMLDsa" />
+      <MemberSignature Language="F#" Value="member this.GetCompositeMLDsaPrivateKey : unit -&gt; System.Security.Cryptography.CompositeMLDsa" Usage="x509Certificate2.GetCompositeMLDsaPrivateKey " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::Cryptography::CompositeMLDsa ^ GetCompositeMLDsaPrivateKey();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-10.0">
+          <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.Experimental("SYSLIB5006", UrlFormat="https://aka.ms/dotnet-warnings/{0}")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.Experimental("SYSLIB5006", UrlFormat="https://aka.ms/dotnet-warnings/{0}")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.CompositeMLDsa</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the <see cref="T:System.Security.Cryptography.CompositeMLDsa" /> private key from this certificate.</summary>
+        <returns>The private key, or <see langword="null" /> if this certificate does not have a Composite ML-DSA private key.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.PlatformNotSupportedException">Retrieving a Composite ML-DSA private key from a certificate is not supported on this platform.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">An error occurred accessing the private key.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCompositeMLDsaPublicKey">
+      <MemberSignature Language="C#" Value="public System.Security.Cryptography.CompositeMLDsa? GetCompositeMLDsaPublicKey ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.Cryptography.CompositeMLDsa GetCompositeMLDsaPublicKey() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2.GetCompositeMLDsaPublicKey" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCompositeMLDsaPublicKey () As CompositeMLDsa" />
+      <MemberSignature Language="F#" Value="member this.GetCompositeMLDsaPublicKey : unit -&gt; System.Security.Cryptography.CompositeMLDsa" Usage="x509Certificate2.GetCompositeMLDsaPublicKey " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::Cryptography::CompositeMLDsa ^ GetCompositeMLDsaPublicKey();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="net-10.0">
+          <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.Experimental("SYSLIB5006", UrlFormat="https://aka.ms/dotnet-warnings/{0}")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.Experimental("SYSLIB5006", UrlFormat="https://aka.ms/dotnet-warnings/{0}")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.CompositeMLDsa</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the <see cref="T:System.Security.Cryptography.CompositeMLDsa" /> public key from this certificate.</summary>
+        <returns>The public key, or <see langword="null" /> if this certificate does not have a Composite ML-DSA public key.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.PlatformNotSupportedException">The certificate has a Composite ML-DSA public key, but the platform does not support Composite ML-DSA.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The public key was invalid, or otherwise could not be imported.</exception>
+      </Docs>
+    </Member>
     <Member MemberName="GetECDiffieHellmanPrivateKey">
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.ECDiffieHellman? GetECDiffieHellmanPrivateKey ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.Cryptography.ECDiffieHellman GetECDiffieHellmanPrivateKey() cil managed" />
@@ -2433,9 +2579,10 @@ The certificate is encoded according to the IETF RFC 7468 "strict"
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the <see cref="T:System.Security.Cryptography.MLDsa" /> private key from this certificate.</summary>
+        <returns>The private key, or <see langword="null" /> if this certificate does not have an ML-DSA private key.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">An error occurred accessing the private key.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetMLDsaPublicKey">
@@ -2467,9 +2614,11 @@ The certificate is encoded according to the IETF RFC 7468 "strict"
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the <see cref="T:System.Security.Cryptography.MLDsa" /> public key from this certificate.</summary>
+        <returns>The public key, or <see langword="null" /> if this certificate does not have an ML-DSA public key.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.PlatformNotSupportedException">The certificate has an ML-DSA public key, but the platform does not support ML-DSA.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The public key was invalid, or otherwise could not be imported.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetMLKemPrivateKey">
@@ -2501,9 +2650,10 @@ The certificate is encoded according to the IETF RFC 7468 "strict"
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the <see cref="T:System.Security.Cryptography.MLKem" /> private key from this certificate.</summary>
+        <returns>The private key, or <see langword="null" /> if this certificate does not have an ML-KEM private key.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">An error occurred accessing the private key.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetMLKemPublicKey">
@@ -2535,9 +2685,11 @@ The certificate is encoded according to the IETF RFC 7468 "strict"
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the <see cref="T:System.Security.Cryptography.MLKem" /> public key from this certificate.</summary>
+        <returns>The public key, or <see langword="null" /> if this certificate does not have an ML-KEM public key.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.PlatformNotSupportedException">The certificate has an ML-KEM public key, but the platform does not support ML-KEM.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The public key was invalid, or otherwise could not be imported.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetNameInfo">
@@ -2636,9 +2788,10 @@ The certificate is encoded according to the IETF RFC 7468 "strict"
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the <see cref="T:System.Security.Cryptography.SlhDsa" /> private key from this certificate.</summary>
+        <returns>The private key, or <see langword="null" /> if this certificate does not have an SLH-DSA private key.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">An error occurred accessing the private key.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetSlhDsaPublicKey">
@@ -2670,9 +2823,11 @@ The certificate is encoded according to the IETF RFC 7468 "strict"
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the <see cref="T:System.Security.Cryptography.SlhDsa" /> public key from this certificate.</summary>
+        <returns>The public key, or <see langword="null" /> if this certificate does not have an SLH-DSA public key.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.PlatformNotSupportedException">The certificate has an SLH-DSA public key, but the platform does not support SLH-DSA.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The public key was invalid, or otherwise could not be imported.</exception>
       </Docs>
     </Member>
     <Member MemberName="HasPrivateKey">
@@ -3320,6 +3475,8 @@ The certificate contains multiple Subject Alternative Name extensions.
 -or-
 
 The Subject Alternative Name extension or Subject Name could not be decoded.</exception>
+        <seealso cref="M:System.Net.IPAddress.TryParse(System.String,System.Net.IPAddress@)" />
+        <seealso cref="M:System.Uri.CheckHostName(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="NotAfter">

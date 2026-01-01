@@ -20,8 +20,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an SLH-DSA key backed by OpenSSL.</summary>
+    <remarks>
+      <para>This algorithm is specified by FIPS-205.</para>
+      <para>Developers are encouraged to program against the <c>SlhDsa</c> base class, rather than any specific derived class.</para>
+      <para>The derived classes are intended for interop with the underlying system cryptographic libraries.</para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -66,9 +70,19 @@
         <Parameter Name="pkeyHandle" Type="System.Security.Cryptography.SafeEvpPKeyHandle" />
       </Parameters>
       <Docs>
-        <param name="pkeyHandle">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="pkeyHandle">The OpenSSL <c>EVP_PKEY*</c> value to use as the key, represented as a <see cref="T:System.Security.Cryptography.SafeEvpPKeyHandle" />.</param>
+        <summary>
+          <para>Initializes a new instance of the <see cref="T:System.Security.Cryptography.SlhDsaOpenSsl" /> class from an existing OpenSSL key represented as an <c>EVP_PKEY*</c>.</para>
+        </summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="pkeyHandle" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">
+          <para>The handle in <paramref name="pkeyHandle" /> is not recognized as an SLH-DSA key.</para>
+          <para>-or-</para>
+          <para>An error occurred while creating the algorithm instance.</para>
+        </exception>
+        <exception cref="T:System.ObjectDisposedException">The handle in <paramref name="pkeyHandle" /> is already disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -93,6 +107,7 @@
         <param name="disposing">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="DuplicateKeyHandle">
@@ -112,18 +127,19 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets a <see cref="T:System.Security.Cryptography.SafeEvpPKeyHandle" /> representation of the cryptographic key.</summary>
+        <returns>A <see cref="T:System.Security.Cryptography.SafeEvpPKeyHandle" /> representation of the cryptographic key.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The object has already been disposed.</exception>
       </Docs>
     </Member>
-    <Member MemberName="ExportSlhDsaPublicKeyCore">
-      <MemberSignature Language="C#" Value="protected override void ExportSlhDsaPublicKeyCore (Span&lt;byte&gt; destination);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ExportSlhDsaPublicKeyCore(valuetype System.Span`1&lt;unsigned int8&gt; destination) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SlhDsaOpenSsl.ExportSlhDsaPublicKeyCore(System.Span{System.Byte})" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ExportSlhDsaPublicKeyCore (destination As Span(Of Byte))" />
-      <MemberSignature Language="F#" Value="override this.ExportSlhDsaPublicKeyCore : Span&lt;byte&gt; -&gt; unit" Usage="slhDsaOpenSsl.ExportSlhDsaPublicKeyCore destination" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ExportSlhDsaPublicKeyCore(Span&lt;System::Byte&gt; destination);" />
+    <Member MemberName="ExportSlhDsaPrivateKeyCore">
+      <MemberSignature Language="C#" Value="protected override void ExportSlhDsaPrivateKeyCore (Span&lt;byte&gt; destination);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ExportSlhDsaPrivateKeyCore(valuetype System.Span`1&lt;unsigned int8&gt; destination) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SlhDsaOpenSsl.ExportSlhDsaPrivateKeyCore(System.Span{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ExportSlhDsaPrivateKeyCore (destination As Span(Of Byte))" />
+      <MemberSignature Language="F#" Value="override this.ExportSlhDsaPrivateKeyCore : Span&lt;byte&gt; -&gt; unit" Usage="slhDsaOpenSsl.ExportSlhDsaPrivateKeyCore destination" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ExportSlhDsaPrivateKeyCore(Span&lt;System::Byte&gt; destination);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography</AssemblyName>
@@ -141,13 +157,13 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="ExportSlhDsaSecretKeyCore">
-      <MemberSignature Language="C#" Value="protected override void ExportSlhDsaSecretKeyCore (Span&lt;byte&gt; destination);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ExportSlhDsaSecretKeyCore(valuetype System.Span`1&lt;unsigned int8&gt; destination) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SlhDsaOpenSsl.ExportSlhDsaSecretKeyCore(System.Span{System.Byte})" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ExportSlhDsaSecretKeyCore (destination As Span(Of Byte))" />
-      <MemberSignature Language="F#" Value="override this.ExportSlhDsaSecretKeyCore : Span&lt;byte&gt; -&gt; unit" Usage="slhDsaOpenSsl.ExportSlhDsaSecretKeyCore destination" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ExportSlhDsaSecretKeyCore(Span&lt;System::Byte&gt; destination);" />
+    <Member MemberName="ExportSlhDsaPublicKeyCore">
+      <MemberSignature Language="C#" Value="protected override void ExportSlhDsaPublicKeyCore (Span&lt;byte&gt; destination);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ExportSlhDsaPublicKeyCore(valuetype System.Span`1&lt;unsigned int8&gt; destination) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SlhDsaOpenSsl.ExportSlhDsaPublicKeyCore(System.Span{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ExportSlhDsaPublicKeyCore (destination As Span(Of Byte))" />
+      <MemberSignature Language="F#" Value="override this.ExportSlhDsaPublicKeyCore : Span&lt;byte&gt; -&gt; unit" Usage="slhDsaOpenSsl.ExportSlhDsaPublicKeyCore destination" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ExportSlhDsaPublicKeyCore(Span&lt;System::Byte&gt; destination);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography</AssemblyName>
@@ -227,6 +243,33 @@
         <param name="hashAlgorithmOid">To be added.</param>
         <param name="destination">To be added.</param>
         <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryExportPkcs8PrivateKeyCore">
+      <MemberSignature Language="C#" Value="protected override bool TryExportPkcs8PrivateKeyCore (Span&lt;byte&gt; destination, out int bytesWritten);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool TryExportPkcs8PrivateKeyCore(valuetype System.Span`1&lt;unsigned int8&gt; destination, [out] int32&amp; bytesWritten) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SlhDsaOpenSsl.TryExportPkcs8PrivateKeyCore(System.Span{System.Byte},System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function TryExportPkcs8PrivateKeyCore (destination As Span(Of Byte), ByRef bytesWritten As Integer) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.TryExportPkcs8PrivateKeyCore : Span&lt;byte&gt; * int -&gt; bool" Usage="slhDsaOpenSsl.TryExportPkcs8PrivateKeyCore (destination, bytesWritten)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool TryExportPkcs8PrivateKeyCore(Span&lt;System::Byte&gt; destination, [Runtime::InteropServices::Out] int % bytesWritten);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
+        <Parameter Name="bytesWritten" Type="System.Int32" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="destination">To be added.</param>
+        <param name="bytesWritten">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

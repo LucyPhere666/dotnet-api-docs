@@ -101,6 +101,34 @@
             </exception>
       </Docs>
     </Member>
+    <Member MemberName="AllowDuplicateAttributes">
+      <MemberSignature Language="C#" Value="public bool AllowDuplicateAttributes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowDuplicateAttributes" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits.AllowDuplicateAttributes" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowDuplicateAttributes As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AllowDuplicateAttributes : bool with get, set" Usage="System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits.AllowDuplicateAttributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowDuplicateAttributes { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Bcl.Cryptography</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether duplicate attributes are permitted.</summary>
+        <value>
+          <para>
+            <see langword="true" /> to permit duplicate attributes; <see langword="false" /> to fail loading when duplicate attributes are found.</para>
+          <para>The default is <see langword="false" />.</para>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="DangerousNoLimits">
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits DangerousNoLimits { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits DangerousNoLimits" />
@@ -181,6 +209,7 @@
               property values may change over time.
             </remarks>
         <altmember cref="P:System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits.IsReadOnly" />
+        <seealso cref="P:System.Security.Cryptography.X509Certificates.Pkcs12LoaderLimits.IsReadOnly" />
       </Docs>
     </Member>
     <Member MemberName="IgnoreEncryptedAuthSafes">
@@ -471,6 +500,7 @@
               This property has no effect on non-Windows systems.
             </remarks>
         <altmember cref="P:System.Security.Cryptography.X509Certificates.X509Certificate2.FriendlyName" />
+        <seealso cref="P:System.Security.Cryptography.X509Certificates.X509Certificate2.FriendlyName" />
       </Docs>
     </Member>
     <Member MemberName="PreserveKeyName">
